@@ -2,9 +2,7 @@
 permalink: /group/
 title: "Research Group"
 author_profile: true
-redirect_from: 
-  - /md/
-  - /markdown.html
+
 ---
 
 ## Locations of key files/directories
