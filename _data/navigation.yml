@@ -9,7 +9,7 @@ main:
   - title: "Software"
     url: /software/    
     
-  - title: "Group"
-    url: /group/
+  - title: "Guide"
+    url: /markdown/
 
     
