@@ -6,8 +6,6 @@ excerpt: ''
 date: 2023-01-26
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2301.11294'
-'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
-
 citation: 'Sharrock, L. and Nemeth, C. (2023). &quot;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates.&quot; <i>arXiv</i>.'
 ---
 
