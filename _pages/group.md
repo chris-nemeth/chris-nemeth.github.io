@@ -1,6 +1,6 @@
 ---
-permalink: /markdown/
-title: "Markdown"
+permalink: /group/
+title: "Research Group"
 author_profile: true
 redirect_from: 
   - /md/
