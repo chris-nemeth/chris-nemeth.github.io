@@ -1,0 +1,14 @@
+---
+title: "Gaussian processes on hypergraphs"
+collection: publications
+permalink: /publication/2021-06-03-gp-hypergraphs
+excerpt: ''
+date: 2021-06-03
+venue: 'arXiv'
+paperurl: 'https://arxiv.org/abs/2106.01982'
+citation: 'Pinder, T., Turnbull, K., Nemeth, C. and Leslie, D., (2021). &quot;Gaussian processes on hypergraphs.&quot; <i>arXiv.</i>'
+---
+
+We derive a Matern Gaussian process (GP) on the vertices of a hypergraph. This enables estimation of regression models of observed or latent values associated with the vertices, in which the correlation and uncertainty estimates are informed by the hypergraph structure. We further present a framework for embedding the vertices of a hypergraph into a latent space using the hypergraph GP. Finally, we provide a scheme for identifying a small number of representative inducing vertices that enables scalable inference through sparse GPs. We demonstrate the utility of our framework on three challenging real-world problems that concern multi-class classification for the political party affiliation of legislators on the basis of voting behaviour, probabilistic matrix factorisation of movie reviews, and embedding a hypergraph of animals into a low-dimensional latent space.
+
+[arXiv](https://arxiv.org/abs/2106.01982)
