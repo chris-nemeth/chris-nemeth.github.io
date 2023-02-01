@@ -1,6 +1,6 @@
 ---
 title: "Probabilistic Algorithms for Scalable and Computable Approaches to Learning (PASCAL)"
-excerpt: "Turnig AI Fellowship <br/><img src='/images/code.jpg'>"
+excerpt: "[UKRI-EPSRC Turing AI Fellowship](https://gtr.ukri.org/projects?ref=EP%2FV022636%2F1)"
 collection: projects
 ---
 
