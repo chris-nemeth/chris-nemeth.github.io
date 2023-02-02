@@ -1,0 +1,7 @@
+---
+title: "Explainable AI for UK agricultural land use decision-making"
+excerpt: "[NERC](https://gtr.ukri.org/projects?ref=NE%2FT004002%2F1)"
+collection: projects
+---
+
+Agricultural land use dynamics and their associated driving factors represent highly complex systems of flows that are subject to non-linearities, sensitivities, and uncertainties across spatial and temporal scales. They are therefore challenging to represent using traditional statistical modelling approaches. Existing process-based modelling has enabled advances in understanding of individual biophysical processes underpinning agricultural land use systems (e.g. crop, livestock and biogeochemical models). However, these tend to focus on individual processes in detail or link a limited number of processes at large scales, thereby mostly ignoring the complex interdependencies between the multiple interacting biophysical and socio-economic components of land use systems. Artificial intelligence (AI) techniques offer great potential to complement such modelling approaches by mining the deep knowledge (e.g. farming patterns and behaviours) encapsulated in 'big' data from ground-based sensors (such as frequently used for precision farming) and Earth Observation satellites. This will deliver enhanced insight on the past and current state and spatio-temporal dynamics of agricultural land use system flows and how they can be influenced by decisions on agricultural policies and related farm management practices. 
