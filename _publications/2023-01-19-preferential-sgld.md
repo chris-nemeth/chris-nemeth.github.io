@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-01-19-preferential-sgld
 excerpt: ''
 date: 2023-01-19
-venue: 'AISTATS'
+venue: 'AISTATS (to appear)'
 paperurl: 'https://arxiv.org/abs/2210.16189'
 citation: 'Putcha, S., Nemeth, C. and Fearnhead, P., (2023). &quot;Preferential Subsampling for Stochastic Gradient Langevin Dynamics.&quot; <i>AISTATS 2023</i>.'
 ---
