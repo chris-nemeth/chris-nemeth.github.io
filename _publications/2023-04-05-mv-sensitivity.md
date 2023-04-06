@@ -1,10 +1,10 @@
 ---
 title: "Multivariate sensitivity analysis for a large-scale climate impact and adaptation model"
 collection: publications
-permalink: /publication/2022-01-24-mv-sensitivity 
+permalink: /publication/2023-04-05-mv-sensitivity 
 excerpt: ''
-date: 2022-01-24
-venue: 'arXiv'
+date: 2023-04-05
+venue: 'Journal of the Royal Statistical Society: Series C (to appear)'
 paperurl: 'https://arxiv.org/abs/2201.09681'
 citation: 'Oyebamiji, O., Nemeth, C., Harrison, P., Dunford, R. and Cojocaru, G., (2022). &quot;Multivariate sensitivity analysis for a large-scale climate impact and adaptation model.&quout; <i>arXiv</i>.'
 ---
