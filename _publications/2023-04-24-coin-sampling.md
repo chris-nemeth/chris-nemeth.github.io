@@ -1,9 +1,9 @@
 ---
 title: "Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates"
 collection: publications
-permalink: /publication/2023-01-26-coin-sampling
+permalink: /publication/2023-04-24-coin-sampling
 excerpt: ''
-date: 2023-01-26
+date: 2023-04-24
 venue: 'ICML'
 paperurl: 'https://arxiv.org/abs/2301.11294'
 citation: 'Sharrock, L. and Nemeth, C. (2023). &quot;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates.&quot; <i>ICML (to appear)</i>.'
