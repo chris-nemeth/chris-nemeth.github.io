@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2024-04-13-transport-ess
 excerpt: ''
 date: 2023-04-13
-venue: 'AISTATS 2023'
+venue: 'AISTATS'
 paperurl: 'https://proceedings.mlr.press/v206/cabezas23a.html'
 citation: 'Cabezas, A. and Nemeth, C., (2023). &quot;Transport Elliptical Slice Sampling.&quot; <i>Proceedings of The 26th International Conference on Artificial Intelligence and Statistics.</i>PMLR 206:3664-3676, 2023.'
 ---
