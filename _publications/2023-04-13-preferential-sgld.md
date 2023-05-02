@@ -1,9 +1,9 @@
 ---
 title: "Preferential Subsampling for Stochastic Gradient Langevin Dynamics"
 collection: publications
-permalink: /publication/2023-01-19-preferential-sgld
+permalink: /publication/2023-04-13-preferential-sgld
 excerpt: ''
-date: 2023-01-19
+date: 2023-04-13
 venue: 'AISTATS'
 paperurl: 'https://proceedings.mlr.press/v206/putcha23a.html'
 citation: 'Putcha, S., Nemeth, C. and Fearnhead, P., (2023). &quot;Preferential Subsampling for Stochastic Gradient Langevin Dynamics.&quot; <i>Proceedings of The 26th International Conference on Artificial Intelligence and Statistics</i>. PMLR 206:8837-8856, 2023.'
