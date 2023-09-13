@@ -5,7 +5,7 @@ permalink: /publication/2023-04-24-coin-sampling
 excerpt: ''
 date: 2023-04-24
 venue: 'ICML'
-paperurl: 'https://arxiv.org/abs/2301.11294'
+paperurl: 'https://proceedings.mlr.press/v202/sharrock23a/sharrock23a.pdf'
 citation: 'Sharrock, L. and Nemeth, C. (2023). &quot;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates.&quot; <i>Proceedings of the 40th International Conference on Machine Learning</i>PMLR 202:30850-30882.'
 ---
 
