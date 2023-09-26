@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-05-25-mirror-coin
 excerpt: ''
 date: 2023-09-21
-venue: 'NeurIPS 2023'
+venue: 'NeurIPS'
 paperurl: 'https://arxiv.org/abs/2305.14943'
 citation: 'Sharrock, L., Mackey, L. and Nemeth, C. (2023). &quot;Learning Rate Free Bayesian Inference in Constrained Domains&quot; <i>NeurIPS 2023 (to appear).</i>.'
 ---
