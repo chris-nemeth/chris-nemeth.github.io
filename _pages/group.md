@@ -23,7 +23,7 @@ Postdoctoral Research Associates
 PhD Students
 ======
 * [Dan Dodd](https://www.lancaster.ac.uk/sci-tech/about-us/people/daniel-dodd):: Learning-rate-free Bayesian inference. 2023-
-* [Connie Trojan](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/):: Funded by [TRL](https://www.trl.co.uk/) and co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/), 2022 -
+* [Connie Trojan](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/):: Funded by [Microsoft Research](https://www.microsoft.com/en-us/research/) and co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/), 2022 -
 * [Thomas Newman](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/):: Funded by [Shell](https://www.shell.co.uk/) and co-supervised with [Phil Jonathan](https://ygraigarw.github.io/), 2022 -
 * [Katie Howgate](https://www.lancaster.ac.uk/stor-i-student-sites/katie-howgate/):: Funded by [Tesco](https://www.tesco.com/) and co-supervised with [Jamie Fairbrother](https://www.lancaster.ac.uk/people-profiles/jamie-fairbrother), 2021-
 * [Alberto Cabezas-Gonzalez](https://www.lancaster.ac.uk/people-profiles/alberto-cabezas-gonzalez):: Co-supervised with [Marco Battiston](https://www.lancaster.ac.uk/maths/people/marco-battiston), 2020-
