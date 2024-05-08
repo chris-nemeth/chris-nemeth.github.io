@@ -1,6 +1,6 @@
 ---
 title: "Scalable and Exact Data Science for Security and Location-based Data"
-excerpt: "[UKRI-EPSRC Fellowship](https://gtr.ukri.org/projects?ref=EP%2FS00159X%2F1)"
+excerpt: "[UKRI-EPSRC Fellowship](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/S00159X/1) PI, £524K"
 collection: projects
 ---
 Incredible technological advances in data collection and storage have created a world in which we are constantly generating data. From supermarket loyalty cards and social media posts to healthcare records and credit card transactions, a digital footprint exists for every aspect of our lives. The ability of data science to analyse and act upon these complex and varied data sources has the potential to improve and revolutionise our lives in a myriad of ways, for example, through the development of driverless cars and personalised medicine.
