@@ -1,6 +1,6 @@
 ---
 title: "Explainable AI for UK agricultural land use decision-making"
-excerpt: "[NERC](https://gtr.ukri.org/projects?ref=NE%2FT004002%2F1)"
+excerpt: "[NERC](https://gtr.ukri.org/projects?ref=NE%2FT004002%2F1), PI, £43K"
 collection: projects
 ---
 
