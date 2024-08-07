@@ -1,5 +1,5 @@
 baseURL: "https://chris-nemeth.github.io" 
-title: Moritz-Maria von Igelfeld
+title: Chris Nemeth
 paginate: 20
 theme: PaperMod
 
@@ -11,25 +11,27 @@ taxonomies:
 
 menu:
     main:
+        - name: Papers
+          url: https://scholar.google.com/citations?user=17-Ze24AAAAJ&hl=en
+          weight: 2
         - name: Books
           url: books/
           weight: 5 
-        - name: Papers
-          url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
+        - name: Software 
+          url: software/
           weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+        - name: Code 
+          url: code_and_software/
+          weight: 4 
+        - name: Group
+          url: research_group/
+        #- name: Blog
+        #  url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+        #  weight: 6
 
 params:
-    description: "I am a Professor of Philology at the Institute of Romance Philology in Regensburg, Germany. My research focuses mostly on Portuguese irregular verbs."
-    author: Moritz-Maria von Igelfeld
+    description: "I am a Professor of Statistics at Lancaster University. My research focuses on Probabilistic Machine Learning."
+    author: Chris Nemeth
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -43,7 +45,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["papers","books","software","code","group"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -53,49 +55,45 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: Chris Nemeth
+          subtitle: "I am a Professor of Statistics at Lancaster University. My research is in the area of Probabilistic Machine Learning, with a particular focus gradient flow methods, Markov chain Monte Carlo algorithms and probabilistic modelling."
+          imageUrl: "nemeth_crop.gif"
           imageWidth: 160
           imageHeight: 160
-          imageTitle: Moritz-Maria von Igelfeld
+          imageTitle: Chris Nemeth
           buttons:
             - name: Papers
-              url: papers/
-            - name: Courses
-              url: courses/
-            - name: Data
-              url: data/
+              url: https://scholar.google.com/citations?user=17-Ze24AAAAJ&hl=en
             - name: Books
               url: books/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+            - name: Software Packages
+              url: software/
+            - name: Code
+              url: code_and_software/
+            - name: Research Group
+              url: research_group/
+            #- name: Tags
+            #  url: tags/
+            #- name: Archive
+            #  url: archive/
+            #- name: Blog
+            #  url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:moritz.maria.von.igelfeld@gmail.com
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
+          url: mailto:c.nemeth@lancaster.ac.uk
         - name: Location
           url: location/
-        - name: Office Hours
-          url: officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=17-Ze24AAAAJ&hl=en
+        - name: Orcid
+          url: https://orcid.org/0000-0002-9084-3866   
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@alexandermccallsmithoffici9000
-        - name: Twitter
-          url: https://twitter.com/McCallSmith
+          url: https://github.com/chris-nemeth
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/christopher-nemeth-815963233
 
     assets:
         disableScrollBarStyle: true
@@ -103,7 +101,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Chris Nemeth"
       icon: favicon.ico
       iconHeight: 18
 

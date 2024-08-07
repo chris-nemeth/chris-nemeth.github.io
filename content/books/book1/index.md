@@ -1,18 +1,18 @@
 ---
-title: "Portugese Irregular Verbs" 
-date: 1997-01-01
-lastmod: 2024-05-08
-tags: ["Portugese","irregular verbs","philology"]
-author: ["Moritz-Maria von Igelfeld"]
-description: "This book discusses Portugese irregular verbs in great details."
-summary: "This book discusses Portugese irregular verbs in great details."
+title: "Scalable Monte Carlo for Bayesian Learning" 
+date: 2024-08-07
+lastmod: 2024-08-07
+tags: ["Bayesian","Monte Carlo","Scalable"]
+author: ["Paul Fearnhead, Christopher Nemeth, Chris J. Oates and Chris Sherlock"]
+description: "This book covers recent advances in the Monte Carlo literature for performing Bayesian inference in high-dimensional and large-data settings."
+summary: "This book introduces scalable Monte Carlo algorithms for Bayesian inference."
 cover:
-    image: "book1.png"
-    alt: "Portugese Irregular Verbs"
+    image: "img.jpeg"
+    alt: "Scalable Monte Carlo for Bayesian Learning"
     relative: false
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Regensburg University Press"
+    URL: "https://arxiv.org/abs/2407.12751"
+    Text: "Cambridge University Press"
 showToc: false
 disableAnchoredHeadings: false
 
@@ -22,57 +22,122 @@ disableAnchoredHeadings: false
 
 #### Description
 
-This book discusses Portugese irregular verbs in great details. It is the seminal work on Romance philology.[^1] The book is the result of years of research into the etymology and vagaries of Portuguese verbs.[^2] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This book aims to provide a graduate-level introduction to advanced topics in Markov chain Monte Carlo (MCMC) algorithms, as applied broadly in the Bayesian computational context. Most, if not all of these topics (stochastic gradient MCMC, non-reversible MCMC, continuous time MCMC, and new techniques for convergence assessment) have emerged as recently as the last decade, and have driven substantial recent practical and theoretical advances in the field. A particular focus is on methods that are scalable with respect to either the amount of data, or the data dimension, motivated by the emerging high-priority application areas in machine learning and AI.
 
-[^1]: The acknowledged aim of the book is to dwarf all other books in the field.
-[^2]: As a result of such intensive research, the book's length is almost twelve hundred pages.
 
----
-
-#### Praise
-
-> There is nothing more to be said on this subject. Nothing – Anonymous reviewer
-
----
 
 #### View
 
-+ [Chapter 1: History of the Portuguese language](chapter1.pdf)
-+ [Chapter 2: Review of regular verbs](chapter2.pdf)
-+ [Chapter 3: Analysis of irregular verbs](chapter3.pdf)
++ [Full book](scalable_mcmc_book.pdf)
++ Chapter 1: Background
+    - Monte Carlo Methods 
+        - What is Monte Carlo Integration? 
+        - Importance Sampling 
+        - Monte Carlo or Quadrature? 
+        - Control Variates 
+        - Monte Carlo Integration and Bayesian Statistics 
+    - Example Applications 
+        - Logistic Regression 
+        - Bayesian Matrix Factorisation 
+        - Bayesian Neural Networks for Classification 
+    - Markov Chains 
+        - Reversible Markov chains 
+        - Convergence, Averages, and Variances 
+    - Stochastic Differential Equations 
+        - The Ornstein–Uhlenbeck Process 
+        - The Infinitesimal Generator 
+        - Langevin Diffusions 
+    - The Kernel Trick 
+        - Finite-Dimensional Inner Product Spaces 
+        - Kernels in a Finite-Dimensional Inner Product Space 
+        - A New Inner Product and the Kernel Trick in Finite Dimensions 
+        - General Kernels 
+        - The Power of the Kernel Trick 
+    - Chapter Notes 
 
----
++ Chapter 2: Reversible MCMC and its Scaling
+    - The Metropolis–Hastings Algorithm 
+        - Component-wise updates and Gibbs moves 
+        - The Metropolis–Hastings Independence Sampler 
+        - The Random Walk Metropolis Algorithm 
+        - The Metropolis-Adjusted Langevin Algorithm 
+    - Hamiltonian Monte Carlo 
+    - Chapter Notes 
 
-#### Excerpt from Chapter 1: Basic mathematical results from Portuguese philology
++ Chapter 3: Stochastic Gradient MCMC Algorithms
+    - The Unadjusted Langevin Algorithm 
+    - Approximate vs. Exact MCMC 
+    - Stochastic Gradient Langevin Dynamics 
+        - Controlling Stochasticity in the Gradient Estimator 
+        - Example: The Value of Control Variates 
+        - Convergence Results for Stochastic Gradient Langevin Dynamics 
+    - A General Framework for stochastic gradient MCMC 
+    - Guidance for Efficient Scalable Bayesian Learning 
+        - Experiments on a Logistic Regression Model 
+        - Experiments on a Bayesian Neural Network Model 
+    - Generalisations and Extensions 
+        - Scalable Inference for Models in Constrained Spaces 
+        - Scalable Inference with Time Series Data 
+    - Chapter Notes
+
++ Chapter 4: Non-Reversible MCMC
+    - The Benefits of Non-Reversibility 
+    - Hamiltonian Monte Carlo Revisited 
+    - Lifting Schemes for MCMC 
+        - Non-Reversible HMC 
+        - Gustafson’s Algorithm and Multidimensional Generalisations 
+    - Improving Non-reversibility: Delayed Rejection 
+        - The Discrete Bouncy Particle Sampler 
+    - Chapter Notes
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit $x\in \mathbb{N}$. Proin ac libero nec eros accumsan sagittis: $x^\ast = \max f(x)$. Fusce gravida $4 \ln(x+y) =4 \int \ln(x^2)dx$, lectus nec aliquet malesuada, augue dui lacinia velit, eget ullamcorper lorem lorem id turpis. Nam interdum est id venenatis fermentum: . Nullam fermentum, arcu eu luctus fermentum, felis orci pretium mi, eu bibendum ligula neque in metus. 
++ Chapter 5: Continuous-Time MCMC
+    - Continuous-Time MCMC as the Limit of Non-Reversible MCMC 
+    - Piecewise Deterministic Markov Processes 
+        - What is a PDMP? 
+        - Simulating PDMPs 
+        - The Generator and Invariant Distribution of a PDMP 
+        - The Limiting Process of Section 5.1 as a PDMP 
+    - Continuous-time MCMC via PDMPs 
+        - Different Samplers 
+        - Use of PDMP Output 
+        - Comparison of Samplers 
+    - Efficient Simulation of PDMP Samplers 
+        - Simulating PDMPs 
+        - Exploiting Model Sparsity
+        - Data Subsampling Ideas 
+    - Extensions 
+        - Discontinuous Target Distribution 
+        - Reversible Jump PDMP Samplers 
+        - More General Velocity Models 
+    - Chapter Notes
 
-$$1+\lambda\exp{\frac{\beta}{\alpha^2}} = \max_{t\in\mathbb{R}}(x(t)-y(t)+z(t)^2).$$
 
-Nulla facilisi. Phasellus pharetra ligula sit amet diam viverra, sed scelerisque ligula cursus. Curabitur sit amet libero eu velit fringilla vulputate, $2\ln(x)$. Suspendisse potenti. Quisque imperdiet arcu ac nibh gravida, id posuere ligula efficitur. Curabitur posuere, dui at finibus viverra, felis justo pulvinar urna, id finibus sem purus eget orci.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris vel neque at lorem fermentum tincidunt: $<x,y> = 2x^2 + \mathcal{A}$. Etiam volutpat, risus at aliquet varius, sapien quam vulputate lectus, id ultrices lorem arcu ut magna. Sed malesuada scelerisque dignissim. Aliquam erat volutpat. Proin efficitur tincidunt nulla, a convallis magna cursus sit amet. Donec eget convallis libero. Pellentesque tincidunt nunc et nisi lacinia, quis auctor lorem suscipit: 
-
-$$2\exp(\gamma) = 2\exp(\zeta/3) = 2\exp(\kappa).$$
-
-Praesent at eros a sapien sagittis scelerisque at a nulla. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus congue vestibulum nisl, vitae accumsan est. Suspendisse potenti. In ut nunc ac quam congue cursus. Duis fermentum hendrerit eros, ut auctor velit pharetra ut. Nulla facilisi. Cras at convallis purus, a convallis mauris. Donec id est vel ipsum hendrerit laoreet.
-
++ Chapter 6: Assessing and Improving MCMC
+    - Diagnostics for MCMC 
+        - Convergence Diagnostics 
+        - Bias Diagnostics 
+        - Improved Bias Diagnostics via the Kernel Trick 
+    - Convergence Bounds for MCMC 
+        - Bounds on Integral Probability Metrics 
+        - Choice of Auxiliary Markov Process 
+        - Kernel Stein Discrepancy 
+        - Convergence Control 
+        - Stochastic Gradient Stein Discrepancy 
+    - Optimal Weights for MCMC 
+    - Optimal Thinning for MCMC 
+    - Chapter Notes 
 ---
 
 #### Citation
 
-Moritz-Maria von Igelfeld. 1997. *Portugese Irregular Verbs*. Regensburg, Germany: Regensburg University Press. http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs.
+Fearnhead, P., Nemeth, C., Oates, C.J. and Sherlock, C., 2024. Scalable Monte Carlo for Bayesian Learning. arXiv preprint arXiv:2407.12751.
 
 ```BibTeX
-@book{I97,
-author = {Moritz-Maria von Igelfeld},
-year = {1997},
-title = {Portugese Irregular Verbs},
-publisher = {Regensburg University Press},
-address = {Regensburg, Germany},
-url = {http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs}}
+@book{fearnhead2024scalable,
+  title={Scalable Monte Carlo for Bayesian Learning},
+  author={Fearnhead, Paul and Nemeth, Christopher and Oates, Chris J and Sherlock, Chris},
+  publisher={Cambridge University Press},
+  year={2024}
+}
 ```

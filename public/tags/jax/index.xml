@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jax on Chris Nemeth</title>
+    <link>https://chris-nemeth.github.io/tags/jax/</link>
+    <description>Recent content in Jax on Chris Nemeth</description>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chris-nemeth.github.io/tags/jax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stochastic Gradient MCMC in Jax</title>
+      <link>https://chris-nemeth.github.io/software/sgmcmcjax/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/software/sgmcmcjax/</guid>
+      <description>This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language.</description>
+    </item>
+  </channel>
+</rss>
