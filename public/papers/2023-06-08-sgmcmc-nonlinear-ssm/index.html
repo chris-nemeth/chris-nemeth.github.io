@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Stochastic Gradient MCMC for Nonlinear State Space Models | Chris Nemeth</title>
+<meta name="keywords" content="Markov chain Monte Carlo, MCMC, stochastic gradient, state space model">
+<meta name="description" content=" ">
+<meta name="author" content="Christopher Aicher,&thinsp;Srshti Putcha,&thinsp;Christopher Nemeth,&thinsp;Paul Fearnhead,&thinsp;Emily B. Fox">
+<link rel="canonical" href="https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Stochastic Gradient MCMC for Nonlinear State Space Models" />
+<meta property="og:description" content=" " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2023-06-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-08T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Stochastic Gradient MCMC for Nonlinear State Space Models"/>
+<meta name="twitter:description" content=" "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://chris-nemeth.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Stochastic Gradient MCMC for Nonlinear State Space Models",
+      "item": "https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Stochastic Gradient MCMC for Nonlinear State Space Models",
+  "name": "Stochastic Gradient MCMC for Nonlinear State Space Models",
+  "description": " ",
+  "keywords": [
+    "Markov chain Monte Carlo", "MCMC", "stochastic gradient", "state space model"
+  ],
+  "articleBody": " Download Paper arXiv Code Abstract State space models (SSMs) provide a flexible framework for modeling complex time series via a latent stochastic process. Inference for nonlinear, non-Gaussian SSMs is often tackled with particle methods that do not scale well to long time series. The challenge is two-fold: not only do computations scale linearly with time, as in the linear case, but particle filters additionally suffer from increasing particle degeneracy with longer series. Stochastic gradient MCMC methods have been developed to scale inference for hidden Markov models (HMMs) and linear SSMs using buffered stochastic gradient estimates to account for temporal dependencies. We extend these stochastic gradient estimators to nonlinear SSMs using particle methods. We present error bounds that account for both buffering error and particle error in the case of nonlinear SSMs that are log-concave in the latent process. We evaluate our proposed particle buffered stochastic gradient using SGMCMC for inference on both long sequential synthetic and minute-resolution financial returns data, demonstrating the importance of this class of methods.\nCitation Aicher, C., Putcha, S., Nemeth, C., Fearnhead, P. and Fox, E., 2023. Stochastic gradient MCMC for nonlinear state space models. Bayesian Analysis, 1(1), pp.1-23.\n@article{aicher2023stochastic, title={Stochastic gradient MCMC for nonlinear state space models}, author={Aicher, Christopher and Putcha, Srshti and Nemeth, Christopher and Fearnhead, Paul and Fox, Emily}, journal={Bayesian Analysis}, volume={1}, number={1}, pages={1–23}, year={2023}, publisher={International Society for Bayesian Analysis} }\n",
+  "wordCount" : "228",
+  "inLanguage": "en",
+  "datePublished": "2023-06-08T00:00:00Z",
+  "dateModified": "2023-06-08T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Christopher Aicher"
+  }, {
+    "@type": "Person",
+    "name": "Srshti Putcha"
+  }, {
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }, {
+    "@type": "Person",
+    "name": "Paul Fearnhead"
+  }, {
+    "@type": "Person",
+    "name": "Emily B. Fox"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Stochastic Gradient MCMC for Nonlinear State Space Models
+    </h1>
+    <div class="post-meta"><span title='2023-06-08 00:00:00 +0000 UTC'>June 2023</span>&nbsp;&middot;&nbsp;Christopher Aicher,&thinsp;Srshti Putcha,&thinsp;Christopher Nemeth,&thinsp;Paul Fearnhead,&thinsp;Emily B. Fox&nbsp;&middot;&nbsp;<a href="https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Stochastic-Gradient-MCMC-for-Nonlinear-State-Space-Models/10.1214/23-BA1395.full" rel="noopener noreferrer" target="_blank">Bayesian Analysis</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Stochastic-Gradient-MCMC-for-Nonlinear-State-Space-Models/10.1214/23-BA1395.full" target="_blank">Paper</a>
+</li>
+<li><a href="https://arxiv.org/abs/1901.10568" target="_blank">arXiv</a>
+</li>
+<li><a href="https://github.com/aicherc/sgmcmc_ssm_code" target="_blank">Code</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>State space models (SSMs) provide a flexible framework for modeling complex time series via a latent stochastic process. Inference for nonlinear, non-Gaussian SSMs is often tackled with particle methods that do not scale well to long time series. The challenge is two-fold: not only do computations scale linearly with time, as in the linear case, but particle filters additionally suffer from increasing particle degeneracy with longer series. Stochastic gradient MCMC methods have been developed to scale inference for hidden Markov models (HMMs) and linear SSMs using buffered stochastic gradient estimates to account for temporal dependencies. We extend these stochastic gradient estimators to nonlinear SSMs using particle methods. We present error bounds that account for both buffering error and particle error in the case of nonlinear SSMs that are log-concave in the latent process. We evaluate our proposed particle buffered stochastic gradient using SGMCMC for inference on both long sequential synthetic and minute-resolution financial returns data, demonstrating the importance of this class of methods.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<p>Aicher, C., Putcha, S., Nemeth, C., Fearnhead, P. and Fox, E., 2023. Stochastic gradient MCMC for nonlinear state space models. <em>Bayesian Analysis</em>, 1(1), pp.1-23.</p>
+<p>@article{aicher2023stochastic,
+title={Stochastic gradient MCMC for nonlinear state space models},
+author={Aicher, Christopher and Putcha, Srshti and Nemeth, Christopher and Fearnhead, Paul and Fox, Emily},
+journal={Bayesian Analysis},
+volume={1},
+number={1},
+pages={1&ndash;23},
+year={2023},
+publisher={International Society for Bayesian Analysis}
+}</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/">Markov Chain Monte Carlo</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/mcmc/">MCMC</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/stochastic-gradient/">Stochastic Gradient</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/state-space-model/">State Space Model</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Preferential Subsampling for Stochastic Gradient Langevin Dynamics | Chris Nemeth</title>
+<meta name="keywords" content="stochastic gradient Langevin dynamics, SGLD, preferential subsampling">
+<meta name="description" content=" ">
+<meta name="author" content="Srshti Putcha,&thinsp;Christopher Nemeth,&thinsp;Paul Fearnhead">
+<link rel="canonical" href="https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Preferential Subsampling for Stochastic Gradient Langevin Dynamics" />
+<meta property="og:description" content=" " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2023-04-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-13T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Preferential Subsampling for Stochastic Gradient Langevin Dynamics"/>
+<meta name="twitter:description" content=" "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://chris-nemeth.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Preferential Subsampling for Stochastic Gradient Langevin Dynamics",
+      "item": "https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Preferential Subsampling for Stochastic Gradient Langevin Dynamics",
+  "name": "Preferential Subsampling for Stochastic Gradient Langevin Dynamics",
+  "description": " ",
+  "keywords": [
+    "stochastic gradient Langevin dynamics", "SGLD", "preferential subsampling"
+  ],
+  "articleBody": " Download Paper arXiv Code Abstract Stochastic gradient MCMC (SGMCMC) offers a scalable alternative to traditional MCMC, by constructing an unbiased estimate of the gradient of the log-posterior with a small, uniformly-weighted subsample of the data. While efficient to compute, the resulting gradient estimator may exhibit a high variance and impact sampler performance. The problem of variance control has been traditionally addressed by constructing a better stochastic gradient estimator, often using control variates. We propose to use a discrete, non-uniform probability distribution to preferentially subsample data points that have a greater impact on the stochastic gradient. In addition, we present a method of adaptively adjusting the subsample size at each iteration of the algorithm, so that we increase the subsample size in areas of the sample space where the gradient is harder to estimate. We demonstrate that such an approach can maintain the same level of accuracy while substantially reducing the average subsample size that is used.\nCitation Putcha, S., Nemeth, C. and Fearnhead, P., 2023, April. Preferential Subsampling for Stochastic Gradient Langevin Dynamics. In International Conference on Artificial Intelligence and Statistics (pp. 8837-8856). PMLR.\n@inproceedings{putcha2023preferential, title={Preferential Subsampling for Stochastic Gradient Langevin Dynamics}, author={Putcha, Srshti and Nemeth, Christopher and Fearnhead, Paul}, booktitle={International Conference on Artificial Intelligence and Statistics}, pages={8837--8856}, year={2023}, organization={PMLR} } ",
+  "wordCount" : "211",
+  "inLanguage": "en",
+  "datePublished": "2023-04-13T00:00:00Z",
+  "dateModified": "2023-04-13T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Srshti Putcha"
+  }, {
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }, {
+    "@type": "Person",
+    "name": "Paul Fearnhead"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Preferential Subsampling for Stochastic Gradient Langevin Dynamics
+    </h1>
+    <div class="post-meta"><span title='2023-04-13 00:00:00 +0000 UTC'>April 2023</span>&nbsp;&middot;&nbsp;Srshti Putcha,&thinsp;Christopher Nemeth,&thinsp;Paul Fearnhead&nbsp;&middot;&nbsp;<a href="https://proceedings.mlr.press/v206/putcha23a.html" rel="noopener noreferrer" target="_blank">AISTATS 2023</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://proceedings.mlr.press/v206/putcha23a/putcha23a.pdf" target="_blank">Paper</a>
+</li>
+<li><a href="https://arxiv.org/abs/2210.16189" target="_blank">arXiv</a>
+</li>
+<li><a href="https://github.com/srshtiputcha/sgmcmc_preferential_subsampling" target="_blank">Code</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>Stochastic gradient MCMC (SGMCMC) offers a scalable alternative to traditional MCMC, by constructing an unbiased estimate of the gradient of the log-posterior with a small, uniformly-weighted subsample of the data. While efficient to compute, the resulting gradient estimator may exhibit a high variance and impact sampler performance. The problem of variance control has been traditionally addressed by constructing a better stochastic gradient estimator, often using control variates. We propose to use a discrete, non-uniform probability distribution to preferentially subsample data points that have a greater impact on the stochastic gradient. In addition, we present a method of adaptively adjusting the subsample size at each iteration of the algorithm, so that we increase the subsample size in areas of the sample space where the gradient is harder to estimate. We demonstrate that such an approach can maintain the same level of accuracy while substantially reducing the average subsample size that is used.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<p>Putcha, S., Nemeth, C. and Fearnhead, P., 2023, April. Preferential Subsampling for Stochastic Gradient Langevin Dynamics. In International Conference on Artificial Intelligence and Statistics (pp. 8837-8856). PMLR.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@inproceedings</span>{putcha2023preferential,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Preferential Subsampling for Stochastic Gradient Langevin Dynamics}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Putcha, Srshti and Nemeth, Christopher and Fearnhead, Paul}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">booktitle</span>=<span style="color:#a50">{International Conference on Artificial Intelligence and Statistics}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">pages</span>=<span style="color:#a50">{8837--8856}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span>=<span style="color:#a50">{2023}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">organization</span>=<span style="color:#a50">{PMLR}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/stochastic-gradient-langevin-dynamics/">Stochastic Gradient Langevin Dynamics</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/sgld/">SGLD</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/preferential-subsampling/">Preferential Subsampling</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

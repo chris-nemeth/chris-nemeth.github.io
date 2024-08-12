@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cox-Ingersoll-Ross Process on Chris Nemeth</title>
+    <link>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</link>
+    <description>Recent content in Cox-Ingersoll-Ross Process on Chris Nemeth</description>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Large-Scale Stochastic Sampling from the Probability Simplex</title>
+      <link>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</guid>
+      <description> </description>
+    </item>
+  </channel>
+</rss>

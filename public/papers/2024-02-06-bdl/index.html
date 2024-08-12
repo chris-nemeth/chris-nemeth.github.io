@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI | Chris Nemeth</title>
+<meta name="keywords" content="Bayesian deep learning, neural networks, Bayesian inference">
+<meta name="description" content=" ">
+<meta name="author" content="Theodore Papamarkou,&thinsp;Maria Skoularidou,&thinsp;Konstantina Palla,&thinsp;Laurence Aitchison,&thinsp;Julyan Arbel,&thinsp;David Dunson,&thinsp;Maurizio Filippone,&thinsp;Vincent Fortuin,&thinsp;Philipp Hennig,&thinsp;Jose Miguel Hernandez-Lobato,&thinsp;Aliaksandr Hubin,&thinsp;Alexander Immer,&thinsp;Theofanis Karaletsos,&thinsp;Mohammad Emtiyaz Khan,&thinsp;Agustinus Kristiadi,&thinsp;Yingzhen Li,&thinsp;Stephan Mandt,&thinsp;Christopher Nemeth,&thinsp;Michael A Osborne,&thinsp;Tim GJ Rudner,&thinsp;David Rugamer,&thinsp;Yee Whye Teh,&thinsp;Max Welling,&thinsp;Andrew Gordon Wilson,&thinsp;Ruqi Zhang">
+<link rel="canonical" href="https://chris-nemeth.github.io/papers/2024-02-06-bdl/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/papers/2024-02-06-bdl/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI" />
+<meta property="og:description" content=" " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/papers/2024-02-06-bdl/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2024-07-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-08-10T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI"/>
+<meta name="twitter:description" content=" "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://chris-nemeth.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI",
+      "item": "https://chris-nemeth.github.io/papers/2024-02-06-bdl/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI",
+  "name": "Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI",
+  "description": " ",
+  "keywords": [
+    "Bayesian deep learning", "neural networks", "Bayesian inference"
+  ],
+  "articleBody": " Download Paper arXiv Abstract In the current landscape of deep learning research, there is a predominant emphasis on achieving high predictive accuracy in supervised tasks involving large image and language datasets. However, a broader perspective reveals a multitude of overlooked metrics, tasks, and data types, such as uncertainty, active and continual learning, and scientific data, that demand attention. Bayesian deep learning (BDL) constitutes a promising avenue, offering advantages across these diverse settings. This paper posits that BDL can elevate the capabilities of deep learning. It revisits the strengths of BDL, acknowledges existing challenges, and highlights some exciting research avenues aimed at addressing these obstacles. Looking ahead, the discussion focuses on possible ways to combine large-scale foundation models with BDL to unlock their full potential.\nCitation Papamarkou, T., Skoularidou, M., Palla, K., Aitchison, L., Arbel, J., Dunson, D., Filippone, M., Fortuin, V., Hennin, P., Hubin, A., Immer, A., Karaletsos, T.,Khan, M. E., Kristiadi, A., Li, Y., Hernandez-Lobato, J., M., Mandt, S., Nemeth, C., Osborne, M. A., Rudner, T.G.J., Rugmer, D,. Teh, Y.W., Welling, M., Wilson, A.G. and Zhang, R. (2024). Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI. In Forty-first International Conference on Machine Learning.\n@inproceedings{papamarkou2024position, title={Position: Bayesian Deep Learning is Needed in the Age of Large-Scale AI}, author={Papamarkou, Theodore and Skoularidou, Maria and Palla, Konstantina and Aitchison, Laurence and Arbel, Julyan and Dunson, David and Filippone, Maurizio and Fortuin, Vincent and Hennig, Philipp and Hern{\\'a}ndez-Lobato, Jos{\\'e} Miguel and others}, booktitle={Forty-first International Conference on Machine Learning}, year={2024} } ",
+  "wordCount" : "250",
+  "inLanguage": "en",
+  "datePublished": "2024-07-22T00:00:00Z",
+  "dateModified": "2024-08-10T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Theodore Papamarkou"
+  }, {
+    "@type": "Person",
+    "name": "Maria Skoularidou"
+  }, {
+    "@type": "Person",
+    "name": "Konstantina Palla"
+  }, {
+    "@type": "Person",
+    "name": "Laurence Aitchison"
+  }, {
+    "@type": "Person",
+    "name": "Julyan Arbel"
+  }, {
+    "@type": "Person",
+    "name": "David Dunson"
+  }, {
+    "@type": "Person",
+    "name": "Maurizio Filippone"
+  }, {
+    "@type": "Person",
+    "name": "Vincent Fortuin"
+  }, {
+    "@type": "Person",
+    "name": "Philipp Hennig"
+  }, {
+    "@type": "Person",
+    "name": "Jose Miguel Hernandez-Lobato"
+  }, {
+    "@type": "Person",
+    "name": "Aliaksandr Hubin"
+  }, {
+    "@type": "Person",
+    "name": "Alexander Immer"
+  }, {
+    "@type": "Person",
+    "name": "Theofanis Karaletsos"
+  }, {
+    "@type": "Person",
+    "name": "Mohammad Emtiyaz Khan"
+  }, {
+    "@type": "Person",
+    "name": "Agustinus Kristiadi"
+  }, {
+    "@type": "Person",
+    "name": "Yingzhen Li"
+  }, {
+    "@type": "Person",
+    "name": "Stephan Mandt"
+  }, {
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }, {
+    "@type": "Person",
+    "name": "Michael A Osborne"
+  }, {
+    "@type": "Person",
+    "name": "Tim GJ Rudner"
+  }, {
+    "@type": "Person",
+    "name": "David Rugamer"
+  }, {
+    "@type": "Person",
+    "name": "Yee Whye Teh"
+  }, {
+    "@type": "Person",
+    "name": "Max Welling"
+  }, {
+    "@type": "Person",
+    "name": "Andrew Gordon Wilson"
+  }, {
+    "@type": "Person",
+    "name": "Ruqi Zhang"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/papers/2024-02-06-bdl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI
+    </h1>
+    <div class="post-meta"><span title='2024-07-22 00:00:00 +0000 UTC'>July 2024</span>&nbsp;&middot;&nbsp;Theodore Papamarkou,&thinsp;Maria Skoularidou,&thinsp;Konstantina Palla,&thinsp;Laurence Aitchison,&thinsp;Julyan Arbel,&thinsp;David Dunson,&thinsp;Maurizio Filippone,&thinsp;Vincent Fortuin,&thinsp;Philipp Hennig,&thinsp;Jose Miguel Hernandez-Lobato,&thinsp;Aliaksandr Hubin,&thinsp;Alexander Immer,&thinsp;Theofanis Karaletsos,&thinsp;Mohammad Emtiyaz Khan,&thinsp;Agustinus Kristiadi,&thinsp;Yingzhen Li,&thinsp;Stephan Mandt,&thinsp;Christopher Nemeth,&thinsp;Michael A Osborne,&thinsp;Tim GJ Rudner,&thinsp;David Rugamer,&thinsp;Yee Whye Teh,&thinsp;Max Welling,&thinsp;Andrew Gordon Wilson,&thinsp;Ruqi Zhang&nbsp;&middot;&nbsp;<a href="https://openreview.net/pdf?id=PrmxFWI1Fr" rel="noopener noreferrer" target="_blank">ICML 2024</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://openreview.net/pdf?id=PrmxFWI1Fr" target="_blank">Paper</a>
+</li>
+<li><a href="https://arxiv.org/abs/2402.00809" target="_blank">arXiv</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>In the current landscape of deep learning research, there is a predominant emphasis on achieving high predictive accuracy in supervised tasks involving large image and language datasets. However, a broader perspective reveals a multitude of overlooked metrics, tasks, and data types, such as uncertainty, active and continual learning, and scientific data, that demand attention. Bayesian deep learning (BDL) constitutes a promising avenue, offering advantages across these diverse settings. This paper posits that BDL can elevate the capabilities of deep learning. It revisits the strengths of BDL, acknowledges existing challenges, and highlights some exciting research avenues aimed at addressing these obstacles. Looking ahead, the discussion focuses on possible ways to combine large-scale foundation models with BDL to unlock their full potential.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<p>Papamarkou, T., Skoularidou, M., Palla, K., Aitchison, L., Arbel, J., Dunson, D., Filippone, M., Fortuin, V., Hennin, P., Hubin, A., Immer, A., Karaletsos, T.,Khan, M. E., Kristiadi, A., Li, Y., Hernandez-Lobato, J., M., Mandt, S., Nemeth, C., Osborne, M. A., Rudner, T.G.J., Rugmer, D,. Teh, Y.W., Welling, M., Wilson, A.G. and Zhang, R. (2024). Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI. In <em>Forty-first International Conference on Machine Learning</em>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@inproceedings</span>{papamarkou2024position,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Position: Bayesian Deep Learning is Needed in the Age of Large-Scale AI}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Papamarkou, Theodore and Skoularidou, Maria and Palla, Konstantina and Aitchison, Laurence and Arbel, Julyan and Dunson, David and Filippone, Maurizio and Fortuin, Vincent and Hennig, Philipp and Hern{\&#39;a}ndez-Lobato, Jos{\&#39;e} Miguel and others}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">booktitle</span>=<span style="color:#a50">{Forty-first International Conference on Machine Learning}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span>=<span style="color:#a50">{2024}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/bayesian-deep-learning/">Bayesian Deep Learning</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/neural-networks/">Neural Networks</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/bayesian-inference/">Bayesian Inference</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

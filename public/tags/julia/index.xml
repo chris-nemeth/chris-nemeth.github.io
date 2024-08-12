@@ -15,5 +15,12 @@
       <guid>https://chris-nemeth.github.io/software/gaussianprocesses-jl/</guid>
       <description>This repository contains a Julia package for Gaussian process models.</description>
     </item>
+    <item>
+      <title>GaussianProcesses.jl: A Nonparametric Bayes Package for the Julia Language</title>
+      <link>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</guid>
+      <description> </description>
+    </item>
   </channel>
 </rss>

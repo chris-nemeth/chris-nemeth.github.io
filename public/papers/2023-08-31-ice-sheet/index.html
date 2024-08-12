@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data | Chris Nemeth</title>
+<meta name="keywords" content="hidden Markov model, ice sheet, Greenland">
+<meta name="description" content=" ">
+<meta name="author" content="Qingying Shu,&thinsp;Rebecca Killick,&thinsp;Amber Leeson,&thinsp;Christopher Nemeth,&thinsp;Xavier Fettweis,&thinsp;Anna Hogg,&thinsp;David Leslie">
+<link rel="canonical" href="https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data" />
+<meta property="og:description" content=" " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2023-08-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-31T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data"/>
+<meta name="twitter:description" content=" "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://chris-nemeth.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data",
+      "item": "https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data",
+  "name": "Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data",
+  "description": " ",
+  "keywords": [
+    "hidden Markov model", "ice sheet", "Greenland"
+  ],
+  "articleBody": " Download Paper Abstract Over half of the recent mass loss from the Greenland ice sheet, and its associated contribution to global sea level rise, can be attributed to increased surface meltwater runoff, with the remainder a result of dynamical processes such as calving and ice discharge. It is therefore important to quantify the distribution of melting on the ice sheet if we are to adequately understand past ice sheet change and make predictions for the future. In this article, we present a novel semi-empirical approach for characterising ice sheet surface conditions using high-resolution synthetic aperture radar (SAR) backscatter data from the Sentinel-1 satellite. We apply a state-space model to nine sites within North-East Greenland to identify changes in SAR backscatter, and we attribute these to different surface types with reference to optical satellite imagery and meteorological data. A set of decision-making rules for labelling ice sheet melting states are determined based on this analysis and subsequently applied to previously unseen sites. We show that our method performs well in (1) recognising some of the ice sheet surface types such as snow and dark ice and (2) determining whether the surface is melting or not melting. Sentinel-1 SAR data are of high spatial resolution; thus, in developing a method to identify the state of the surface from these data, we improve our capability to understand the variation of ice sheet melting across time and space.\nCitation Shu, Q., Killick, R., Leeson, A., Nemeth, C., Fettweis, X., Hogg, A. and Leslie, D., 2023. Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data. Journal of Glaciology, pp.1-12.\n@article{shu2023characterising, title={Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data}, author={Shu, Qingying and Killick, Rebecca and Leeson, Amber and Nemeth, Christopher and Fettweis, Xavier and Hogg, Anna and Leslie, David}, journal={Journal of Glaciology}, pages={1--12}, publisher={Cambridge University Press} } ",
+  "wordCount" : "308",
+  "inLanguage": "en",
+  "datePublished": "2023-08-31T00:00:00Z",
+  "dateModified": "2023-08-31T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Qingying Shu"
+  }, {
+    "@type": "Person",
+    "name": "Rebecca Killick"
+  }, {
+    "@type": "Person",
+    "name": "Amber Leeson"
+  }, {
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }, {
+    "@type": "Person",
+    "name": "Xavier Fettweis"
+  }, {
+    "@type": "Person",
+    "name": "Anna Hogg"
+  }, {
+    "@type": "Person",
+    "name": "David Leslie"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data
+    </h1>
+    <div class="post-meta"><span title='2023-08-31 00:00:00 +0000 UTC'>August 2023</span>&nbsp;&middot;&nbsp;Qingying Shu,&thinsp;Rebecca Killick,&thinsp;Amber Leeson,&thinsp;Christopher Nemeth,&thinsp;Xavier Fettweis,&thinsp;Anna Hogg,&thinsp;David Leslie&nbsp;&middot;&nbsp;<a href="https://www.cambridge.org/core/journals/journal-of-glaciology/article/characterising-the-ice-sheet-surface-in-northeast-greenland-using-sentinel1-sar-data/6FB58B78E79370A93AFCCF53ED2945F5" rel="noopener noreferrer" target="_blank">Journal of Glaciology</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://www.cambridge.org/core/journals/journal-of-glaciology/article/characterising-the-ice-sheet-surface-in-northeast-greenland-using-sentinel1-sar-data/6FB58B78E79370A93AFCCF53ED2945F5" target="_blank">Paper</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>Over half of the recent mass loss from the Greenland ice sheet, and its associated contribution to global sea level rise, can be attributed to increased surface meltwater runoff, with the remainder a result of dynamical processes such as calving and ice discharge. It is therefore important to quantify the distribution of melting on the ice sheet if we are to adequately understand past ice sheet change and make predictions for the future. In this article, we present a novel semi-empirical approach for characterising ice sheet surface conditions using high-resolution synthetic aperture radar (SAR) backscatter data from the Sentinel-1 satellite. We apply a state-space model to nine sites within North-East Greenland to identify changes in SAR backscatter, and we attribute these to different surface types with reference to optical satellite imagery and meteorological data. A set of decision-making rules for labelling ice sheet melting states are determined based on this analysis and subsequently applied to previously unseen sites. We show that our method performs well in (1) recognising some of the ice sheet surface types such as snow and dark ice and (2) determining whether the surface is melting or not melting. Sentinel-1 SAR data are of high spatial resolution; thus, in developing a method to identify the state of the surface from these data, we improve our capability to understand the variation of ice sheet melting across time and space.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<p>Shu, Q., Killick, R., Leeson, A., Nemeth, C., Fettweis, X., Hogg, A. and Leslie, D., 2023. Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data. <em>Journal of Glaciology</em>, pp.1-12.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@article</span>{shu2023characterising,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Shu, Qingying and Killick, Rebecca and Leeson, Amber and Nemeth, Christopher and Fettweis, Xavier and Hogg, Anna and Leslie, David}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">journal</span>=<span style="color:#a50">{Journal of Glaciology}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">pages</span>=<span style="color:#a50">{1--12}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">publisher</span>=<span style="color:#a50">{Cambridge University Press}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/hidden-markov-model/">Hidden Markov Model</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/ice-sheet/">Ice Sheet</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/greenland/">Greenland</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

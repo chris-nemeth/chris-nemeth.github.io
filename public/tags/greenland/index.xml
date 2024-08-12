@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Greenland on Chris Nemeth</title>
+    <link>https://chris-nemeth.github.io/tags/greenland/</link>
+    <description>Recent content in Greenland on Chris Nemeth</description>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chris-nemeth.github.io/tags/greenland/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data</title>
+      <link>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</link>
+      <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</guid>
+      <description> </description>
+    </item>
+  </channel>
+</rss>

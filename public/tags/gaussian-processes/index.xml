@@ -15,5 +15,40 @@
       <guid>https://chris-nemeth.github.io/software/gaussianprocesses-jl/</guid>
       <description>This repository contains a Julia package for Gaussian process models.</description>
     </item>
+    <item>
+      <title>Multivariate sensitivity analysis for a large-scale climate impact and adaptation model</title>
+      <link>https://chris-nemeth.github.io/papers/2023-04-05-mv-sensitivity/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-05-mv-sensitivity/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>GaussianProcesses.jl: A Nonparametric Bayes Package for the Julia Language</title>
+      <link>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Gaussian processes on hypergraphs</title>
+      <link>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Stein variational Gaussian processes</title>
+      <link>https://chris-nemeth.github.io/papers/2020-09-25-stein-gp/</link>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2020-09-25-stein-gp/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Merging MCMC Subposteriors through Gaussian-Process Approximations</title>
+      <link>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</guid>
+      <description> </description>
+    </item>
   </channel>
 </rss>

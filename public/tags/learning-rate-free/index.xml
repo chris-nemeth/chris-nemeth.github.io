@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Learning-Rate-Free on Chris Nemeth</title>
+    <link>https://chris-nemeth.github.io/tags/learning-rate-free/</link>
+    <description>Recent content in Learning-Rate-Free on Chris Nemeth</description>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chris-nemeth.github.io/tags/learning-rate-free/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning-Rate-Free Stochastic Optimization over Riemannian Manifolds</title>
+      <link>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Tuning-Free Maximum Likelihood Training of Latent Variable Models via Coin Betting</title>
+      <link>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</link>
+      <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Learning Rate Free Sampling in Constrained Domains</title>
+      <link>https://chris-nemeth.github.io/papers/2023-09-21-mirror-coin/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-09-21-mirror-coin/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates</title>
+      <link>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</guid>
+      <description> </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Parameter estimation for state space models using sequential Monte Carlo algorithms | Chris Nemeth</title>
+<meta name="keywords" content="sequential Monte Carlo, state-space models, particle filters, Bayesian inference">
+<meta name="description" content=" ">
+<meta name="author" content="Christopher Nemeth">
+<link rel="canonical" href="https://chris-nemeth.github.io/papers/2014-10-01-thesis/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/papers/2014-10-01-thesis/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Parameter estimation for state space models using sequential Monte Carlo algorithms" />
+<meta property="og:description" content=" " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/papers/2014-10-01-thesis/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2014-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-10-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Parameter estimation for state space models using sequential Monte Carlo algorithms"/>
+<meta name="twitter:description" content=" "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://chris-nemeth.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Parameter estimation for state space models using sequential Monte Carlo algorithms",
+      "item": "https://chris-nemeth.github.io/papers/2014-10-01-thesis/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Parameter estimation for state space models using sequential Monte Carlo algorithms",
+  "name": "Parameter estimation for state space models using sequential Monte Carlo algorithms",
+  "description": " ",
+  "keywords": [
+    "sequential Monte Carlo", "state-space models", "particle filters", "Bayesian inference"
+  ],
+  "articleBody": " Download Thesis PDF Abstract State space models represent a flexible class of Bayesian time series models which can be applied to model latent state stochastic processes. Sequential Monte Carlo (SMC) algorithms, also known as particle filters, are perhaps the most widely used methodology for inference in such models, particularly when the model is nonlinear and cannot be evaluated analytically. The SMC methodology allows for the sequential analysis of state space models in online settings for fast inference, but can also be applied to study offline problems. This area of research has grown rapidly over the past 20 years and has lead to the development of important theoretical results. This thesis builds upon the SMC framework to address problems of parameter estimation for state space models. Due to the nonlinearity of some models, maximising the likelihood function of a state space model cannot be done analytically. This thesis proposes a new methodology for performing parameter estimation based on a gradient ascent algorithm, where the gradient is approximated using a particle filter. This new approach is shown to estimate parameters both online and offline and with a computational cost that is linear in the number of particles. This is an improvement over previously proposed approaches which either display quadratically increasing variance in the estimate of the gradient, or carry a computational cost which scales quadratically with the number of particles. Combining the advantages of SMC and Markov chain Monte Carlo (MCMC) the recently proposed particle MCMC methodology can be applied to estimate parameters. This thesis proposes a new class of efficient proposal distributions which take account of the geometry of the target density. This is achieved by using particle approximations of the gradient of the target within the proposal mechanism. Finally, a new algorithm is introduced for estimating piecewise time-varying parameters for target tracking problems\nCitation Nemeth, C.J., 2014. Parameter estimation for state space models using sequential Monte Carlo algorithms. Lancaster University (United Kingdom).\n@book{nemeth2014parameter, title={Parameter estimation for state space models using sequential Monte Carlo algorithms}, author={Nemeth, Christopher John}, year={2014}, publisher={Lancaster University (United Kingdom)} } ",
+  "wordCount" : "343",
+  "inLanguage": "en",
+  "datePublished": "2014-10-01T00:00:00Z",
+  "dateModified": "2014-10-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/papers/2014-10-01-thesis/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Parameter estimation for state space models using sequential Monte Carlo algorithms
+    </h1>
+    <div class="post-meta"><span title='2014-10-01 00:00:00 +0000 UTC'>October 2014</span>&nbsp;&middot;&nbsp;Christopher Nemeth&nbsp;&middot;&nbsp;<a href="https://www.proquest.com/openview/b69ef75883fa333b16874bf903d0074e/1?pq-origsite=gscholar&amp;cbl=51922" rel="noopener noreferrer" target="_blank">PhD Thesis</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://www.proquest.com/openview/b69ef75883fa333b16874bf903d0074e/1?pq-origsite=gscholar&amp;cbl=51922" target="_blank">Thesis</a>
+</li>
+<li><a href="https://eprints.lancs.ac.uk/id/eprint/71713/1/2014nemethphd.pdf" target="_blank">PDF</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>State space models represent a flexible class of Bayesian time series models which
+can be applied to model latent state stochastic processes. Sequential Monte Carlo
+(SMC) algorithms, also known as particle filters, are perhaps the most widely used
+methodology for inference in such models, particularly when the model is nonlinear
+and cannot be evaluated analytically. The SMC methodology allows for the sequential
+analysis of state space models in online settings for fast inference, but can also be
+applied to study offline problems. This area of research has grown rapidly over the
+past 20 years and has lead to the development of important theoretical results.
+This thesis builds upon the SMC framework to address problems of parameter
+estimation for state space models. Due to the nonlinearity of some models, maximising
+the likelihood function of a state space model cannot be done analytically. This thesis
+proposes a new methodology for performing parameter estimation based on a gradient
+ascent algorithm, where the gradient is approximated using a particle filter. This
+new approach is shown to estimate parameters both online and offline and with a
+computational cost that is linear in the number of particles. This is an improvement
+over previously proposed approaches which either display quadratically increasing variance in the estimate of the gradient, or carry a computational cost which scales
+quadratically with the number of particles.
+Combining the advantages of SMC and Markov chain Monte Carlo (MCMC) the
+recently proposed particle MCMC methodology can be applied to estimate parameters. This thesis proposes a new class of efficient proposal distributions which take
+account of the geometry of the target density. This is achieved by using particle
+approximations of the gradient of the target within the proposal mechanism.
+Finally, a new algorithm is introduced for estimating piecewise time-varying parameters for target tracking problems</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<p>Nemeth, C.J., 2014. Parameter estimation for state space models using sequential Monte Carlo algorithms. Lancaster University (United Kingdom).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@book</span>{nemeth2014parameter,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Parameter estimation for state space models using sequential Monte Carlo algorithms}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Nemeth, Christopher John}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span>=<span style="color:#a50">{2014}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">publisher</span>=<span style="color:#a50">{Lancaster University (United Kingdom)}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/sequential-monte-carlo/">Sequential Monte Carlo</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/state-space-models/">State-Space Models</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/particle-filters/">Particle Filters</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/bayesian-inference/">Bayesian Inference</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

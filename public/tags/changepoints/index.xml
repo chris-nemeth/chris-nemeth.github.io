@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Changepoints on Chris Nemeth</title>
+    <link>https://chris-nemeth.github.io/tags/changepoints/</link>
+    <description>Recent content in Changepoints on Chris Nemeth</description>
+    <generator>Hugo -- 0.131.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chris-nemeth.github.io/tags/changepoints/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A changepoint approach to modelling non-stationary soil moisture dynamics</title>
+      <link>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Sequential Monte Carlo methods for state and parameter estimation in abruptly changing environments</title>
+      <link>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</guid>
+      <description> </description>
+    </item>
+  </channel>
+</rss>

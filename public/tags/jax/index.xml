@@ -15,5 +15,12 @@
       <guid>https://chris-nemeth.github.io/software/sgmcmcjax/</guid>
       <description>This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language.</description>
     </item>
+    <item>
+      <title>SGMCMCJax: a lightweight JAX library for stochastic gradient Markov chain Monte Carlo algorithms</title>
+      <link>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</guid>
+      <description> </description>
+    </item>
   </channel>
 </rss>

@@ -12,7 +12,7 @@ taxonomies:
 menu:
     main:
         - name: Papers
-          url: https://scholar.google.com/citations?user=17-Ze24AAAAJ&hl=en
+          url: papers/
           weight: 2
         - name: Books
           url: books/
@@ -56,14 +56,14 @@ params:
     profileMode:
           enabled: true
           title: Chris Nemeth
-          subtitle: "I am a Professor of Statistics at Lancaster University. My research is in the area of Probabilistic Machine Learning, with a particular focus gradient flow methods, Markov chain Monte Carlo algorithms and probabilistic modelling."
+          subtitle: "I am a Professor of Statistics at Lancaster University. My research is in the area of Probabilistic Machine Learning, with a particular focus on gradient flow methods, Monte Carlo algorithms for Bayesian inference and probabilistic modelling."
           imageUrl: "nemeth_crop.gif"
           imageWidth: 160
           imageHeight: 160
           imageTitle: Chris Nemeth
           buttons:
             - name: Papers
-              url: https://scholar.google.com/citations?user=17-Ze24AAAAJ&hl=en
+              url: papers/
             - name: Books
               url: books/
             - name: Software Packages

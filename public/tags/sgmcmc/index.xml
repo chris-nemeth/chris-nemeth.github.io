@@ -15,5 +15,40 @@
       <guid>https://chris-nemeth.github.io/software/sgmcmcjax/</guid>
       <description>This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language.</description>
     </item>
+    <item>
+      <title>SGMCMCJax: a lightweight JAX library for stochastic gradient Markov chain Monte Carlo algorithms</title>
+      <link>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Stochastic Gradient Markov Chain Monte Carlo</title>
+      <link>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>sgmcmc: An R package for stochastic gradient Markov chain Monte Carlo</title>
+      <link>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Control variates for stochastic gradient MCMC</title>
+      <link>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Large-Scale Stochastic Sampling from the Probability Simplex</title>
+      <link>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</guid>
+      <description> </description>
+    </item>
   </channel>
 </rss>
