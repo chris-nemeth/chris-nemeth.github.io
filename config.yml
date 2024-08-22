@@ -57,9 +57,9 @@ params:
           enabled: true
           title: Chris Nemeth
           subtitle: "I am a Professor of Statistics at Lancaster University. My research is in the area of Probabilistic Machine Learning, with a particular focus on gradient flow methods, Monte Carlo algorithms for Bayesian inference and probabilistic modelling."
-          imageUrl: "nemeth_crop.gif"
-          imageWidth: 190
-          imageHeight: 200
+          imageUrl: "chris2024.png"
+          imageWidth: 234
+          imageHeight: 353
           imageTitle: Chris Nemeth
           buttons:
             - name: Papers
