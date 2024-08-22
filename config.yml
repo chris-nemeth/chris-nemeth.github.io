@@ -25,9 +25,9 @@ menu:
           weight: 4 
         - name: Group
           url: research_group/
-        #- name: Blog
-        #  url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-        #  weight: 6
+        - name: Blog
+          url: blogs/
+          weight: 6
 
 params:
     description: "I am a Professor of Statistics at Lancaster University. My research focuses on Probabilistic Machine Learning."
