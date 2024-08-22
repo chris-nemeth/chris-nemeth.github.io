@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chris-nemeth.github.io/blogs/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/coin-betting/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/coin-sampling/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/blogs/coin_betting/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/gradient-flows/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/learning-rate-free/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chris-nemeth.github.io/tags/bayesian/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/books/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/</loc>
-    <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/software/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
@@ -47,9 +68,6 @@
     <loc>https://chris-nemeth.github.io/software/sgmcmcjax/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
-    <lastmod>2024-08-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/code_and_software/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -78,9 +96,6 @@
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/bayesian-inference/</loc>
-    <lastmod>2024-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/learning-rate-free/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</loc>
@@ -205,9 +220,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/ice-sheet/</loc>
     <lastmod>2023-08-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/coin-sampling/</loc>
-    <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>

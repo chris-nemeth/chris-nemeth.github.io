@@ -6,8 +6,15 @@
     <description>Recent content in Coin Sampling on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/coin-sampling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coin Sampling: How to make Bayesian inference learning-rate free</title>
+      <link>https://chris-nemeth.github.io/blogs/coin_betting/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/blogs/coin_betting/</guid>
+      <description>Blog post on Coin Sampling, a learning-rate-free approach to gradient-based Bayesian inference.</description>
+    </item>
     <item>
       <title>Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates</title>
       <link>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</link>

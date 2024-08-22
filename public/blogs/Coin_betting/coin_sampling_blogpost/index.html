@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Chris Nemeth</title>
+<meta name="keywords" content="">
+<meta name="description" content="Coin Sampling: How to make Bayesian inference learning-rate free Authors: Louis Sharrock, Christopher Nemeth Bayesian inference is a cornerstone of modern statistics and machine learning, but its practical implementation often requires meticulous tuning of hyperparameters, particularly the learning rate (also known as the step size). In our ICML 2023 paper, &ldquo;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates,&rdquo; we introduce a new approach to gradient-based Bayesian inference that bypasses the need for a learning rate.">
+<meta name="author" content="Chris Nemeth">
+<link rel="canonical" href="http://localhost:1313/blogs/coin_betting/coin_sampling_blogpost/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blogs/coin_betting/coin_sampling_blogpost/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Coin Sampling: How to make Bayesian inference learning-rate free Authors: Louis Sharrock, Christopher Nemeth Bayesian inference is a cornerstone of modern statistics and machine learning, but its practical implementation often requires meticulous tuning of hyperparameters, particularly the learning rate (also known as the step size). In our ICML 2023 paper, &ldquo;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates,&rdquo; we introduce a new approach to gradient-based Bayesian inference that bypasses the need for a learning rate." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blogs/coin_betting/coin_sampling_blogpost/" /><meta property="article:section" content="blogs" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Coin Sampling: How to make Bayesian inference learning-rate free Authors: Louis Sharrock, Christopher Nemeth Bayesian inference is a cornerstone of modern statistics and machine learning, but its practical implementation often requires meticulous tuning of hyperparameters, particularly the learning rate (also known as the step size). In our ICML 2023 paper, &ldquo;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates,&rdquo; we introduce a new approach to gradient-based Bayesian inference that bypasses the need for a learning rate."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "http://localhost:1313/blogs/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://localhost:1313/blogs/coin_betting/coin_sampling_blogpost/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Coin Sampling: How to make Bayesian inference learning-rate free Authors: Louis Sharrock, Christopher Nemeth Bayesian inference is a cornerstone of modern statistics and machine learning, but its practical implementation often requires meticulous tuning of hyperparameters, particularly the learning rate (also known as the step size). In our ICML 2023 paper, \u0026ldquo;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates,\u0026rdquo; we introduce a new approach to gradient-based Bayesian inference that bypasses the need for a learning rate.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Coin Sampling: How to make Bayesian inference learning-rate free Authors: Louis Sharrock, Christopher Nemeth Bayesian inference is a cornerstone of modern statistics and machine learning, but its practical implementation often requires meticulous tuning of hyperparameters, particularly the learning rate (also known as the step size). In our ICML 2023 paper, “Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates,” we introduce a new approach to gradient-based Bayesian inference that bypasses the need for a learning rate.\nThis blog post delves into the details of the coin betting algorithm, a technique from the online learning optimization literature, and how it can be applied in the Bayesian setting where our goal is draw samples from a posterior density (note that this idea is applicable beyond the Bayesian setting for generic sampling problems).\nThe Challenge of Learning Rates Particle-based variational inference (ParVI) methods, such as Stein variational gradient descent (SVGD) (Liu and Wang, 2016) , have become a popular tool in the Bayesian machine learning literature. However, the performance of these methods critically depends on hyperparameters like the learning rate. Choosing an optimal learning rate is a non-trivial task that can significantly impact the convergence and efficiency of ParVI algorithms.\nIntroducing Coin Betting Coin betting, a concept borrowed from convex optimization, offers a novel approach to address this challenge. The core idea is to construct a gradient-based sampling method that inherently avoids the need for learning rate tuning. Before getting into our Coin Sampling algorithm, let’s first start with how coin betting works.\nCoin Betting in Optimization The Coin Betting algorithm was first conceived by Orabona and Pal in the field of stochastic optimization and was an important contribution to the growing literature of parameter-free optimization methods. The classic scenario involves a gambler placing bets on a series of coin flips. The wealth of the gambler evolves based on the outcomes of these bets, and the goal is to design a betting strategy that guarantees convergence to an optimal solution.\nMathematical Formulation Consider the optimization problem:\n$$ x^* = \\arg\\min_{x \\in \\mathcal{X}} f(x), $$\nwhere $f : \\mathcal{X} \\to \\mathbb{R}$ is a convex function. Traditional gradient descent updates the iterate $x_t$ as follows:\n$$ x_{t+1} = x_t - \\gamma \\nabla f(x_t), $$\nwhere $\\gamma \u003e0$ is the learning rate. The choice of $\\gamma$ is crucial for ensuring convergence.\nIn the coin betting approach, we can eliminate the need for a predefined learning rate by introducing a betting strategy. Let’s define the wealth $w_t$ of a gambler after $t$ rounds of betting:\n$$ w_t = \\epsilon + \\sum_{i=1}^t c_i x_i, $$\nwhere $\\epsilon \u003e 0$ is the initial wealth, $x_i$ is the size of the bet in the $i$-th round, and $c_i$ is the outcome of the $i$-th coin flip, which can be interpreted as the negative subgradient of $f$ at $x_i$, i.e.\n$$ c_i = -\\nabla f(x_i). $$\nThe betting strategy is defined such that the bet size $x_i$ is a fraction of the current wealth $w_{i-1}$:\n$$ x_i = \\beta_i w_{i-1}, $$\nwhere $\\beta_i \\in [-1, 1]$ is the betting fraction. A common choice for $\\beta_i$ is based on the Krichevsky-Trofimov (KT) estimator:\n$$\\beta_t = \\frac{\\sum_{i=1}^{t-1} c_i}{t}. $$\nThe update rule for the gambler’s wealth then becomes:\n$$ x_{t+1} = x_0 + \\frac{1}{t} \\sum_{s=1}^{t} c_s \\left( w_0 + \\sum_{s=1}^{t-1} \\langle c_s, x_s - x_0 \\rangle \\right), $$\nwhere $\\langle \\cdot, \\cdot \\rangle$ denotes the inner product.\nIllustrative Example Let’s see coin betting in action by considering the optimization of a simple function:\n$$f(x)=|x-10|$$\nThis is same example that is given by Francesco Orabona in his ICML 2020 tutorial on Parameter-Free Online Optimization .\nRecall that at each iteration $i$ of the coin betting algorithm, we bet $\\pounds x_i$ on the outcome $c_i = -\\nabla f(x_i)$, and for the function $f$ we know that the subgradients are $\\nabla f(x) \\in {-1,1}$, i.e. $c_i={-1,1}$.\nSo, assuming that we start with initial wealth $w_0=1$, how does the algorithm proceed.\nIteration 0 Iteration 1 Iteration 2 Iteration 3 Iteration 4 Iteration 5 Iteration 6 Iteration 7 Iteration 8 Iteration 9 Iteration 10 Iteration 11 Iteration 12 Iteration 13 Iteration 14 We can see from the steps of the algorithm that we may overshoot the minimum. Therefore, we are often interested in the average of the iterates. Convergence Analysis Under suitable conditions, the coin betting algorithm guarantees convergence to the optimal solution $x^$. Specifically, the expected suboptimality $\\mathbb{E}[f(\\bar{x}_T)] - f(x^)$ after $T$ iterations satisfies:\n$$ \\mathbb{E}[f(\\bar{x}_T)] - f(x^) \\leq \\frac{K | x^ | \\sqrt{\\log(1 + 24T^2 | x^* |^2 / \\epsilon^2)} + \\epsilon}{\\sqrt{T}}, $$\nwhere $\\bar{x}T = \\frac{1}{T} \\sum{t=1}^T x_t$ is the average iterate, and $K$ is a universal constant.\nCoin Sampling for Bayesian Inference In the realm of Bayesian inference, the goal is to sample from a target distribution rather than finding the minimum of a function (as we’ve just seen in the optimization setting). So, to create a learning-rate-free Bayesian inference scheme we will need to convert the coin betting optimization algorithm to a sampling algorithm. In our ICML 2023 paper (Sharrock and Nemeth, 2023) , we extend the coin betting framework from the Euclidean space to the Wasserstein space, which is where probability measures live. Here’s a step-by-step overview of our coin sampling algorithm, also known as Coin Wasserstein gradient descent:\n1. Initial Setup: Begin with an initial measure $\\mu_0$ and a set of $N$ initial particles ${x^i_0}_{i=1}^N$ distributed according to $\\mu_0$. Assign an initial wealth $w_0$ to each particle. 2. Betting Strategy: For each iteration $t$, compute a bet for each particle based on its current wealth and a betting fraction. The betting fraction is derived from the accumulated outcomes of past iterations, ensuring that the strategy adapts over time without needing a predefined step size. 3. Updating Particles: Update each particle’s position by incorporating the computed bets. The update rule does not require a learning rate, as it is inherently determined by the wealth and betting strategy. 4. Wasserstein Gradient Flow: The algorithm simulates a gradient flow in the Wasserstein space, ensuring that the particles move according to the optimal transport plan. This approach guarantees convergence to the target distribution under certain assumptions. Mathematical Formulation The core update rule in coin sampling can be expressed as:\n$$ x^i_{t+1} = x^i_0 + \\frac{1}{t} \\sum_{s=1}^{t} c_s \\left( w_0 + \\sum_{s=1}^{t-1} \\langle c_s, x^i_s - x^i_0 \\rangle \\right), $$\nwhere $c_s$ are the outcomes (gradients) and $\\langle \\cdot, \\cdot \\rangle$ denotes the inner product. The wealth $w_t$ of each particle evolves according to the cumulative outcome of bets, thus avoiding the need for a manually tuned learning rate.\nPractical Implementation To implement coin sampling, the authors approximate the Wasserstein gradients using an ensemble of interacting particles. This approximation allows the method to scale efficiently and be applicable in high-dimensional settings.\nCoin Stein Variational Gradient Descent (Coin SVGD) One of the key algorithms introduced is Coin SVGD, a learning-rate-free variant of SVGD. The algorithm leverages the coin betting framework to update particles without requiring a predefined learning rate, using kernel methods to approximate gradients in the Wasserstein space.\nThe gifs that keep on giving Here are a number of simulations on 2-dimensional targets which compared the coin sampling against SVGD, where we do a Goldilocks thing on SVGD and consider some learning rates that are too small, too large and one that is hand-tuned to be just right.\nDoughnut distribution Neal’s funnel distribution Gaussian distribution Mixture of two Gaussians Some numerical results from the paper The authors demonstrate the effectiveness of Coin SVGD through various numerical experiments, including:\nToy Examples: Demonstrating convergence to complex, high-dimensional distributions. Bayesian Independent Component Analysis (ICA): Showing competitive performance compared to SVGD with optimal learning rates, particularly in higher dimensions. Bayesian Logistic Regression: Achieving robust performance across different learning rate scenarios, outperforming SVGD when suboptimal rates are used. Bayesian Neural Networks and Matrix Factorization: Illustrating the algorithm’s adaptability and efficiency in practical machine learning tasks. Conclusion The coin betting algorithm represents a significant advancement in gradient-based Bayesian inference, providing a robust and scalable solution that eliminates the need for learning rate tuning. This innovation paves the way for more efficient and user-friendly implementations of Bayesian methods in various scientific and engineering applications.\nFor more details on the theoretical underpinnings and empirical performance of coin sampling, you can access the full paper here .\nThis post highlighted the key aspects of the coin betting algorithm and its transformative potential in Bayesian inference. Stay tuned for more insights into cutting-edge research in probabilistic machine learning!\n",
+  "wordCount" : "1411",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Chris Nemeth"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blogs/coin_betting/coin_sampling_blogpost/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Nemeth">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">Chris Nemeth
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="coin-sampling-how-to-make-bayesian-inference-learning-rate-free">Coin Sampling: How to make Bayesian inference learning-rate free</h1>
+<h3 id="authors-louis-sharrock-christopher-nemeth">Authors: Louis Sharrock, Christopher Nemeth</h3>
+<hr>
+<p>Bayesian inference is a cornerstone of modern statistics and machine learning, but its practical implementation often requires meticulous tuning of hyperparameters, particularly the learning rate (also known as the step size). In our ICML 2023 paper, &ldquo;Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates,&rdquo; we introduce a new approach to gradient-based Bayesian inference that bypasses the need for a learning rate.</p>
+<p>This blog post delves into the details of the coin betting algorithm, a technique from the online learning optimization literature, and how it can be applied in the Bayesian setting where our goal is draw samples from a posterior density (note that this idea is applicable beyond the Bayesian setting for generic sampling problems).</p>
+<hr>
+<h2 id="the-challenge-of-learning-rates">The Challenge of Learning Rates</h2>
+<p>Particle-based variational inference (ParVI) methods, such as Stein variational gradient descent (SVGD) <a href="https://arxiv.org/abs/1608.04471" target="_blank">(Liu and Wang, 2016)</a>
+, have become a popular tool in the Bayesian machine learning literature. However, the performance of these methods critically depends on hyperparameters like the learning rate. Choosing an optimal learning rate is a non-trivial task that can significantly impact the convergence and efficiency of ParVI algorithms.</p>
+<h2 id="introducing-coin-betting">Introducing Coin Betting</h2>
+<p>Coin betting, a concept borrowed from convex optimization, offers a novel approach to address this challenge. The core idea is to construct a gradient-based sampling method that inherently avoids the need for learning rate tuning. Before getting into our Coin Sampling algorithm, let’s first start with how coin betting works.</p>
+<h3 id="coin-betting-in-optimization">Coin Betting in Optimization</h3>
+<p>The Coin Betting algorithm was first conceived by <a href="https://arxiv.org/abs/1602.04128" target="_blank">Orabona and Pal</a>
+ in the field of stochastic optimization and was an important contribution to the growing literature of parameter-free optimization methods. The classic scenario involves a gambler placing bets on a series of coin flips. The wealth of the gambler evolves based on the outcomes of these bets, and the goal is to design a betting strategy that guarantees convergence to an optimal solution.</p>
+<h4 id="mathematical-formulation">Mathematical Formulation</h4>
+<p>Consider the optimization problem:</p>
+<p>$$ x^* = \arg\min_{x \in \mathcal{X}} f(x), $$</p>
+<p>where $f : \mathcal{X} \to \mathbb{R}$ is a convex function. Traditional gradient descent updates the iterate $x_t$ as follows:</p>
+<p>$$ x_{t+1} = x_t - \gamma \nabla f(x_t), $$</p>
+<p>where $\gamma &gt;0$ is the learning rate. The choice of $\gamma$ is crucial for ensuring convergence.</p>
+<p>In the coin betting approach, we can eliminate the need for a predefined learning rate by introducing a betting strategy. Let’s define the wealth $w_t$ of a gambler after $t$ rounds of betting:</p>
+<p>$$ w_t = \epsilon + \sum_{i=1}^t c_i x_i, $$</p>
+<p>where $\epsilon &gt; 0$ is the initial wealth, $x_i$ is the size of the bet in the $i$-th round, and $c_i$ is the outcome of the $i$-th coin flip, which can be interpreted as the negative subgradient of $f$ at $x_i$, i.e.</p>
+<p>$$ c_i = -\nabla f(x_i). $$</p>
+<p>The betting strategy is defined such that the bet size $x_i$ is a fraction of the current wealth $w_{i-1}$:</p>
+<p>$$ x_i = \beta_i w_{i-1}, $$</p>
+<p>where $\beta_i \in [-1, 1]$ is the betting fraction. A common choice for $\beta_i$ is based on the Krichevsky-Trofimov (KT) estimator:</p>
+<p>$$\beta_t = \frac{\sum_{i=1}^{t-1} c_i}{t}. $$</p>
+<p>The update rule for the gambler’s wealth then becomes:</p>
+<p>$$ x_{t+1} = x_0 + \frac{1}{t} \sum_{s=1}^{t} c_s \left( w_0 + \sum_{s=1}^{t-1} \langle c_s, x_s - x_0 \rangle \right), $$</p>
+<p>where $\langle \cdot, \cdot \rangle$ denotes the inner product.</p>
+<h4 id="illustrative-example">Illustrative Example</h4>
+<p>Let&rsquo;s see coin betting in action by considering the optimization of a simple function:</p>
+<p>$$f(x)=|x-10|$$</p>
+<p>This is same example that is given by Francesco Orabona in his ICML 2020 tutorial on <a href="https://parameterfree.com/icml-tutorial/" target="_blank">Parameter-Free Online Optimization</a>
+.</p>
+<p>Recall that at each iteration $i$ of the coin betting algorithm, we bet $\pounds x_i$ on the outcome $c_i = -\nabla f(x_i)$, and for the function $f$ we know that the subgradients are $\nabla f(x) \in {-1,1}$, i.e. $c_i={-1,1}$.</p>
+<p>So, assuming that we start with initial wealth $w_0=1$, how does the algorithm proceed.</p>
+<p><em>Iteration 0</em>
+<img loading="lazy" src="./figure-1-1.png" alt="Iteration 0"  />
+</p>
+<p><em>Iteration 1</em>
+<img loading="lazy" src="./figure-2-1.png" alt="Iteration 1"  />
+</p>
+<p><em>Iteration 2</em>
+<img loading="lazy" src="./figure-3-1.png" alt="Iteration 2"  />
+</p>
+<p><em>Iteration 3</em>
+<img loading="lazy" src="./figure-4-1.png" alt="Iteration 3"  />
+</p>
+<p><em>Iteration 4</em>
+<img loading="lazy" src="./figure-5-1.png" alt="Iteration 4"  />
+</p>
+<p><em>Iteration 5</em>
+<img loading="lazy" src="./figure-6-1.png" alt="Iteration 5"  />
+</p>
+<p><em>Iteration 6</em>
+<img loading="lazy" src="./figure-7-1.png" alt="Iteration 6"  />
+</p>
+<p><em>Iteration 7</em>
+<img loading="lazy" src="./figure-8-1.png" alt="Iteration 7"  />
+</p>
+<p><em>Iteration 8</em>
+<img loading="lazy" src="./figure-9-1.png" alt="Iteration 8"  />
+</p>
+<p><em>Iteration 9</em>
+<img loading="lazy" src="./figure-10-1.png" alt="Iteration 9"  />
+</p>
+<p><em>Iteration 10</em>
+<img loading="lazy" src="./figure-11-1.png" alt="Iteration 10"  />
+</p>
+<p><em>Iteration 11</em>
+<img loading="lazy" src="./figure-12-1.png" alt="Iteration 11"  />
+</p>
+<p><em>Iteration 12</em>
+<img loading="lazy" src="./figure-13-1.png" alt="Iteration 12"  />
+</p>
+<p><em>Iteration 13</em>
+<img loading="lazy" src="./figure-14-1.png" alt="Iteration 13"  />
+</p>
+<p><em>Iteration 14</em>
+<img loading="lazy" src="./figure-15-1.png" alt="Iteration 14"  />
+</p>
+<p>We can see from the steps of the algorithm that we may overshoot the minimum. Therefore, we are often interested in the average of the iterates.
+<img loading="lazy" src="./figure-16-1.png" alt="Final"  />
+</p>
+<h4 id="convergence-analysis">Convergence Analysis</h4>
+<p>Under suitable conditions, the coin betting algorithm guarantees convergence to the optimal solution $x^<em>$. Specifically, the expected suboptimality $\mathbb{E}[f(\bar{x}_T)] - f(x^</em>)$ after $T$ iterations satisfies:</p>
+<p>$$ \mathbb{E}[f(\bar{x}_T)] - f(x^<em>) \leq \frac{K | x^</em> | \sqrt{\log(1 + 24T^2 | x^* |^2 / \epsilon^2)} + \epsilon}{\sqrt{T}}, $$</p>
+<p>where $\bar{x}<em>T = \frac{1}{T} \sum</em>{t=1}^T x_t$ is the average iterate, and $K$ is a universal constant.</p>
+<hr>
+<h3 id="coin-sampling-for-bayesian-inference">Coin Sampling for Bayesian Inference</h3>
+<p>In the realm of Bayesian inference, the goal is to sample from a target distribution rather than finding the minimum of a function (as we&rsquo;ve just seen in the optimization setting). So, to create a learning-rate-free Bayesian inference scheme we will need to convert the coin betting optimization algorithm to a sampling algorithm. In our ICML 2023 paper <a href="https://arxiv.org/abs/2301.11294" target="_blank">(Sharrock and Nemeth, 2023)</a>
+, we extend the coin betting framework from the Euclidean space to the Wasserstein space, which is where probability measures live. Here&rsquo;s a step-by-step overview of our coin sampling algorithm, also known as Coin Wasserstein gradient descent:</p>
+<h4 id="1-initial-setup">1. <strong>Initial Setup:</strong></h4>
+<ul>
+<li>Begin with an initial measure $\mu_0$ and a set of $N$ initial particles ${x^i_0}_{i=1}^N$ distributed according to $\mu_0$.</li>
+<li>Assign an initial wealth $w_0$ to each particle.</li>
+</ul>
+<h4 id="2-betting-strategy">2. <strong>Betting Strategy:</strong></h4>
+<ul>
+<li>For each iteration $t$, compute a bet for each particle based on its current wealth and a betting fraction.</li>
+<li>The betting fraction is derived from the accumulated outcomes of past iterations, ensuring that the strategy adapts over time without needing a predefined step size.</li>
+</ul>
+<h4 id="3-updating-particles">3. <strong>Updating Particles:</strong></h4>
+<ul>
+<li>Update each particle&rsquo;s position by incorporating the computed bets.</li>
+<li>The update rule does not require a learning rate, as it is inherently determined by the wealth and betting strategy.</li>
+</ul>
+<h4 id="4-wasserstein-gradient-flow">4. <strong>Wasserstein Gradient Flow:</strong></h4>
+<ul>
+<li>The algorithm simulates a gradient flow in the Wasserstein space, ensuring that the particles move according to the optimal transport plan.</li>
+<li>This approach guarantees convergence to the target distribution under certain assumptions.</li>
+</ul>
+<h3 id="mathematical-formulation-1">Mathematical Formulation</h3>
+<p>The core update rule in coin sampling can be expressed as:</p>
+<p>$$ x^i_{t+1} = x^i_0 + \frac{1}{t} \sum_{s=1}^{t} c_s \left( w_0 + \sum_{s=1}^{t-1} \langle c_s, x^i_s - x^i_0 \rangle \right), $$</p>
+<p>where $c_s$ are the outcomes (gradients) and $\langle \cdot, \cdot \rangle$ denotes the inner product. The wealth $w_t$ of each particle evolves according to the cumulative outcome of bets, thus avoiding the need for a manually tuned learning rate.</p>
+<h2 id="practical-implementation">Practical Implementation</h2>
+<p>To implement coin sampling, the authors approximate the Wasserstein gradients using an ensemble of interacting particles. This approximation allows the method to scale efficiently and be applicable in high-dimensional settings.</p>
+<h3 id="coin-stein-variational-gradient-descent-coin-svgd">Coin Stein Variational Gradient Descent (Coin SVGD)</h3>
+<p>One of the key algorithms introduced is Coin SVGD, a learning-rate-free variant of SVGD. The algorithm leverages the coin betting framework to update particles without requiring a predefined learning rate, using kernel methods to approximate gradients in the Wasserstein space.</p>
+<h4 id="the-gifs-that-keep-on-giving">The gifs that keep on giving</h4>
+<p>Here are a number of simulations on 2-dimensional targets which compared the coin sampling against SVGD, where we do a Goldilocks thing on SVGD and consider some learning rates that are too small, too large and one that is hand-tuned to be just right.</p>
+<p><em>Doughnut distribution</em>
+<img loading="lazy" src="donut.gif" alt="simulation"  />
+</p>
+<p><em>Neal&rsquo;s funnel distribution</em>
+<img loading="lazy" src="funnel.gif" alt="simulation"  />
+</p>
+<p><em>Gaussian distribution</em>
+<img loading="lazy" src="gaussian.gif" alt="simulation"  />
+</p>
+<p><em>Mixture of two Gaussians</em>
+<img loading="lazy" src="mixture_two_gaussians.gif" alt="simulation"  />
+</p>
+<h4 id="some-numerical-results-from-the-paper">Some numerical results from the paper</h4>
+<p>The authors demonstrate the effectiveness of Coin SVGD through various numerical experiments, including:</p>
+<ul>
+<li><strong>Toy Examples:</strong> Demonstrating convergence to complex, high-dimensional distributions.</li>
+<li><strong>Bayesian Independent Component Analysis (ICA):</strong> Showing competitive performance compared to SVGD with optimal learning rates, particularly in higher dimensions.</li>
+<li><strong>Bayesian Logistic Regression:</strong> Achieving robust performance across different learning rate scenarios, outperforming SVGD when suboptimal rates are used.</li>
+<li><strong>Bayesian Neural Networks and Matrix Factorization:</strong> Illustrating the algorithm&rsquo;s adaptability and efficiency in practical machine learning tasks.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The coin betting algorithm represents a significant advancement in gradient-based Bayesian inference, providing a robust and scalable solution that eliminates the need for learning rate tuning. This innovation paves the way for more efficient and user-friendly implementations of Bayesian methods in various scientific and engineering applications.</p>
+<p>For more details on the theoretical underpinnings and empirical performance of coin sampling, you can access the full paper <a href="https://arxiv.org/abs/2301.11294" target="_blank">here</a>
+.</p>
+<hr>
+<p>This post highlighted the key aspects of the coin betting algorithm and its transformative potential in Bayesian inference. Stay tuned for more insights into cutting-edge research in probabilistic machine learning!</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://localhost:1313/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>
