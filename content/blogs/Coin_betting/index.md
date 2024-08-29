@@ -269,6 +269,73 @@ In the paper we demonstrate the effectiveness of Coin SVGD (and a few other *"co
 - **Bayesian Logistic Regression:** Achieving robust performance across different learning rate scenarios, outperforming SVGD when suboptimal rates are used.
 - **Bayesian Neural Networks and Matrix Factorization:** Illustrating the algorithm's adaptability and efficiency on practical machine learning tasks.
 
+--- 
+## Extensions and Recent Advances
+
+<!-- 
+
+## Learning-rate-free sampling on constrained spaces
+
+We can extend the coin sampling framework to constrained parameter sapces by using a *mirror map*. Let $\mathcal{X}$ be a closed, convex domain in $\mathbb{R}^d$. Let $\phi:\mathcal{X}\rightarrow\mathbb{R}\cup\{\infty\}$ be a proper, lower semicontinuous, strongly convex function of Legendre type. This implies, in particular, that $\nabla \phi(\mathcal{X}) = \mathbb{R}^d$ and $\nabla \phi: \mathcal{X}\rightarrow\mathbb{R}^d$ is bijective. Moreover, its inverse $(\nabla \phi)^{-1}:\mathbb{R}^d\rightarrow\mathcal{X}$ satisfies $(\nabla\phi)^{-1}= \nabla \phi^* $, where $\phi^* :\mathbb{R}^d\rightarrow\mathbb{R}$ denotes the Fenchel conjugate of $\phi$, defined as $\phi^{*}(y) = \sup_{x\in\mathcal{X}} \langle x, y \rangle - \phi(x)$. We will refer to $\nabla\phi:\mathcal{X}\rightarrow\mathbb{R}^d$ as the *mirror map* and $\nabla \phi(\mathcal{X}) = \mathbb{R}^d$ as the *dual space*.
+
+
+Using the mirror map $\nabla \phi:\mathcal{X}\rightarrow\mathbb{R}^d$, we can now reformulate the constrained sampling problem as the solution of a "mirrored" version of the optimisation problem. Let us define $\nu = (\nabla \phi)_{&#35} \pi$, with $\pi = (\nabla \phi^* )_{\#}\nu$. We can then view the target $\pi$ as the solution of 
+$$
+    \pi = (\nabla \phi^* )_{\#} \nu,~~~ \nu = \argmin_{\eta\in\mathcal{P}_2(\mathbb{R}^d)}\mathcal{F}(\eta),
+$$
+where now $\smash{\mathcal{F}:\mathcal{P}_2(\mathbb{R}^d)\rightarrow(-\infty,\infty]}$ is a functional uniquely minimised by $\smash{\nu = (\nabla \phi)_{\#}\pi}$. We have already seen that a natural choice of this functional would be $\mathcal{F}(\eta) = \mathrm{KL}(\eta|\nu)$. This satisfies the useful property that, if $\eta = (\nabla \phi)_{\#}\mu$ and $\nu = (\nabla \phi)_{\#}\pi$, then $\mathrm{KL}(\eta|\nu) = \mathrm{KL}(\mu |\pi)$, [Hseieh 2018, Theorem 2](https://proceedings.neurips.cc/paper_files/paper/2018/file/6490791e7abf6b29a381288cc23a8223-Paper.pdf). 
+
+
+Returing to Coin Sampling, we can now apply the same iterative scheme introduced earlier, but where now our coin bets are $c_t= -\nabla_{W_2}\mathcal{F}(\eta_t)$. For more details on learning-rate-free sampling in constrained spaces, check out the NeurIPS 2023 paper [Sharrock et al. 2023](https://proceedings.neurips.cc/paper_files/paper/2023/file/cdee6c3eaa2adc285f11da7711a75c12-Paper-Conference.pdf).
+-->
+
+
+## Learning-rate-free marginal maximum likelihood training for latent variable models 
+
+In statistics and machine learning, probabilistic latent variable models $p_x(z,y)$ comprise of *parameters* $\smash{x \in \mathcal{X} \subseteq \mathbb{R}^{d_x}}$, unobserved *latent variables* $\smash{z \in \mathcal{Z} \subseteq \mathbb{R}^{d_z}}$, and *observations* (i.e. data) $y \in \mathcal{Y} \subseteq \mathbb{R}^{d_y}$. These models are used to capture the hidden structure of complex data such as images, audio, text, and graphs. 
+
+A challenge faced by these models is to estimate the parameters by maximizing the marginal likelihood of the observed data, 
+$$
+    x^* = \argmax_{x \in \mathcal{X}} p_{x}(y):= \argmax_{x \in \mathcal{X}} \int_{\mathcal{Z}}p_{x}(z,y)\mathrm{d}z,
+$$
+and quantifying the uncertainty in the latent variables through the corresponding posterior $\smash{p_{x^* }(z|y) = {p_{x^* }(z,y)}/{p_{x^* }(y)}}$. 
+
+A classical approach for solving the marginal maximum likelihood estimation (MMLE) problem is via the *Expectation Maximization* (EM) algorithm [(Dempster 1977)](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1977.tb01600.x). This iterative method consists of two steps: an *expectation step* (E-step) and a *maximization step* (M-step). In the $t^{\text{th}}$ iteration of the EM algorithm, the E-step involves computing the expectation of the log-likelihood with respect to the current posterior distribution $\mu_{t} := p_{x_t}(\cdot|y)$ of the latent variables, viz, 
+$$
+    Q_{t}(x) = \int_{\mathcal{Z}} \log \pi_{x}(z) \mu_{t}(z) \mathrm{d}z, \tag{E} 
+$$
+where $\pi_{x}(z):= p_{x}(z,y)$ denotes the joint density of $z$ and $y$, given fixed $y\in\mathbb{R}^{d_y}$. Meanwhile, the M-step involves optimizing this quantity with respect to the parameters, namely
+$$
+    x_{t+1} := \argmax_{x \in \mathcal{X}}  Q_t(x).
+$$
+ Under fairly general conditions, this procedure guarantees convergence of the parameters $x_t$ to a stationary point $x^* $ of the marginal likelihood, and convergence of the corresponding posterior approximations $p_{x_t}(\cdot | y)$ to $p_{x^* }(\cdot|y)$ 
+
+An alternative perspective of the EM algorithm was given by [Neal and Hinton 1998](https://link.springer.com/chapter/10.1007/978-94-011-5014-9_12). They noticed that the problem of marginal maximum likelihood estimation could be recast as minimization of the free-energy functional
+$\mathcal{F}:\mathcal{X}\times \mathcal{P}(\mathcal{Z})\rightarrow \mathbb{R}$, defined according to
+$$
+    \mathcal{F}(x,\mu) := \int \log \frac{\mu(z)}{\pi_{x}(z)} \mu(z)\mathrm{d}z. 
+$$
+
+Taking a free-energy funcitonal perspective of the marginal maximum likelihood estimation problem, now means that we want to solve the joint minimization problem
+$$
+    (x^* , \mu^* ) = \argmin_{(x,\mu) \in \mathcal{X} \times \mathcal{P}_2(\mathcal{Z})} \mathcal{F}(x,\mu). 
+$$
+
+In particular, the EM algorithm corresponds precisely to a coordinate descent scheme applied to $\mathcal{F}$: given an initial $x_0\in\mathcal{X}$, solve 
+$$
+    \mu_{t} := \argmin_{ \mu \in \mathcal{P}_2 (\mathcal{Z}) } \mathcal{F} (x_t, \mu ), 
+$$
+
+$$
+    x_{t+1} := \argmin_{ x \in \mathcal{X} } \mathcal{F} (x , \mu_{t} ), 
+$$
+
+until convergence. As we've seen already, we can cast this problem of optimization of functionals as a gradient flow problem with respect to its parameters. An interesting learning-rate-free version of the EM algorithm then follows by combining the coin betting algorithm for estimating $x^* $ with the coin sampling algorithm for estimating $\mu^* $. Check out the AISTATS 2024 paper for full details [Sharrock et al. 2024](https://proceedings.mlr.press/v238/sharrock24a/sha.rrock24a.pdf)
+
+
+
+
+--- 
 ## Conclusion
 
 The coin sampling algorithm (aka Coin Wasserstein gradient descent algorithm) is an interesting (and possibly the first) learning-rate-free gradient-based Bayesian inference scheme. In the paper we show that coin sampling is a robust and scalable solution that eliminates the need for learning rate tuning. In fact, it pretty much always just worked out-of-the-box for the examples that we considered. Hopefully, this work lead others to develop more efficient and user-friendly (i.e. learning rate free) implementations of Bayesian methods for new scientific applications.
