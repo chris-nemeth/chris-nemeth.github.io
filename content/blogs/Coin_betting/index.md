@@ -1,5 +1,5 @@
 ---
-title: "Coin Sampling: How to make Bayesian inference learning-rate free" 
+title: "Using coins to make Bayesian inference learning-rate free" 
 date: 2024-08-22
 lastmod: 2024-08-22
 tags: ["coin betting","coin sampling","gradient flows","learning-rate-free"]
@@ -272,14 +272,14 @@ In the paper we demonstrate the effectiveness of Coin SVGD (and a few other *"co
 --- 
 ## Extensions and Recent Advances
 
-<!-- 
+
 
 ## Learning-rate-free sampling on constrained spaces
 
 We can extend the coin sampling framework to constrained parameter sapces by using a *mirror map*. Let $\mathcal{X}$ be a closed, convex domain in $\mathbb{R}^d$. Let $\phi:\mathcal{X}\rightarrow\mathbb{R}\cup\{\infty\}$ be a proper, lower semicontinuous, strongly convex function of Legendre type. This implies, in particular, that $\nabla \phi(\mathcal{X}) = \mathbb{R}^d$ and $\nabla \phi: \mathcal{X}\rightarrow\mathbb{R}^d$ is bijective. Moreover, its inverse $(\nabla \phi)^{-1}:\mathbb{R}^d\rightarrow\mathcal{X}$ satisfies $(\nabla\phi)^{-1}= \nabla \phi^* $, where $\phi^* :\mathbb{R}^d\rightarrow\mathbb{R}$ denotes the Fenchel conjugate of $\phi$, defined as $\phi^{*}(y) = \sup_{x\in\mathcal{X}} \langle x, y \rangle - \phi(x)$. We will refer to $\nabla\phi:\mathcal{X}\rightarrow\mathbb{R}^d$ as the *mirror map* and $\nabla \phi(\mathcal{X}) = \mathbb{R}^d$ as the *dual space*.
 
 
-Using the mirror map $\nabla \phi:\mathcal{X}\rightarrow\mathbb{R}^d$, we can now reformulate the constrained sampling problem as the solution of a "mirrored" version of the optimisation problem. Let us define $\nu = (\nabla \phi)_{&#35} \pi$, with $\pi = (\nabla \phi^* )_{\#}\nu$. We can then view the target $\pi$ as the solution of 
+Using the mirror map $\nabla \phi:\mathcal{X}\rightarrow\mathbb{R}^d$, we can now reformulate the constrained sampling problem as the solution of a "mirrored" version of the optimisation problem. Let us define $\nu = (\nabla \phi)_{\#} \pi$, with $\pi = (\nabla \phi^* )_{\#}\nu$. We can then view the target $\pi$ as the solution of 
 $$
     \pi = (\nabla \phi^* )_{\#} \nu,~~~ \nu = \argmin_{\eta\in\mathcal{P}_2(\mathbb{R}^d)}\mathcal{F}(\eta),
 $$
@@ -287,7 +287,7 @@ where now $\smash{\mathcal{F}:\mathcal{P}_2(\mathbb{R}^d)\rightarrow(-\infty,\in
 
 
 Returing to Coin Sampling, we can now apply the same iterative scheme introduced earlier, but where now our coin bets are $c_t= -\nabla_{W_2}\mathcal{F}(\eta_t)$. For more details on learning-rate-free sampling in constrained spaces, check out the NeurIPS 2023 paper [Sharrock et al. 2023](https://proceedings.neurips.cc/paper_files/paper/2023/file/cdee6c3eaa2adc285f11da7711a75c12-Paper-Conference.pdf).
--->
+
 
 
 ## Learning-rate-free marginal maximum likelihood training for latent variable models 
