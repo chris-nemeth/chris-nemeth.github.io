@@ -6,8 +6,50 @@
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Control Variates</title>
+      <link>https://chris-nemeth.github.io/tags/control-variates/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/control-variates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cox-Ingersoll-Ross Process</title>
+      <link>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markov Chain Monte Carlo</title>
+      <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probability Simplex</title>
+      <link>https://chris-nemeth.github.io/tags/probability-simplex/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/probability-simplex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable Subsampling</title>
+      <link>https://chris-nemeth.github.io/tags/scalable-subsampling/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/scalable-subsampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stochastic Gradient MCMC</title>
+      <link>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Gradient Flows</title>
       <link>https://chris-nemeth.github.io/tags/gradient-flows/</link>
@@ -107,17 +149,24 @@
       <description></description>
     </item>
     <item>
-      <title>Stochastic Gradient MCMC</title>
-      <link>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</guid>
+      <title>Gas Emmissions</title>
+      <link>https://chris-nemeth.github.io/tags/gas-emmissions/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/gas-emmissions/</guid>
       <description></description>
     </item>
     <item>
-      <title>Markov Chain Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
+      <title>Gaussian Plume Model</title>
+      <link>https://chris-nemeth.github.io/tags/gaussian-plume-model/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/gaussian-plume-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inverse Modelling</title>
+      <link>https://chris-nemeth.github.io/tags/inverse-modelling/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/inverse-modelling/</guid>
       <description></description>
     </item>
     <item>
@@ -125,13 +174,6 @@
       <link>https://chris-nemeth.github.io/tags/mcmc/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/mcmc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalable Subsampling</title>
-      <link>https://chris-nemeth.github.io/tags/scalable-subsampling/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/scalable-subsampling/</guid>
       <description></description>
     </item>
     <item>
@@ -443,13 +485,6 @@
       <description></description>
     </item>
     <item>
-      <title>Control Variates</title>
-      <link>https://chris-nemeth.github.io/tags/control-variates/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/control-variates/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Monte Carlo Integration</title>
       <link>https://chris-nemeth.github.io/tags/monte-carlo-integration/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
@@ -517,20 +552,6 @@
       <link>https://chris-nemeth.github.io/tags/r/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/r/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cox-Ingersoll-Ross Process</title>
-      <link>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Probability Simplex</title>
-      <link>https://chris-nemeth.github.io/tags/probability-simplex/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/probability-simplex/</guid>
       <description></description>
     </item>
     <item>
