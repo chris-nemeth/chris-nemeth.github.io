@@ -5,6 +5,24 @@
     <loc>https://chris-nemeth.github.io/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://chris-nemeth.github.io/tags/flow-matching/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/normalizing-flows/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,12 +32,6 @@
     <loc>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/probability-simplex/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -28,9 +40,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/blogs/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
@@ -160,15 +169,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/divide-and-conquer/</loc>
     <lastmod>2024-06-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/flow-matching/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/normalizing-flows/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2021-05-23-robust-bnp-variable/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
