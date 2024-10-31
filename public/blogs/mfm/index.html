@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows | Chris Nemeth</title>
+<meta name="keywords" content="normalizing flows, flow matching, Markov chain Monte Carlo, sampling">
+<meta name="description" content="Blog post on NeurIPS 2024 paper - Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows">
+<meta name="author" content="Alberto Cabezas-Gonzalez,&thinsp;Louis Sharrock,&thinsp;Christopher Nemeth">
+<link rel="canonical" href="https://chris-nemeth.github.io/blogs/mfm/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/blogs/mfm/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows" />
+<meta property="og:description" content="Blog post on NeurIPS 2024 paper - Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/blogs/mfm/" />
+<meta property="og:image" content="https://chris-nemeth.github.io/mfm_figure.png" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2024-10-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-10-29T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://chris-nemeth.github.io/mfm_figure.png" />
+<meta name="twitter:title" content="Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows"/>
+<meta name="twitter:description" content="Blog post on NeurIPS 2024 paper - Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://chris-nemeth.github.io/blogs/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows",
+      "item": "https://chris-nemeth.github.io/blogs/mfm/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows",
+  "name": "Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows",
+  "description": "Blog post on NeurIPS 2024 paper - Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows",
+  "keywords": [
+    "normalizing flows", "flow matching", "Markov chain Monte Carlo", "sampling"
+  ],
+  "articleBody": "In recent years, continuous normalizing flows (CNFs) have gained a lot of traction as a method for generative modelling. In our case, we can use this approach to allow us to establish a continuous, smooth transition between distributions, making CNFs attractive for probabilistic inference tasks where one often needs to sample from complex target distributions. Our recent NeurIPS 2024 paper explores a new approach called Markovian Flow Matching (MFM), which integrates CNFs with Markov Chain Monte Carlo (MCMC) sampling techniques to create an adaptive MCMC algorithm which is well-suited to complex target geometries.\nBackground: The Challenge of Sampling in High Dimensions Sampling from a probability distribution, particularly in high-dimensional spaces, is a cornerstone problem across fields from Bayesian inference to statistical physics. Let’s define a target probability distribution $\\pi(x)$ over a space $\\mathbb{R}^d$ that we aim to sample from. Generally, we only know $\\pi(x)$ up to a normalizing constant $Z$, i.e., $\\pi(x) = \\hat{\\pi}(x)/Z$, where $\\hat{\\pi}(x)$ is an unnormalised probability density/mass function.\nTraditional MCMC methods, like the Metropolis-Hastings (MH) algorithm, create a Markov chain whose stationary distribution is the target distribution $\\pi(x)$. However, MCMC can struggle with slow convergence, especially for multi-modal or high-dimensional distributions.\nOur Approach: Markovian Flow Matching We address these challenges by introducing Markovian Flow Matching (MFM), a method that enhances MCMC by integrating it with continuous normalizing flows (CNFs). CNFs are capable of transforming a simple reference distribution into a complex target distribution through an ordinary differential equation (ODE) that describes the transition over time. Here’s a breakdown of how MFM works:\nFlow Matching for CNFs Our method relies on a flow matching (FM) objective, which trains a CNF to match a sequence of intermediate distributions (a “probability path”) from a reference distribution to the target distribution. For instance, given a reference distribution $p_0$ (e.g., a standard Gaussian), we train a CNF to transform samples from $p_0$ to resemble samples from $\\pi$.\nMathematically, we define a vector field $v_t$ that determines the ODE governing the CNF: ￼ $$ \\frac{\\mathrm{d}}{\\mathrm{dt}} = v_t(\\phi_t(x)), \\ \\ \\ \\phi_0(x) = x, $$ where $\\phi: [0,1] \\times \\mathbb{R}^d \\rightarrow \\mathbb{R}^d$ is a diffeomorphic map called the flow.\nHere, $\\phi_t$ is the flow that maps $p_0$ to $\\pi$ over time $t$. Minimising the flow matching objective,\n$$ \\mathcal{L}(\\theta;\\pi) = \\mathbb{E}_{t \\sim U(0,1), x \\sim p_t} [|v_t^{\\theta}(x)-v_t(x)|^2] $$\nallows us to train a neural network $v_t^\\theta(x)$ (parameterised by $\\theta$), which approximates the true vector field $v_t(x)$. By minimising the flow matching objective we are able to minimise the discrepancy between the generated and desired probability paths from $p_0$ to $p_1 \\approx \\pi$ for $t \\in [0,1]$, which results in a trained CNF that approximates the target distribution.\nAdaptive MCMC with CNFs By combining local MCMC kernels (such as those used in the Metropolis Adjusted Langevin Algorithm (MALA) or Hamiltonian Monte Carlo (HMC)) with non-local CNF-based kernels, Markovian Flow Matching (MFM) creates a robust sampler that can explore challenging distributions effectively. The non-local transitions proposed by the CNF allow the sampler to make larger jumps in distribution space, overcoming bottlenecks associated with local exploration alone.\nIn addition, we use adaptive tempering to handle multi-modal distributions. This technique gradually increases the “temperature” of the target distribution, starting from an easy-to-sample reference distribution $p_0$ and moving toward the complex target distribution of interest $\\pi$. This allows the sampler to overcome local optima, improving convergence to all modes in the target.\nKey Results and Experiments We tested MFM on a variety of benchmarks:\nSynthetic Multimodal Distributions: MFM successfully captured all modes in the mixtures of Gaussians experiments, where other methods (like traditional MCMC or variational inference) often failed to explore multiple modes.\nReal-World Applications: We applied MFM to a log-Gaussian Cox process and a stochastic Allen-Cahn equation model. MFM is highly competitive with other state-of-the-art methods in sample quality and computation time, demonstrating its potential in high-dimensional Bayesian inference.\nConclusions and Future Work MFM provides a promising framework for improving MCMC through flow-based transitions, making it adaptable for complex inference tasks in machine learning and statistics. Potential directions include refining the choice of flow architectures and exploring non-asymptotic convergence properties.\nFor those interested, the full paper and code are available on GitHub .\n",
+  "wordCount" : "696",
+  "inLanguage": "en",
+  "image":"https://chris-nemeth.github.io/mfm_figure.png","datePublished": "2024-10-29T00:00:00Z",
+  "dateModified": "2024-10-29T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Alberto Cabezas-Gonzalez"
+  }, {
+    "@type": "Person",
+    "name": "Louis Sharrock"
+  }, {
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/blogs/mfm/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/blogs/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows
+    </h1>
+    <div class="post-meta"><span title='2024-10-29 00:00:00 +0000 UTC'>October 2024</span>&nbsp;&middot;&nbsp;Alberto Cabezas-Gonzalez,&thinsp;Louis Sharrock,&thinsp;Christopher Nemeth
+
+</div>
+  </header> 
+  <div class="post-content"><p>In recent years, continuous normalizing flows (CNFs) have gained a lot of traction as a method for generative modelling. In our case, we can use this approach to allow us to establish a continuous, smooth transition between distributions, making CNFs attractive for probabilistic inference tasks where one often needs to sample from complex target distributions. Our recent NeurIPS 2024 paper explores a new approach called Markovian Flow Matching (MFM), which integrates CNFs with Markov Chain Monte Carlo (MCMC) sampling techniques to create an adaptive MCMC algorithm which is well-suited to complex target geometries.</p>
+<hr>
+<h2 id="background-the-challenge-of-sampling-in-high-dimensions">Background: The Challenge of Sampling in High Dimensions</h2>
+<p>Sampling from a probability distribution, particularly in high-dimensional spaces, is a cornerstone problem across fields from Bayesian inference to statistical physics. Let’s define a target probability distribution $\pi(x)$ over a space $\mathbb{R}^d$ that we aim to sample from. Generally, we only know $\pi(x)$ up to a normalizing constant $Z$, i.e., $\pi(x) = \hat{\pi}(x)/Z$, where $\hat{\pi}(x)$ is an unnormalised probability density/mass function.</p>
+<p>Traditional MCMC methods, like the Metropolis-Hastings (MH) algorithm, create a Markov chain whose stationary distribution is the target distribution $\pi(x)$. However, MCMC can struggle with slow convergence, especially for multi-modal or high-dimensional distributions.</p>
+<hr>
+<h2 id="our-approach-markovian-flow-matching">Our Approach: Markovian Flow Matching</h2>
+<p>We address these challenges by introducing <strong>Markovian Flow Matching (MFM)</strong>, a method that enhances MCMC by integrating it with <strong>continuous normalizing flows (CNFs)</strong>. CNFs are capable of transforming a simple reference distribution into a complex target distribution through an <strong>ordinary differential equation (ODE)</strong> that describes the transition over time. Here’s a breakdown of how MFM works:</p>
+<h3 id="flow-matching-for-cnfs">Flow Matching for CNFs</h3>
+<p>Our method relies on a <strong>flow matching (FM)</strong> objective, which trains a CNF to match a sequence of intermediate distributions (a “probability path”) from a reference distribution to the target distribution. For instance, given a reference distribution $p_0$ (e.g., a standard Gaussian), we train a CNF to transform samples from $p_0$ to resemble samples from $\pi$.</p>
+<p>Mathematically, we define a vector field $v_t$ that determines the ODE governing the CNF:
+￼
+$$
+\frac{\mathrm{d}}{\mathrm{dt}} = v_t(\phi_t(x)), \ \ \ \phi_0(x) = x,
+$$
+where $\phi: [0,1] \times \mathbb{R}^d \rightarrow \mathbb{R}^d$ is a diffeomorphic map called the <em>flow</em>.</p>
+<p>Here, $\phi_t$ is the flow that maps $p_0$ to $\pi$ over time $t$. Minimising the flow matching objective,</p>
+<p>$$
+\mathcal{L}(\theta;\pi) = \mathbb{E}_{t \sim U(0,1), x \sim p_t} [|v_t^{\theta}(x)-v_t(x)|^2]
+$$</p>
+<p>allows us to train a neural network $v_t^\theta(x)$ (parameterised by $\theta$), which approximates the true vector field $v_t(x)$. By minimising the flow matching objective we are able to minimise the discrepancy between the generated and desired probability paths from $p_0$ to $p_1 \approx \pi$ for $t \in [0,1]$, which results in a trained CNF that approximates the target distribution.</p>
+<h3 id="adaptive-mcmc-with-cnfs">Adaptive MCMC with CNFs</h3>
+<p>By combining <strong>local MCMC kernels</strong> (such as those used in the Metropolis Adjusted Langevin Algorithm (MALA) or Hamiltonian Monte Carlo (HMC)) with <strong>non-local CNF-based kernels</strong>, Markovian Flow Matching (MFM) creates a robust sampler that can explore challenging distributions effectively. The non-local transitions proposed by the CNF allow the sampler to make larger jumps in distribution space, overcoming bottlenecks associated with local exploration alone.</p>
+<p>In addition, we use adaptive tempering to handle multi-modal distributions. This technique gradually increases the “temperature” of the target distribution, starting from an easy-to-sample reference distribution $p_0$ and moving toward the complex target distribution of interest $\pi$. This allows the sampler to overcome local optima, improving convergence to all modes in the target.</p>
+<h2 id="key-results-and-experiments">Key Results and Experiments</h2>
+<p>We tested MFM on a variety of benchmarks:</p>
+<ol>
+<li>
+<p><strong>Synthetic Multimodal Distributions</strong>: MFM successfully captured all modes in the mixtures of Gaussians experiments, where other methods (like traditional MCMC or variational inference) often failed to explore multiple modes.</p>
+</li>
+<li>
+<p><strong>Real-World Applications</strong>: We applied MFM to a log-Gaussian Cox process and a stochastic Allen-Cahn equation model. MFM is highly competitive with other state-of-the-art methods in sample quality and computation time, demonstrating its potential in high-dimensional Bayesian inference.</p>
+</li>
+</ol>
+<h2 id="conclusions-and-future-work">Conclusions and Future Work</h2>
+<p>MFM provides a promising framework for improving MCMC through flow-based transitions, making it adaptable for complex inference tasks in machine learning and statistics. Potential directions include refining the choice of flow architectures and exploring non-asymptotic convergence properties.</p>
+<p>For those interested, the full <a href="https://arxiv.org/abs/2405.14392" target="_blank">paper</a>
+ and code are available on <a href="https://github.com/albcab/mfm" target="_blank">GitHub</a>
+.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/normalizing-flows/">Normalizing Flows</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/flow-matching/">Flow Matching</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/">Markov Chain Monte Carlo</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/sampling/">Sampling</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>
