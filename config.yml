@@ -30,7 +30,7 @@ menu:
           weight: 6
 
 params:
-    description: "I am a Professor of Statistics at Lancaster University. My research focuses on Probabilistic Machine Learning."
+    description: "I am a Professor in Probabilistic Machine Learning at Lancaster University."
     author: Chris Nemeth
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -56,7 +56,7 @@ params:
     profileMode:
           enabled: true
           title: Chris Nemeth
-          subtitle: "I am a Professor of Statistics at Lancaster University. My research is in the area of Probabilistic Machine Learning, with a particular focus on gradient flow methods, Monte Carlo algorithms for Bayesian inference and probabilistic modelling."
+          subtitle: "I am a Professor in Probabilistic Machine Learning at Lancaster University. My current research focuses on gradient flow methods for the development of optimisation and sampling algorithms to efficiently estimate the parameters of large-scale models. I also work on Monte Carlo methods for Bayesian inference, Gaussian processes, statistical network modelling and the application of probabilistic modelling to environmental challenges."
           imageUrl: "chris2024.png"
           imageWidth: 234
           imageHeight: 353
