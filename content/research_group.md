@@ -10,7 +10,8 @@ description: "Chris Nemeth's research group"
 
 #### Postdoctoral Researchers
 
-+ [Louis Sharrock](https://louissharrock.github.io/): 2022 - 
++ [Louis Sharrock](https://louissharrock.github.io/): 2022 - 2025
+    - Now at [UCL](https://louissharrock.github.io/)
 + [Estevao Prado](https://www.maynoothuniversity.ie/faculty-science-engineering/our-people/estevao-prado): 2022 - 
 + [Kathryn Turnbull](https://www.linkedin.com/in/kathryn-turnbull-17a480151/): 2021 - 2022
     - Now at [Ocean Science Consulting](https://www.osc.co.uk)
@@ -27,8 +28,11 @@ description: "Chris Nemeth's research group"
 #### PhD Students
 
 
++ [Andreas Makris](https://www.lancaster.ac.uk/maths/people/andreas-makris): 2024 - 
+    - Funded by [ProbAI](https://www.probai.uk)
+    - Co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/)
+
 + [Dan Dodd](https://www.lancaster.ac.uk/sci-tech/about-us/people/daniel-dodd): 2023 -
-    - Learning-rate-free Bayesian inference. 
 
 + [Connie Trojan](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/): 2022 -
     - Funded by [Microsoft Research](https://www.microsoft.com/en-us/research/) 
@@ -42,8 +46,9 @@ description: "Chris Nemeth's research group"
     - Funded by [Tesco](https://www.tesco.com/) 
     - Co-supervised with [Jamie Fairbrother](https://www.lancaster.ac.uk/people-profiles/jamie-fairbrother)
 
-+ [Alberto Cabezas-Gonzalez](https://www.lancaster.ac.uk/people-profiles/alberto-cabezas-gonzalez): 2020 -
++ [Alberto Cabezas-Gonzalez](https://www.lancaster.ac.uk/people-profiles/alberto-cabezas-gonzalez): 2020 - 2024
     - Co-supervised with [Marco Battiston](https://www.lancaster.ac.uk/maths/people/marco-battiston)
+    - Now at [University of Turin](https://www.est.unito.it/do/docenti.pl/Alias?alberto.cabezasgonzalez#tab-profilo)
 
 + [Tom Pinder](https://tpin.uk): 2019 - 2022
     - [*Developments in Gaussian processes with applications to climate science and network problems*](https://eprints.lancs.ac.uk/id/eprint/188421/1/main.pdf). 
@@ -75,6 +80,7 @@ description: "Chris Nemeth's research group"
 + Kathryn Turnbull: 2016 - 2019
     - [*Advancements in Latent Space Network Modelling*](https://eprints.lancs.ac.uk/id/eprint/140679/2/2020turnbullphd.pdf)
     - Co-supervised with [Simon Lunagomez](https://www.simonlunagomezc.com/), [Matt Nunes](https://people.bath.ac.uk/man54/homepage.html) and [Tyler McCormick](https://thmccormick.github.io/)
+    - Now at [Ocean Science Consulting](https://www.osc.co.uk)
 
 + [Jack Baker](https://www.linkedin.com/in/jbaker92/): 2015 - 2018
     - [*Large-Scale Bayesian Computation Using Stochastic Gradient Markov Chain Monte Carlo*](https://eprints.lancs.ac.uk/id/eprint/131012/1/2019JackBakerPhD.pdf)
