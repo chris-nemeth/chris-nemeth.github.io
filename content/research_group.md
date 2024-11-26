@@ -12,7 +12,8 @@ description: "Chris Nemeth's research group"
 
 + [Louis Sharrock](https://louissharrock.github.io/): 2022 - 2025
     - Now at [UCL](https://louissharrock.github.io/)
-+ [Estevao Prado](https://www.maynoothuniversity.ie/faculty-science-engineering/our-people/estevao-prado): 2022 - 
++ [Estevao Prado](https://www.linkedin.com/in/estevão-prado-998097238/): 2022 - 2024
+    - Now at [Banco Bradesco](https://banco.bradesco/html/classic/index.shtm)
 + [Kathryn Turnbull](https://www.linkedin.com/in/kathryn-turnbull-17a480151/): 2021 - 2022
     - Now at [Ocean Science Consulting](https://www.osc.co.uk)
 + [Jeremie Coullon](https://www.jeremiecoullon.com/): 2020 - 2022
