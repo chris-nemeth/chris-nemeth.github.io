@@ -1,14 +1,14 @@
 ---
 title: "Modelling Populations of Interaction Networks via Distance Metrics"
-date: 2022-06-20
-lastmod: 2022-06-20
+date: 2025-07-09
+lastmod: 2025-07-09
 tags: ["network model","interaction network","distance metrics","Markov chain Monte Carlo","MCMC"]
 author: ["George Bolt", "Simon Lunagomez","Christopher Nemeth"]
 description: " "
-summary: "arXiv preprint"
+summary: "Journal of Machine Learning Research (to appear)"
 editPost:
     URL: "https://arxiv.org/abs/2206.09995"
-    Text: "arXiv preprint"
+    Text: "Journal of Machine Learning Research (to appear)"
 
 ---
 
@@ -29,13 +29,13 @@ Network data arises through observation of relational information between a coll
 ---
 ##### Citation
 
-Bolt, G., Lunagomez, S. and Nemeth, C., 2022. Modelling Populations of Interaction Networks via Distance Metrics. arXiv preprint arXiv:2206.09995.
+Bolt, G., Lunagomez, S. and Nemeth, C., 2025. Modelling Populations of Interaction Networks via Distance Metrics. *Journal of Machine Learning Research (to appear)*.
 
 ```BibTeX
-@article{bolt2022modelling,
+@article{bolt2025modelling,
   title={Modelling Populations of Interaction Networks via Distance Metrics},
   author={Bolt, George and Lunag{\'o}mez, Sim{\'o}n and Nemeth, Christopher},
-  journal={arXiv preprint arXiv:2206.09995},
-  year={2022}
+  journal={Journal of Machine Learning Research (to appear)},
+  year={2025}
 }
 ```

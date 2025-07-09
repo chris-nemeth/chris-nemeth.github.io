@@ -1,7 +1,7 @@
 ---
 title: "Scalable Monte Carlo for Bayesian Learning" 
-date: 2024-08-07
-lastmod: 2024-08-07
+date: 2025-06-07
+lastmod: 2025-06-07
 tags: ["Bayesian","Monte Carlo","Scalable"]
 author: ["Paul Fearnhead, Christopher Nemeth, Chris J. Oates and Chris Sherlock"]
 description: "This book covers recent advances in the Monte Carlo literature for performing Bayesian inference in high-dimensional and large-data settings."
@@ -11,7 +11,7 @@ cover:
     alt: "Scalable Monte Carlo for Bayesian Learning"
     relative: false
 editPost:
-    URL: "https://arxiv.org/abs/2407.12751"
+    URL: "https://www.cambridge.org/core/books/scalable-monte-carlo-for-bayesian-learning/7FDC9891DDA086B85AD8AB386F6F3BD3"
     Text: "Cambridge University Press"
 showToc: false
 disableAnchoredHeadings: false
@@ -131,13 +131,13 @@ This book provides a graduate-level introduction to advanced topics in Markov ch
 
 #### Citation
 
-Fearnhead, P., Nemeth, C., Oates, C.J. and Sherlock, C., 2024. Scalable Monte Carlo for Bayesian Learning. arXiv preprint arXiv:2407.12751.
+Fearnhead, P., Nemeth, C., Oates, C.J. and Sherlock, C., 2025. Scalable Monte Carlo for Bayesian Learning. Cambridge University Press.
 
 ```BibTeX
-@book{fearnhead2024scalable,
+@book{fearnhead2025scalable,
   title={Scalable Monte Carlo for Bayesian Learning},
   author={Fearnhead, Paul and Nemeth, Christopher and Oates, Chris J and Sherlock, Chris},
   publisher={Cambridge University Press},
-  year={2024}
+  year={2025}
 }
 ```
