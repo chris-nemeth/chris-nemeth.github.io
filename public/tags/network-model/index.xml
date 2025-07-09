@@ -6,20 +6,20 @@
     <description>Recent content in Network Model on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/network-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modelling Populations of Interaction Networks via Distance Metrics</title>
+      <link>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Sequential Estimation of Temporally Evolving Latent Space Network Models</title>
       <link>https://chris-nemeth.github.io/papers/2022-09-25-seq-lsnm/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/papers/2022-09-25-seq-lsnm/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>Modelling Populations of Interaction Networks via Distance Metrics</title>
-      <link>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</guid>
       <description> </description>
     </item>
     <item>

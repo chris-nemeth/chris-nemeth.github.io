@@ -2,16 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chris-nemeth.github.io/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/distance-metrics/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/interaction-network/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/mcmc/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/network-model/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/bayesian/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/books/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/monte-carlo/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/scalable/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/books/book1/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chris-nemeth.github.io/blogs/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/flow-matching/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/blogs/mfm/</loc>
@@ -23,13 +59,7 @@
     <loc>https://chris-nemeth.github.io/tags/sampling/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</loc>
-    <lastmod>2024-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</loc>
@@ -71,12 +101,6 @@
     <loc>https://chris-nemeth.github.io/blogs/coin_betting/</loc>
     <lastmod>2024-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/bayesian/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/books/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/software/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -92,16 +116,7 @@
     <loc>https://chris-nemeth.github.io/tags/julia/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/monte-carlo/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/python/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/scalable/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/books/book1/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/sgmcmc/</loc>
@@ -130,9 +145,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-08-02-plume/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/mcmc/</loc>
-    <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</loc>
     <lastmod>2024-07-30T00:00:00+00:00</lastmod>
@@ -305,23 +317,11 @@
     <loc>https://chris-nemeth.github.io/tags/latent-space-model/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/network-model/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2022-09-25-seq-lsnm/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/distance-metrics/</loc>
-    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/interaction-network/</loc>
-    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</loc>
-    <lastmod>2022-06-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2022-06-17-distance-multisets/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>

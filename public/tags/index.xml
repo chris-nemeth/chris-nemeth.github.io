@@ -6,20 +6,69 @@
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Flow Matching</title>
-      <link>https://chris-nemeth.github.io/tags/flow-matching/</link>
-      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/flow-matching/</guid>
+      <title>Distance Metrics</title>
+      <link>https://chris-nemeth.github.io/tags/distance-metrics/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/distance-metrics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interaction Network</title>
+      <link>https://chris-nemeth.github.io/tags/interaction-network/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/interaction-network/</guid>
       <description></description>
     </item>
     <item>
       <title>Markov Chain Monte Carlo</title>
       <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
-      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCMC</title>
+      <link>https://chris-nemeth.github.io/tags/mcmc/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Model</title>
+      <link>https://chris-nemeth.github.io/tags/network-model/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/network-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayesian</title>
+      <link>https://chris-nemeth.github.io/tags/bayesian/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/bayesian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monte Carlo</title>
+      <link>https://chris-nemeth.github.io/tags/monte-carlo/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/monte-carlo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable</title>
+      <link>https://chris-nemeth.github.io/tags/scalable/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/scalable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flow Matching</title>
+      <link>https://chris-nemeth.github.io/tags/flow-matching/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/flow-matching/</guid>
       <description></description>
     </item>
     <item>
@@ -107,13 +156,6 @@
       <description></description>
     </item>
     <item>
-      <title>Bayesian</title>
-      <link>https://chris-nemeth.github.io/tags/bayesian/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/bayesian/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Gaussian Processes</title>
       <link>https://chris-nemeth.github.io/tags/gaussian-processes/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
@@ -135,24 +177,10 @@
       <description></description>
     </item>
     <item>
-      <title>Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/monte-carlo/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/monte-carlo/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Python</title>
       <link>https://chris-nemeth.github.io/tags/python/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalable</title>
-      <link>https://chris-nemeth.github.io/tags/scalable/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/scalable/</guid>
       <description></description>
     </item>
     <item>
@@ -181,13 +209,6 @@
       <link>https://chris-nemeth.github.io/tags/inverse-modelling/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/inverse-modelling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCMC</title>
-      <link>https://chris-nemeth.github.io/tags/mcmc/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/mcmc/</guid>
       <description></description>
     </item>
     <item>
@@ -450,31 +471,10 @@
       <description></description>
     </item>
     <item>
-      <title>Network Model</title>
-      <link>https://chris-nemeth.github.io/tags/network-model/</link>
-      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/network-model/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sequential Monte Carlo</title>
       <link>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Distance Metrics</title>
-      <link>https://chris-nemeth.github.io/tags/distance-metrics/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/distance-metrics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Interaction Network</title>
-      <link>https://chris-nemeth.github.io/tags/interaction-network/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/interaction-network/</guid>
       <description></description>
     </item>
     <item>

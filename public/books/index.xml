@@ -6,12 +6,12 @@
     <description>Recent content in Books on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scalable Monte Carlo for Bayesian Learning</title>
       <link>https://chris-nemeth.github.io/books/book1/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/books/book1/</guid>
       <description>This book covers recent advances in the Monte Carlo literature for performing Bayesian inference in high-dimensional and large-data settings.</description>
     </item>
