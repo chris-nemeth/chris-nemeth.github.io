@@ -1,14 +1,14 @@
 ---
 title: "A changepoint approach to modelling non-stationary soil moisture dynamics"
-date: 2023-10-30
-lastmod: 2023-10-30
+date: 2025-06-30
+lastmod: 2025-06-30
 tags: ["changepoints","soil","time series"]
 author: ["Mengyi Gong","Rebecca Killick","Christopher Nemeth","John Quinton"]
 description: " "
-summary: "arXiv preprint"
+summary: "Journal of the Royal Statistical Society Series C: Applied Statistics"
 editPost:
-    URL: "https://arxiv.org/abs/2310.17546"
-    Text: "arXiv preprint"
+    URL: "https://academic.oup.com/jrsssc/article/74/3/866/7986097"
+    Text: "Journal of the Royal Statistical Society Series C: Applied Statistics"
 
 ---
 
@@ -18,6 +18,7 @@ editPost:
 ##### Download
 
 + [arXiv](https://arxiv.org/abs/2310.17546)
++ [paper](https://academic.oup.com/jrsssc/article/74/3/866/7986097)
 
 
 ---
@@ -28,13 +29,17 @@ Soil moisture dynamics provide an indicator of soil health that scientists model
 ---
 ##### Citation
 
-Gong, M., Killick, R., Nemeth, C. and Quinton, J. (2023). A changepoint approach to modelling non-stationary soil moisture dynamics. *arXiv preprint*.
+Gong, M., Killick, R., Nemeth, C. and Quinton, J. (2025). A changepoint approach to modelling non-stationary soil moisture dynamics. *Journal of the Royal Statistical Society Series C: Applied Statistics*. Vol. 74(3), pp.866--883. Oxford University Press.
 
 ```BibTeX
-@article{gong2023changepoint,
-  title={A changepoint approach to modelling non-stationary soil moisture dynamics},
+@article{gong2025changepoint,
+  title={A changepoint approach to modelling nonstationary soil moisture dynamics},
   author={Gong, Mengyi and Killick, Rebecca and Nemeth, Christopher and Quinton, John},
-  journal={arXiv preprint arXiv:2310.17546},
-  year={2023}
+  journal={Journal of the Royal Statistical Society Series C: Applied Statistics},
+  volume={74},
+  number={3},
+  pages={866--883},
+  year={2025},
+  publisher={Oxford University Press UK}
 }
 ```

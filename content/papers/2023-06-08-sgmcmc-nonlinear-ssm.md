@@ -1,7 +1,7 @@
 ---
 title: "Stochastic Gradient MCMC for Nonlinear State Space Models"
-date: 2023-06-08
-lastmod: 2023-06-08
+date: 2025-03-08
+lastmod: 2025-03-08
 tags: ["Markov chain Monte Carlo","MCMC","stochastic gradient","state space model"]
 author: ["Christopher Aicher", "Srshti Putcha", "Christopher Nemeth", "Paul Fearnhead", "Emily B. Fox"]
 description: " "
@@ -34,16 +34,16 @@ State space models (SSMs) provide a flexible framework for modeling complex time
 ##### Citation
 
 
-Aicher, C., Putcha, S., Nemeth, C., Fearnhead, P. and Fox, E., 2023. Stochastic gradient MCMC for nonlinear state space models. *Bayesian Analysis*, 1(1), pp.1-23.
+Aicher, C., Putcha, S., Nemeth, C., Fearnhead, P. and Fox, E. (2025). Stochastic gradient MCMC for nonlinear state space models. *Bayesian Analysis*, 20(1), pp.83--105.
 
-@article{aicher2023stochastic,
+@article{aicher2025stochastic,
   title={Stochastic gradient MCMC for nonlinear state space models},
   author={Aicher, Christopher and Putcha, Srshti and Nemeth, Christopher and Fearnhead, Paul and Fox, Emily},
   journal={Bayesian Analysis},
-  volume={1},
+  volume={20},
   number={1},
-  pages={1--23},
-  year={2023},
+  pages={83--105},
+  year={2025},
   publisher={International Society for Bayesian Analysis}
 }
 
