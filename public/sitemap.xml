@@ -2,486 +2,486 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chris-nemeth.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gas-emmissions/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gaussian-plume-model/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/inverse-modelling/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/markov-chain-monte-carlo/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/2024-08-02-plume/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/distance-metrics/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/distance-metrics/</loc>
+    <loc>http://localhost:1313/tags/interaction-network/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/interaction-network/</loc>
+    <loc>http://localhost:1313/tags/mcmc/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
+    <loc>http://localhost:1313/papers/2022-06-20-pop-interaction-networks/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/mcmc/</loc>
+    <loc>http://localhost:1313/tags/network-model/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</loc>
-    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/network-model/</loc>
-    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
-    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
-    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/bayesian/</loc>
+    <loc>http://localhost:1313/tags/bayesian/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/books/</loc>
+    <loc>http://localhost:1313/books/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/monte-carlo/</loc>
+    <loc>http://localhost:1313/tags/monte-carlo/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/scalable/</loc>
+    <loc>http://localhost:1313/tags/scalable/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/books/book1/</loc>
+    <loc>http://localhost:1313/books/book1/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</loc>
+    <loc>http://localhost:1313/papers/2025-06-02-plume_surrogates/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gas-emmissions/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/inverse-modelling/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/blogs/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/flow-matching/</loc>
+    <loc>http://localhost:1313/tags/flow-matching/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/blogs/mfm/</loc>
+    <loc>http://localhost:1313/blogs/mfm/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/normalizing-flows/</loc>
+    <loc>http://localhost:1313/tags/normalizing-flows/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sampling/</loc>
+    <loc>http://localhost:1313/tags/sampling/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</loc>
+    <loc>http://localhost:1313/papers/2024-05-24-mfm/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</loc>
+    <loc>http://localhost:1313/papers/2024-10-01-scir-cv/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/control-variates/</loc>
+    <loc>http://localhost:1313/tags/control-variates/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</loc>
+    <loc>http://localhost:1313/tags/cox-ingersoll-ross-process/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/probability-simplex/</loc>
+    <loc>http://localhost:1313/tags/probability-simplex/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/scalable-subsampling/</loc>
+    <loc>http://localhost:1313/tags/scalable-subsampling/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</loc>
+    <loc>http://localhost:1313/tags/stochastic-gradient-mcmc/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gradient-flows/</loc>
+    <loc>http://localhost:1313/tags/gradient-flows/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/optimization/</loc>
+    <loc>http://localhost:1313/tags/optimization/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/blogs/caring_about_gf/</loc>
+    <loc>http://localhost:1313/blogs/caring_about_gf/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/coin-betting/</loc>
+    <loc>http://localhost:1313/tags/coin-betting/</loc>
     <lastmod>2024-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/coin-sampling/</loc>
+    <loc>http://localhost:1313/tags/coin-sampling/</loc>
     <lastmod>2024-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/learning-rate-free/</loc>
+    <loc>http://localhost:1313/tags/learning-rate-free/</loc>
     <lastmod>2024-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/blogs/coin_betting/</loc>
+    <loc>http://localhost:1313/blogs/coin_betting/</loc>
     <lastmod>2024-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/software/</loc>
+    <loc>http://localhost:1313/software/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gaussian-processes/</loc>
+    <loc>http://localhost:1313/tags/gaussian-processes/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/software/gaussianprocesses-jl/</loc>
+    <loc>http://localhost:1313/software/gaussianprocesses-jl/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/jax/</loc>
+    <loc>http://localhost:1313/tags/jax/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/julia/</loc>
+    <loc>http://localhost:1313/tags/julia/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sgmcmc/</loc>
+    <loc>http://localhost:1313/tags/sgmcmc/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/software/sgmcmcjax/</loc>
+    <loc>http://localhost:1313/software/sgmcmcjax/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/code_and_software/</loc>
+    <loc>http://localhost:1313/code_and_software/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/location/</loc>
+    <loc>http://localhost:1313/location/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/research_group/</loc>
+    <loc>http://localhost:1313/research_group/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gaussian-plume-model/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-08-02-plume/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</loc>
+    <loc>http://localhost:1313/papers/2024-07-30-mhss/</loc>
     <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/bayesian-deep-learning/</loc>
+    <loc>http://localhost:1313/tags/bayesian-deep-learning/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/bayesian-inference/</loc>
+    <loc>http://localhost:1313/tags/bayesian-inference/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</loc>
+    <loc>http://localhost:1313/papers/2024-06-05-rdog/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/neural-networks/</loc>
+    <loc>http://localhost:1313/tags/neural-networks/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-02-06-bdl/</loc>
+    <loc>http://localhost:1313/papers/2024-02-06-bdl/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/riemannian-manifold/</loc>
+    <loc>http://localhost:1313/tags/riemannian-manifold/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/pdmp/</loc>
+    <loc>http://localhost:1313/tags/pdmp/</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/piecewise-deterministic-markov-processes/</loc>
+    <loc>http://localhost:1313/tags/piecewise-deterministic-markov-processes/</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-06-28-spdmps/</loc>
+    <loc>http://localhost:1313/papers/2024-06-28-spdmps/</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</loc>
+    <loc>http://localhost:1313/papers/2024-06-18-diff-div-conq/</loc>
     <lastmod>2024-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/diffusion-models/</loc>
+    <loc>http://localhost:1313/tags/diffusion-models/</loc>
     <lastmod>2024-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/divide-and-conquer/</loc>
+    <loc>http://localhost:1313/tags/divide-and-conquer/</loc>
     <lastmod>2024-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2021-05-23-robust-bnp-variable/</loc>
+    <loc>http://localhost:1313/papers/2021-05-23-robust-bnp-variable/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/robust-regression/</loc>
+    <loc>http://localhost:1313/tags/robust-regression/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/variable-selection/</loc>
+    <loc>http://localhost:1313/tags/variable-selection/</loc>
     <lastmod>2024-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/officehours/</loc>
+    <loc>http://localhost:1313/officehours/</loc>
     <lastmod>2024-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/latent-variable-model/</loc>
+    <loc>http://localhost:1313/tags/latent-variable-model/</loc>
     <lastmod>2024-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/maximum-likelihood-estimation/</loc>
+    <loc>http://localhost:1313/tags/maximum-likelihood-estimation/</loc>
     <lastmod>2024-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/particle-variational-inference/</loc>
+    <loc>http://localhost:1313/tags/particle-variational-inference/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</loc>
+    <loc>http://localhost:1313/papers/2023-05-25-coinem/</loc>
     <lastmod>2024-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gaussian-process/</loc>
+    <loc>http://localhost:1313/tags/gaussian-process/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-03-14-gp-cos/</loc>
+    <loc>http://localhost:1313/papers/2024-03-14-gp-cos/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/spatial-modelling/</loc>
+    <loc>http://localhost:1313/tags/spatial-modelling/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/hypergraphs/</loc>
+    <loc>http://localhost:1313/tags/hypergraphs/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/latent-space-modelling/</loc>
+    <loc>http://localhost:1313/tags/latent-space-modelling/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-09-25-lsm-hyper/</loc>
+    <loc>http://localhost:1313/papers/2023-09-25-lsm-hyper/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/parallel-mcmc/</loc>
+    <loc>http://localhost:1313/tags/parallel-mcmc/</loc>
     <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</loc>
+    <loc>http://localhost:1313/papers/2022-11-04-swiss/</loc>
     <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/constrained-sampling/</loc>
+    <loc>http://localhost:1313/tags/constrained-sampling/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-09-21-mirror-coin/</loc>
+    <loc>http://localhost:1313/papers/2023-09-21-mirror-coin/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/mirror-descent/</loc>
+    <loc>http://localhost:1313/tags/mirror-descent/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</loc>
+    <loc>http://localhost:1313/papers/2023-10-30-soil-changepoints/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/changepoints/</loc>
+    <loc>http://localhost:1313/tags/changepoints/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/soil/</loc>
+    <loc>http://localhost:1313/tags/soil/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/time-series/</loc>
+    <loc>http://localhost:1313/tags/time-series/</loc>
     <lastmod>2023-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</loc>
+    <loc>http://localhost:1313/papers/2023-08-31-ice-sheet/</loc>
     <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/greenland/</loc>
+    <loc>http://localhost:1313/tags/greenland/</loc>
     <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/hidden-markov-model/</loc>
+    <loc>http://localhost:1313/tags/hidden-markov-model/</loc>
     <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/ice-sheet/</loc>
+    <loc>http://localhost:1313/tags/ice-sheet/</loc>
     <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</loc>
+    <loc>http://localhost:1313/papers/2023-04-24-coin-sampling/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/svgd/</loc>
+    <loc>http://localhost:1313/tags/svgd/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/state-space-model/</loc>
+    <loc>http://localhost:1313/tags/state-space-model/</loc>
     <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/stochastic-gradient/</loc>
+    <loc>http://localhost:1313/tags/stochastic-gradient/</loc>
     <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</loc>
+    <loc>http://localhost:1313/papers/2023-06-08-sgmcmc-nonlinear-ssm/</loc>
     <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/elliptical-slice-sampling/</loc>
+    <loc>http://localhost:1313/tags/elliptical-slice-sampling/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/normalizing-flow/</loc>
+    <loc>http://localhost:1313/tags/normalizing-flow/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/preferential-subsampling/</loc>
+    <loc>http://localhost:1313/tags/preferential-subsampling/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/</loc>
+    <loc>http://localhost:1313/papers/2023-04-13-preferential-sgld/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sgld/</loc>
+    <loc>http://localhost:1313/tags/sgld/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/stochastic-gradient-langevin-dynamics/</loc>
+    <loc>http://localhost:1313/tags/stochastic-gradient-langevin-dynamics/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-04-13-transport-ess/</loc>
+    <loc>http://localhost:1313/papers/2023-04-13-transport-ess/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/climate-model/</loc>
+    <loc>http://localhost:1313/tags/climate-model/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/emulation/</loc>
+    <loc>http://localhost:1313/tags/emulation/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-04-05-mv-sensitivity/</loc>
+    <loc>http://localhost:1313/papers/2023-04-05-mv-sensitivity/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-04-04-tuning-sgmcmc/</loc>
+    <loc>http://localhost:1313/papers/2023-04-04-tuning-sgmcmc/</loc>
     <lastmod>2023-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/latent-space-model/</loc>
+    <loc>http://localhost:1313/tags/latent-space-model/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-09-25-seq-lsnm/</loc>
+    <loc>http://localhost:1313/papers/2022-09-25-seq-lsnm/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</loc>
+    <loc>http://localhost:1313/tags/sequential-monte-carlo/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-06-17-distance-multisets/</loc>
+    <loc>http://localhost:1313/papers/2022-06-17-distance-multisets/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/multisets/</loc>
+    <loc>http://localhost:1313/tags/multisets/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/monte-carlo-integration/</loc>
+    <loc>http://localhost:1313/tags/monte-carlo-integration/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sards-method/</loc>
+    <loc>http://localhost:1313/tags/sards-method/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-06-01-semi-exact-cf/</loc>
+    <loc>http://localhost:1313/papers/2022-06-01-semi-exact-cf/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/steins-method/</loc>
+    <loc>http://localhost:1313/tags/steins-method/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</loc>
+    <loc>http://localhost:1313/papers/2022-04-30-gpjl/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/nonparametric-functions/</loc>
+    <loc>http://localhost:1313/tags/nonparametric-functions/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</loc>
+    <loc>http://localhost:1313/papers/2022-04-18-sgmcmcjax/</loc>
     <lastmod>2022-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</loc>
+    <loc>http://localhost:1313/papers/2021-06-03-gp-hypergraphs/</loc>
     <lastmod>2021-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2021-04-22-covid-lockdown-aq/</loc>
+    <loc>http://localhost:1313/papers/2021-04-22-covid-lockdown-aq/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/air-quality/</loc>
+    <loc>http://localhost:1313/tags/air-quality/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/covid-19/</loc>
+    <loc>http://localhost:1313/tags/covid-19/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/lockdown/</loc>
+    <loc>http://localhost:1313/tags/lockdown/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</loc>
+    <loc>http://localhost:1313/papers/2021-01-04-sgmcmc-review/</loc>
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2020-09-25-stein-gp/</loc>
+    <loc>http://localhost:1313/papers/2020-09-25-stein-gp/</loc>
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2020-09-15-firn/</loc>
+    <loc>http://localhost:1313/papers/2020-09-15-firn/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/firn-densification/</loc>
+    <loc>http://localhost:1313/tags/firn-densification/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/multi-modal-distributions/</loc>
+    <loc>http://localhost:1313/tags/multi-modal-distributions/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2019-12-01-pseudo-extended/</loc>
+    <loc>http://localhost:1313/papers/2019-12-01-pseudo-extended/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/r/</loc>
+    <loc>http://localhost:1313/tags/r/</loc>
     <lastmod>2019-10-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</loc>
+    <loc>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</loc>
     <lastmod>2019-10-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</loc>
+    <loc>http://localhost:1313/papers/2019-05-01-sgldcv/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</loc>
+    <loc>http://localhost:1313/papers/2018-12-01-simplex/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</loc>
+    <loc>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/subposteriors/</loc>
+    <loc>http://localhost:1313/tags/subposteriors/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</loc>
+    <loc>http://localhost:1313/papers/2016-10-01-particle-score/</loc>
     <lastmod>2016-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/particle-filters/</loc>
+    <loc>http://localhost:1313/tags/particle-filters/</loc>
     <lastmod>2016-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/smc/</loc>
+    <loc>http://localhost:1313/tags/smc/</loc>
     <lastmod>2016-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/state-space-models/</loc>
+    <loc>http://localhost:1313/tags/state-space-models/</loc>
     <lastmod>2016-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/mala/</loc>
+    <loc>http://localhost:1313/tags/mala/</loc>
     <lastmod>2016-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/metropolis-adjusted-langevin-algorithm/</loc>
+    <loc>http://localhost:1313/tags/metropolis-adjusted-langevin-algorithm/</loc>
     <lastmod>2016-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2016-08-25-pmala/</loc>
+    <loc>http://localhost:1313/papers/2016-08-25-pmala/</loc>
     <lastmod>2016-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2014-10-01-thesis/</loc>
+    <loc>http://localhost:1313/papers/2014-10-01-thesis/</loc>
     <lastmod>2014-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</loc>
+    <loc>http://localhost:1313/papers/2014-04-01-smc-change/</loc>
     <lastmod>2014-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/bearings-only-tracking/</loc>
+    <loc>http://localhost:1313/tags/bearings-only-tracking/</loc>
     <lastmod>2012-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2012-07-09-bearings/</loc>
+    <loc>http://localhost:1313/papers/2012-07-09-bearings/</loc>
     <lastmod>2012-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/parameter-estimation/</loc>
+    <loc>http://localhost:1313/tags/parameter-estimation/</loc>
     <lastmod>2012-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2012-01-01-particle-learning/</loc>
+    <loc>http://localhost:1313/papers/2012-01-01-particle-learning/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/target-tracking/</loc>
+    <loc>http://localhost:1313/tags/target-tracking/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/courses/</loc>
+    <loc>http://localhost:1313/courses/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/irregular-verbs/</loc>
+    <loc>http://localhost:1313/tags/irregular-verbs/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/courses/course1/</loc>
+    <loc>http://localhost:1313/courses/course1/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/philology/</loc>
+    <loc>http://localhost:1313/tags/philology/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/portuguese/</loc>
+    <loc>http://localhost:1313/tags/portuguese/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/romance-languages/</loc>
+    <loc>http://localhost:1313/tags/romance-languages/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/spanish/</loc>
+    <loc>http://localhost:1313/tags/spanish/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/celtic-languages/</loc>
+    <loc>http://localhost:1313/tags/celtic-languages/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/irish/</loc>
+    <loc>http://localhost:1313/tags/irish/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/language-modernization/</loc>
+    <loc>http://localhost:1313/tags/language-modernization/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/profanity/</loc>
+    <loc>http://localhost:1313/tags/profanity/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/courses/course2/</loc>
+    <loc>http://localhost:1313/courses/course2/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/archive/</loc>
+    <loc>http://localhost:1313/archive/</loc>
   </url>
 </urlset>

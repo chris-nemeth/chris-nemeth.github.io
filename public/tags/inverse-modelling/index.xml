@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Inverse Modelling on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/inverse-modelling/</link>
+    <link>http://localhost:1313/tags/inverse-modelling/</link>
     <description>Recent content in Inverse Modelling on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/inverse-modelling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/inverse-modelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Deep Learning Surrogates for Real-Time Gas Emission Inversion</title>
-      <link>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</link>
-      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</guid>
+      <title>Probabilistic Inversion Modeling of Gas Emissions: A Gradient-Based MCMC Estimation of Gaussian Plume Parameters</title>
+      <link>http://localhost:1313/papers/2024-08-02-plume/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/2024-08-02-plume/</guid>
       <description> </description>
     </item>
     <item>
-      <title>Probabilistic Inversion Modeling of Gas Emissions: A Gradient-Based MCMC Estimation of Gaussian Plume Parameters</title>
-      <link>https://chris-nemeth.github.io/papers/2024-08-02-plume/</link>
-      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-08-02-plume/</guid>
+      <title>Deep Learning Surrogates for Real-Time Gas Emission Inversion</title>
+      <link>http://localhost:1313/papers/2025-06-02-plume_surrogates/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/2025-06-02-plume_surrogates/</guid>
       <description> </description>
     </item>
   </channel>

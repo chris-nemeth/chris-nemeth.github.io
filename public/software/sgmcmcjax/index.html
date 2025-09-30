@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Stochastic Gradient MCMC in Jax | Chris Nemeth</title>
 <meta name="keywords" content="Stochastic gradient MCMC, SGMCMC, Jax, python">
 <meta name="description" content="This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language.">
 <meta name="author" content="Jeremie Coullon,&thinsp;Christopher Nemeth">
-<link rel="canonical" href="https://chris-nemeth.github.io/software/sgmcmcjax/">
+<link rel="canonical" href="http://localhost:1313/software/sgmcmcjax/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/software/sgmcmcjax/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/software/sgmcmcjax/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,13 +29,13 @@
 </noscript><meta property="og:title" content="Stochastic Gradient MCMC in Jax" />
 <meta property="og:description" content="This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chris-nemeth.github.io/software/sgmcmcjax/" />
-<meta property="og:image" content="https://chris-nemeth.github.io/all_PMF_ksd_curves.png" /><meta property="article:section" content="software" />
+<meta property="og:url" content="http://localhost:1313/software/sgmcmcjax/" />
+<meta property="og:image" content="http://localhost:1313/all_PMF_ksd_curves.png" /><meta property="article:section" content="software" />
 <meta property="article:published_time" content="2024-08-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-08-07T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://chris-nemeth.github.io/all_PMF_ksd_curves.png" />
+<meta name="twitter:image" content="http://localhost:1313/all_PMF_ksd_curves.png" />
 <meta name="twitter:title" content="Stochastic Gradient MCMC in Jax"/>
 <meta name="twitter:description" content="This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language."/>
 
@@ -49,13 +49,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Data",
-      "item": "https://chris-nemeth.github.io/software/"
+      "item": "http://localhost:1313/software/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Stochastic Gradient MCMC in Jax",
-      "item": "https://chris-nemeth.github.io/software/sgmcmcjax/"
+      "item": "http://localhost:1313/software/sgmcmcjax/"
     }
   ]
 }
@@ -73,7 +73,7 @@
   "articleBody": "SGMCMCJax Documentation SGMCMCJax is a lightweight library of stochastic gradient Markov chain Monte Carlo (SGMCMC) algorithms. The aim is to include both standard samplers (SGLD, SGHMC) as well as state of the art samplers while requiring only JAX to run.\nThe target audience for this library is researchers and practitioners: simply plug in your JAX model and easily obtain samples.\nExample usage We show the basic usage with the following example of estimating the mean of a D-dimensional Gaussian from data using a Gaussian prior.\nimport jax.numpy as jnp from jax import random from sgmcmcjax.samplers import build_sgld_sampler # define model in JAX def loglikelihood(theta, x): return -0.5*jnp.dot(x-theta, x-theta) def logprior(theta): return -0.5*jnp.dot(theta, theta)*0.01 # generate dataset N, D = 10_000, 100 key = random.PRNGKey(0) X_data = random.normal(key, shape=(N, D)) # build sampler batch_size = int(0.1*N) dt = 1e-5 my_sampler = build_sgld_sampler(dt, loglikelihood, logprior, (X_data,), batch_size) # run sampler Nsamples = 10_000 samples = my_sampler(key, Nsamples, jnp.zeros(D)) Ask a question or open an issue Please open issues on Github Issue Tracker , or ask a question in the Discussion section on Github.\nSamplers The library includes several SGMCMC algorithms with their pros and cons briefly discussed in the documentation .\nThe current list of samplers is:\nSGLD SGLD-CV SVRG-Langevin SGHMC SGHMC-CV SVRG-SGHMC pSGLD SGLDAdam BAOAB SGNHT SGNHT-CV BADODAB BADODAB-CV Installation Create a virtual environment and either install a stable version using pip or install the development version.\nStable version To install the latest stable version run:\npip install sgmcmcjax Development version To install the development version run:\ngit clone https://github.com/jeremiecoullon/SGMCMCJax.git cd SGMCMCJax python -m pip install -e . Then run the tests with pip install -r requirements-dev.txt; make\nTo run code style checks: make lint\nCiting SGMCMCJax Please use the following bibtex reference to cite this repository:\n@article{Coullon2022, doi = {10.21105/joss.04113}, url = {https://doi.org/10.21105/joss.04113}, year = {2022}, publisher = {The Open Journal}, volume = {7}, number = {72}, pages = {4113}, author = {Jeremie Coullon and Christopher Nemeth}, title = {SGMCMCJax: a lightweight JAX library for stochastic gradient Markov chain Monte Carlo algorithms}, journal = {Journal of Open Source Software} } ",
   "wordCount" : "350",
   "inLanguage": "en",
-  "image":"https://chris-nemeth.github.io/all_PMF_ksd_curves.png","datePublished": "2024-08-07T00:00:00Z",
+  "image":"http://localhost:1313/all_PMF_ksd_curves.png","datePublished": "2024-08-07T00:00:00Z",
   "dateModified": "2024-08-07T00:00:00Z",
   "author":[{
     "@type": "Person",
@@ -84,14 +84,14 @@
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://chris-nemeth.github.io/software/sgmcmcjax/"
+    "@id": "http://localhost:1313/software/sgmcmcjax/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Chris Nemeth",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://chris-nemeth.github.io/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -132,8 +132,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
-                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Nemeth">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
                     height="18"
                     width="18">Chris Nemeth</a>
             <div class="logo-switches">
@@ -141,32 +141,32 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                <a href="http://localhost:1313/papers/" title="Papers">
                     <span>Papers</span>
                 </a>
             </li>
             <li>
-                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                <a href="http://localhost:1313/code_and_software/" title="Code">
                     <span>Code</span>
                 </a>
             </li>
             <li>
-                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                <a href="http://localhost:1313/software/" title="Software">
                     <span>Software</span>
                 </a>
             </li>
             <li>
-                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                <a href="http://localhost:1313/books/" title="Books">
                     <span>Books</span>
                 </a>
             </li>
             <li>
-                <a href="https://chris-nemeth.github.io/blogs/" title="Blog">
+                <a href="http://localhost:1313/blogs/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                <a href="http://localhost:1313/research_group/" title="Group">
                     <span>Group</span>
                 </a>
             </li>
@@ -299,17 +299,17 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/">Stochastic Gradient MCMC</a></li>
-      <li><a href="https://chris-nemeth.github.io/tags/sgmcmc/">SGMCMC</a></li>
-      <li><a href="https://chris-nemeth.github.io/tags/jax/">Jax</a></li>
-      <li><a href="https://chris-nemeth.github.io/tags/python/">Python</a></li>
+      <li><a href="http://localhost:1313/tags/stochastic-gradient-mcmc/">Stochastic Gradient MCMC</a></li>
+      <li><a href="http://localhost:1313/tags/sgmcmc/">SGMCMC</a></li>
+      <li><a href="http://localhost:1313/tags/jax/">Jax</a></li>
+      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>&copy; 2025 <a href="http://localhost:1313/">Chris Nemeth</a></span> ·     
     <span>
     Powered by 
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

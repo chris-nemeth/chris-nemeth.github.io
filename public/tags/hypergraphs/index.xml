@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hypergraphs on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/hypergraphs/</link>
+    <link>http://localhost:1313/tags/hypergraphs/</link>
     <description>Recent content in Hypergraphs on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/hypergraphs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hypergraphs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Latent space modelling of hypergraph data</title>
-      <link>https://chris-nemeth.github.io/papers/2023-09-25-lsm-hyper/</link>
+      <link>http://localhost:1313/papers/2023-09-25-lsm-hyper/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2023-09-25-lsm-hyper/</guid>
+      <guid>http://localhost:1313/papers/2023-09-25-lsm-hyper/</guid>
       <description> </description>
     </item>
     <item>
       <title>Gaussian processes on hypergraphs</title>
-      <link>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</link>
+      <link>http://localhost:1313/papers/2021-06-03-gp-hypergraphs/</link>
       <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</guid>
+      <guid>http://localhost:1313/papers/2021-06-03-gp-hypergraphs/</guid>
       <description> </description>
     </item>
   </channel>

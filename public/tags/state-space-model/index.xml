@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>State Space Model on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/state-space-model/</link>
+    <link>http://localhost:1313/tags/state-space-model/</link>
     <description>Recent content in State Space Model on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/state-space-model/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/state-space-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stochastic Gradient MCMC for Nonlinear State Space Models</title>
-      <link>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</link>
+      <link>http://localhost:1313/papers/2023-06-08-sgmcmc-nonlinear-ssm/</link>
       <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</guid>
+      <guid>http://localhost:1313/papers/2023-06-08-sgmcmc-nonlinear-ssm/</guid>
       <description> </description>
     </item>
   </channel>

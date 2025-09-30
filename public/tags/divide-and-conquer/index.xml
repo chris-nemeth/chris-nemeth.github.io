@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Divide and Conquer on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/divide-and-conquer/</link>
+    <link>http://localhost:1313/tags/divide-and-conquer/</link>
     <description>Recent content in Divide and Conquer on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/divide-and-conquer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/divide-and-conquer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diffusion Generative Modelling for Divide-and-Conquer MCMC</title>
-      <link>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</link>
+      <link>http://localhost:1313/papers/2024-06-18-diff-div-conq/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</guid>
+      <guid>http://localhost:1313/papers/2024-06-18-diff-div-conq/</guid>
       <description> </description>
     </item>
     <item>
       <title>SwISS: A scalable Markov chain Monte Carlo divide-and-conquer strategy</title>
-      <link>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</link>
+      <link>http://localhost:1313/papers/2022-11-04-swiss/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</guid>
+      <guid>http://localhost:1313/papers/2022-11-04-swiss/</guid>
       <description> </description>
     </item>
     <item>
       <title>Merging MCMC Subposteriors through Gaussian-Process Approximations</title>
-      <link>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</link>
+      <link>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</guid>
+      <guid>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</guid>
       <description> </description>
     </item>
   </channel>

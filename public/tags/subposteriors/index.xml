@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Subposteriors on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/subposteriors/</link>
+    <link>http://localhost:1313/tags/subposteriors/</link>
     <description>Recent content in Subposteriors on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/subposteriors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/subposteriors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Merging MCMC Subposteriors through Gaussian-Process Approximations</title>
-      <link>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</link>
+      <link>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</guid>
+      <guid>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</guid>
       <description> </description>
     </item>
   </channel>

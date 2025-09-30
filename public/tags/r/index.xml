@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>R on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/r/</link>
+    <link>http://localhost:1313/tags/r/</link>
     <description>Recent content in R on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sgmcmc: An R package for stochastic gradient Markov chain Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</link>
+      <link>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</guid>
+      <guid>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</guid>
       <description> </description>
     </item>
   </channel>

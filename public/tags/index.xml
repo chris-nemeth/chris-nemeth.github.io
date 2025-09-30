@@ -2,682 +2,682 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Distance Metrics</title>
-      <link>https://chris-nemeth.github.io/tags/distance-metrics/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/distance-metrics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Interaction Network</title>
-      <link>https://chris-nemeth.github.io/tags/interaction-network/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/interaction-network/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markov Chain Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCMC</title>
-      <link>https://chris-nemeth.github.io/tags/mcmc/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/mcmc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Network Model</title>
-      <link>https://chris-nemeth.github.io/tags/network-model/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/network-model/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bayesian</title>
-      <link>https://chris-nemeth.github.io/tags/bayesian/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/bayesian/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/monte-carlo/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/monte-carlo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalable</title>
-      <link>https://chris-nemeth.github.io/tags/scalable/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/scalable/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gas Emmissions</title>
-      <link>https://chris-nemeth.github.io/tags/gas-emmissions/</link>
-      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/gas-emmissions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inverse Modelling</title>
-      <link>https://chris-nemeth.github.io/tags/inverse-modelling/</link>
-      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/inverse-modelling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Flow Matching</title>
-      <link>https://chris-nemeth.github.io/tags/flow-matching/</link>
-      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/flow-matching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Normalizing Flows</title>
-      <link>https://chris-nemeth.github.io/tags/normalizing-flows/</link>
-      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/normalizing-flows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sampling</title>
-      <link>https://chris-nemeth.github.io/tags/sampling/</link>
-      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sampling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Control Variates</title>
-      <link>https://chris-nemeth.github.io/tags/control-variates/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/control-variates/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cox-Ingersoll-Ross Process</title>
-      <link>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/cox-ingersoll-ross-process/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Probability Simplex</title>
-      <link>https://chris-nemeth.github.io/tags/probability-simplex/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/probability-simplex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalable Subsampling</title>
-      <link>https://chris-nemeth.github.io/tags/scalable-subsampling/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/scalable-subsampling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Stochastic Gradient MCMC</title>
-      <link>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gradient Flows</title>
-      <link>https://chris-nemeth.github.io/tags/gradient-flows/</link>
-      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/gradient-flows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Optimization</title>
-      <link>https://chris-nemeth.github.io/tags/optimization/</link>
-      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/optimization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coin Betting</title>
-      <link>https://chris-nemeth.github.io/tags/coin-betting/</link>
-      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/coin-betting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coin Sampling</title>
-      <link>https://chris-nemeth.github.io/tags/coin-sampling/</link>
-      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/coin-sampling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning-Rate-Free</title>
-      <link>https://chris-nemeth.github.io/tags/learning-rate-free/</link>
-      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/learning-rate-free/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gaussian Processes</title>
-      <link>https://chris-nemeth.github.io/tags/gaussian-processes/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/gaussian-processes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Jax</title>
-      <link>https://chris-nemeth.github.io/tags/jax/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/jax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Julia</title>
-      <link>https://chris-nemeth.github.io/tags/julia/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/julia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://chris-nemeth.github.io/tags/python/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SGMCMC</title>
-      <link>https://chris-nemeth.github.io/tags/sgmcmc/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sgmcmc/</guid>
+      <link>http://localhost:1313/tags/gas-emmissions/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gas-emmissions/</guid>
       <description></description>
     </item>
     <item>
       <title>Gaussian Plume Model</title>
-      <link>https://chris-nemeth.github.io/tags/gaussian-plume-model/</link>
-      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/gaussian-plume-model/</guid>
+      <link>http://localhost:1313/tags/gaussian-plume-model/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gaussian-plume-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inverse Modelling</title>
+      <link>http://localhost:1313/tags/inverse-modelling/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/inverse-modelling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markov Chain Monte Carlo</title>
+      <link>http://localhost:1313/tags/markov-chain-monte-carlo/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/markov-chain-monte-carlo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distance Metrics</title>
+      <link>http://localhost:1313/tags/distance-metrics/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/distance-metrics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interaction Network</title>
+      <link>http://localhost:1313/tags/interaction-network/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/interaction-network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCMC</title>
+      <link>http://localhost:1313/tags/mcmc/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Model</title>
+      <link>http://localhost:1313/tags/network-model/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/network-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayesian</title>
+      <link>http://localhost:1313/tags/bayesian/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bayesian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monte Carlo</title>
+      <link>http://localhost:1313/tags/monte-carlo/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/monte-carlo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable</title>
+      <link>http://localhost:1313/tags/scalable/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scalable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flow Matching</title>
+      <link>http://localhost:1313/tags/flow-matching/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flow-matching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Normalizing Flows</title>
+      <link>http://localhost:1313/tags/normalizing-flows/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/normalizing-flows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sampling</title>
+      <link>http://localhost:1313/tags/sampling/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control Variates</title>
+      <link>http://localhost:1313/tags/control-variates/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/control-variates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cox-Ingersoll-Ross Process</title>
+      <link>http://localhost:1313/tags/cox-ingersoll-ross-process/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cox-ingersoll-ross-process/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probability Simplex</title>
+      <link>http://localhost:1313/tags/probability-simplex/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/probability-simplex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable Subsampling</title>
+      <link>http://localhost:1313/tags/scalable-subsampling/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scalable-subsampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stochastic Gradient MCMC</title>
+      <link>http://localhost:1313/tags/stochastic-gradient-mcmc/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stochastic-gradient-mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gradient Flows</title>
+      <link>http://localhost:1313/tags/gradient-flows/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gradient-flows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>http://localhost:1313/tags/optimization/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coin Betting</title>
+      <link>http://localhost:1313/tags/coin-betting/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/coin-betting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coin Sampling</title>
+      <link>http://localhost:1313/tags/coin-sampling/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/coin-sampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning-Rate-Free</title>
+      <link>http://localhost:1313/tags/learning-rate-free/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/learning-rate-free/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gaussian Processes</title>
+      <link>http://localhost:1313/tags/gaussian-processes/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gaussian-processes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jax</title>
+      <link>http://localhost:1313/tags/jax/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jax/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Julia</title>
+      <link>http://localhost:1313/tags/julia/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/julia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SGMCMC</title>
+      <link>http://localhost:1313/tags/sgmcmc/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sgmcmc/</guid>
       <description></description>
     </item>
     <item>
       <title>Bayesian Deep Learning</title>
-      <link>https://chris-nemeth.github.io/tags/bayesian-deep-learning/</link>
+      <link>http://localhost:1313/tags/bayesian-deep-learning/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/bayesian-deep-learning/</guid>
+      <guid>http://localhost:1313/tags/bayesian-deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Bayesian Inference</title>
-      <link>https://chris-nemeth.github.io/tags/bayesian-inference/</link>
+      <link>http://localhost:1313/tags/bayesian-inference/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/bayesian-inference/</guid>
+      <guid>http://localhost:1313/tags/bayesian-inference/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural Networks</title>
-      <link>https://chris-nemeth.github.io/tags/neural-networks/</link>
+      <link>http://localhost:1313/tags/neural-networks/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/neural-networks/</guid>
+      <guid>http://localhost:1313/tags/neural-networks/</guid>
       <description></description>
     </item>
     <item>
       <title>Riemannian Manifold</title>
-      <link>https://chris-nemeth.github.io/tags/riemannian-manifold/</link>
+      <link>http://localhost:1313/tags/riemannian-manifold/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/riemannian-manifold/</guid>
+      <guid>http://localhost:1313/tags/riemannian-manifold/</guid>
       <description></description>
     </item>
     <item>
       <title>PDMP</title>
-      <link>https://chris-nemeth.github.io/tags/pdmp/</link>
+      <link>http://localhost:1313/tags/pdmp/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/pdmp/</guid>
+      <guid>http://localhost:1313/tags/pdmp/</guid>
       <description></description>
     </item>
     <item>
       <title>Piecewise Deterministic Markov Processes</title>
-      <link>https://chris-nemeth.github.io/tags/piecewise-deterministic-markov-processes/</link>
+      <link>http://localhost:1313/tags/piecewise-deterministic-markov-processes/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/piecewise-deterministic-markov-processes/</guid>
+      <guid>http://localhost:1313/tags/piecewise-deterministic-markov-processes/</guid>
       <description></description>
     </item>
     <item>
       <title>Diffusion Models</title>
-      <link>https://chris-nemeth.github.io/tags/diffusion-models/</link>
+      <link>http://localhost:1313/tags/diffusion-models/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/diffusion-models/</guid>
+      <guid>http://localhost:1313/tags/diffusion-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Divide and Conquer</title>
-      <link>https://chris-nemeth.github.io/tags/divide-and-conquer/</link>
+      <link>http://localhost:1313/tags/divide-and-conquer/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/divide-and-conquer/</guid>
+      <guid>http://localhost:1313/tags/divide-and-conquer/</guid>
       <description></description>
     </item>
     <item>
       <title>Robust Regression</title>
-      <link>https://chris-nemeth.github.io/tags/robust-regression/</link>
+      <link>http://localhost:1313/tags/robust-regression/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/robust-regression/</guid>
+      <guid>http://localhost:1313/tags/robust-regression/</guid>
       <description></description>
     </item>
     <item>
       <title>Variable Selection</title>
-      <link>https://chris-nemeth.github.io/tags/variable-selection/</link>
+      <link>http://localhost:1313/tags/variable-selection/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/variable-selection/</guid>
+      <guid>http://localhost:1313/tags/variable-selection/</guid>
       <description></description>
     </item>
     <item>
       <title>Latent Variable Model</title>
-      <link>https://chris-nemeth.github.io/tags/latent-variable-model/</link>
+      <link>http://localhost:1313/tags/latent-variable-model/</link>
       <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/latent-variable-model/</guid>
+      <guid>http://localhost:1313/tags/latent-variable-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Maximum Likelihood Estimation</title>
-      <link>https://chris-nemeth.github.io/tags/maximum-likelihood-estimation/</link>
+      <link>http://localhost:1313/tags/maximum-likelihood-estimation/</link>
       <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/maximum-likelihood-estimation/</guid>
+      <guid>http://localhost:1313/tags/maximum-likelihood-estimation/</guid>
       <description></description>
     </item>
     <item>
       <title>Particle Variational Inference</title>
-      <link>https://chris-nemeth.github.io/tags/particle-variational-inference/</link>
+      <link>http://localhost:1313/tags/particle-variational-inference/</link>
       <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/particle-variational-inference/</guid>
+      <guid>http://localhost:1313/tags/particle-variational-inference/</guid>
       <description></description>
     </item>
     <item>
       <title>Gaussian Process</title>
-      <link>https://chris-nemeth.github.io/tags/gaussian-process/</link>
+      <link>http://localhost:1313/tags/gaussian-process/</link>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/gaussian-process/</guid>
+      <guid>http://localhost:1313/tags/gaussian-process/</guid>
       <description></description>
     </item>
     <item>
       <title>Spatial Modelling</title>
-      <link>https://chris-nemeth.github.io/tags/spatial-modelling/</link>
+      <link>http://localhost:1313/tags/spatial-modelling/</link>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/spatial-modelling/</guid>
+      <guid>http://localhost:1313/tags/spatial-modelling/</guid>
       <description></description>
     </item>
     <item>
       <title>Hypergraphs</title>
-      <link>https://chris-nemeth.github.io/tags/hypergraphs/</link>
+      <link>http://localhost:1313/tags/hypergraphs/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/hypergraphs/</guid>
+      <guid>http://localhost:1313/tags/hypergraphs/</guid>
       <description></description>
     </item>
     <item>
       <title>Latent Space Modelling</title>
-      <link>https://chris-nemeth.github.io/tags/latent-space-modelling/</link>
+      <link>http://localhost:1313/tags/latent-space-modelling/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/latent-space-modelling/</guid>
+      <guid>http://localhost:1313/tags/latent-space-modelling/</guid>
       <description></description>
     </item>
     <item>
       <title>Parallel MCMC</title>
-      <link>https://chris-nemeth.github.io/tags/parallel-mcmc/</link>
+      <link>http://localhost:1313/tags/parallel-mcmc/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/parallel-mcmc/</guid>
+      <guid>http://localhost:1313/tags/parallel-mcmc/</guid>
       <description></description>
     </item>
     <item>
       <title>Constrained Sampling</title>
-      <link>https://chris-nemeth.github.io/tags/constrained-sampling/</link>
+      <link>http://localhost:1313/tags/constrained-sampling/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/constrained-sampling/</guid>
+      <guid>http://localhost:1313/tags/constrained-sampling/</guid>
       <description></description>
     </item>
     <item>
       <title>Mirror Descent</title>
-      <link>https://chris-nemeth.github.io/tags/mirror-descent/</link>
+      <link>http://localhost:1313/tags/mirror-descent/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/mirror-descent/</guid>
+      <guid>http://localhost:1313/tags/mirror-descent/</guid>
       <description></description>
     </item>
     <item>
       <title>Changepoints</title>
-      <link>https://chris-nemeth.github.io/tags/changepoints/</link>
+      <link>http://localhost:1313/tags/changepoints/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/changepoints/</guid>
+      <guid>http://localhost:1313/tags/changepoints/</guid>
       <description></description>
     </item>
     <item>
       <title>Soil</title>
-      <link>https://chris-nemeth.github.io/tags/soil/</link>
+      <link>http://localhost:1313/tags/soil/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/soil/</guid>
+      <guid>http://localhost:1313/tags/soil/</guid>
       <description></description>
     </item>
     <item>
       <title>Time Series</title>
-      <link>https://chris-nemeth.github.io/tags/time-series/</link>
+      <link>http://localhost:1313/tags/time-series/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/time-series/</guid>
+      <guid>http://localhost:1313/tags/time-series/</guid>
       <description></description>
     </item>
     <item>
       <title>Greenland</title>
-      <link>https://chris-nemeth.github.io/tags/greenland/</link>
+      <link>http://localhost:1313/tags/greenland/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/greenland/</guid>
+      <guid>http://localhost:1313/tags/greenland/</guid>
       <description></description>
     </item>
     <item>
       <title>Hidden Markov Model</title>
-      <link>https://chris-nemeth.github.io/tags/hidden-markov-model/</link>
+      <link>http://localhost:1313/tags/hidden-markov-model/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/hidden-markov-model/</guid>
+      <guid>http://localhost:1313/tags/hidden-markov-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Ice Sheet</title>
-      <link>https://chris-nemeth.github.io/tags/ice-sheet/</link>
+      <link>http://localhost:1313/tags/ice-sheet/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/ice-sheet/</guid>
+      <guid>http://localhost:1313/tags/ice-sheet/</guid>
       <description></description>
     </item>
     <item>
       <title>SVGD</title>
-      <link>https://chris-nemeth.github.io/tags/svgd/</link>
+      <link>http://localhost:1313/tags/svgd/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/svgd/</guid>
+      <guid>http://localhost:1313/tags/svgd/</guid>
       <description></description>
     </item>
     <item>
       <title>State Space Model</title>
-      <link>https://chris-nemeth.github.io/tags/state-space-model/</link>
+      <link>http://localhost:1313/tags/state-space-model/</link>
       <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/state-space-model/</guid>
+      <guid>http://localhost:1313/tags/state-space-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Stochastic Gradient</title>
-      <link>https://chris-nemeth.github.io/tags/stochastic-gradient/</link>
+      <link>http://localhost:1313/tags/stochastic-gradient/</link>
       <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/stochastic-gradient/</guid>
+      <guid>http://localhost:1313/tags/stochastic-gradient/</guid>
       <description></description>
     </item>
     <item>
       <title>Elliptical Slice Sampling</title>
-      <link>https://chris-nemeth.github.io/tags/elliptical-slice-sampling/</link>
+      <link>http://localhost:1313/tags/elliptical-slice-sampling/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/elliptical-slice-sampling/</guid>
+      <guid>http://localhost:1313/tags/elliptical-slice-sampling/</guid>
       <description></description>
     </item>
     <item>
       <title>Normalizing Flow</title>
-      <link>https://chris-nemeth.github.io/tags/normalizing-flow/</link>
+      <link>http://localhost:1313/tags/normalizing-flow/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/normalizing-flow/</guid>
+      <guid>http://localhost:1313/tags/normalizing-flow/</guid>
       <description></description>
     </item>
     <item>
       <title>Preferential Subsampling</title>
-      <link>https://chris-nemeth.github.io/tags/preferential-subsampling/</link>
+      <link>http://localhost:1313/tags/preferential-subsampling/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/preferential-subsampling/</guid>
+      <guid>http://localhost:1313/tags/preferential-subsampling/</guid>
       <description></description>
     </item>
     <item>
       <title>SGLD</title>
-      <link>https://chris-nemeth.github.io/tags/sgld/</link>
+      <link>http://localhost:1313/tags/sgld/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sgld/</guid>
+      <guid>http://localhost:1313/tags/sgld/</guid>
       <description></description>
     </item>
     <item>
       <title>Stochastic Gradient Langevin Dynamics</title>
-      <link>https://chris-nemeth.github.io/tags/stochastic-gradient-langevin-dynamics/</link>
+      <link>http://localhost:1313/tags/stochastic-gradient-langevin-dynamics/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/stochastic-gradient-langevin-dynamics/</guid>
+      <guid>http://localhost:1313/tags/stochastic-gradient-langevin-dynamics/</guid>
       <description></description>
     </item>
     <item>
       <title>Climate Model</title>
-      <link>https://chris-nemeth.github.io/tags/climate-model/</link>
+      <link>http://localhost:1313/tags/climate-model/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/climate-model/</guid>
+      <guid>http://localhost:1313/tags/climate-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Emulation</title>
-      <link>https://chris-nemeth.github.io/tags/emulation/</link>
+      <link>http://localhost:1313/tags/emulation/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/emulation/</guid>
+      <guid>http://localhost:1313/tags/emulation/</guid>
       <description></description>
     </item>
     <item>
       <title>Latent Space Model</title>
-      <link>https://chris-nemeth.github.io/tags/latent-space-model/</link>
+      <link>http://localhost:1313/tags/latent-space-model/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/latent-space-model/</guid>
+      <guid>http://localhost:1313/tags/latent-space-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Sequential Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</link>
+      <link>http://localhost:1313/tags/sequential-monte-carlo/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</guid>
+      <guid>http://localhost:1313/tags/sequential-monte-carlo/</guid>
       <description></description>
     </item>
     <item>
       <title>Multisets</title>
-      <link>https://chris-nemeth.github.io/tags/multisets/</link>
+      <link>http://localhost:1313/tags/multisets/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/multisets/</guid>
+      <guid>http://localhost:1313/tags/multisets/</guid>
       <description></description>
     </item>
     <item>
       <title>Monte Carlo Integration</title>
-      <link>https://chris-nemeth.github.io/tags/monte-carlo-integration/</link>
+      <link>http://localhost:1313/tags/monte-carlo-integration/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/monte-carlo-integration/</guid>
+      <guid>http://localhost:1313/tags/monte-carlo-integration/</guid>
       <description></description>
     </item>
     <item>
       <title>Sard&#39;s Method</title>
-      <link>https://chris-nemeth.github.io/tags/sards-method/</link>
+      <link>http://localhost:1313/tags/sards-method/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sards-method/</guid>
+      <guid>http://localhost:1313/tags/sards-method/</guid>
       <description></description>
     </item>
     <item>
       <title>Stein&#39;s Method</title>
-      <link>https://chris-nemeth.github.io/tags/steins-method/</link>
+      <link>http://localhost:1313/tags/steins-method/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/steins-method/</guid>
+      <guid>http://localhost:1313/tags/steins-method/</guid>
       <description></description>
     </item>
     <item>
       <title>Nonparametric Functions</title>
-      <link>https://chris-nemeth.github.io/tags/nonparametric-functions/</link>
+      <link>http://localhost:1313/tags/nonparametric-functions/</link>
       <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/nonparametric-functions/</guid>
+      <guid>http://localhost:1313/tags/nonparametric-functions/</guid>
       <description></description>
     </item>
     <item>
       <title>Air Quality</title>
-      <link>https://chris-nemeth.github.io/tags/air-quality/</link>
+      <link>http://localhost:1313/tags/air-quality/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/air-quality/</guid>
+      <guid>http://localhost:1313/tags/air-quality/</guid>
       <description></description>
     </item>
     <item>
       <title>Covid-19</title>
-      <link>https://chris-nemeth.github.io/tags/covid-19/</link>
+      <link>http://localhost:1313/tags/covid-19/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/covid-19/</guid>
+      <guid>http://localhost:1313/tags/covid-19/</guid>
       <description></description>
     </item>
     <item>
       <title>Lockdown</title>
-      <link>https://chris-nemeth.github.io/tags/lockdown/</link>
+      <link>http://localhost:1313/tags/lockdown/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/lockdown/</guid>
+      <guid>http://localhost:1313/tags/lockdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Firn Densification</title>
-      <link>https://chris-nemeth.github.io/tags/firn-densification/</link>
+      <link>http://localhost:1313/tags/firn-densification/</link>
       <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/firn-densification/</guid>
+      <guid>http://localhost:1313/tags/firn-densification/</guid>
       <description></description>
     </item>
     <item>
       <title>Multi-Modal Distributions</title>
-      <link>https://chris-nemeth.github.io/tags/multi-modal-distributions/</link>
+      <link>http://localhost:1313/tags/multi-modal-distributions/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/multi-modal-distributions/</guid>
+      <guid>http://localhost:1313/tags/multi-modal-distributions/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>https://chris-nemeth.github.io/tags/r/</link>
+      <link>http://localhost:1313/tags/r/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/r/</guid>
+      <guid>http://localhost:1313/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>Subposteriors</title>
-      <link>https://chris-nemeth.github.io/tags/subposteriors/</link>
+      <link>http://localhost:1313/tags/subposteriors/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/subposteriors/</guid>
+      <guid>http://localhost:1313/tags/subposteriors/</guid>
       <description></description>
     </item>
     <item>
       <title>Particle Filters</title>
-      <link>https://chris-nemeth.github.io/tags/particle-filters/</link>
+      <link>http://localhost:1313/tags/particle-filters/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/particle-filters/</guid>
+      <guid>http://localhost:1313/tags/particle-filters/</guid>
       <description></description>
     </item>
     <item>
       <title>SMC</title>
-      <link>https://chris-nemeth.github.io/tags/smc/</link>
+      <link>http://localhost:1313/tags/smc/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/smc/</guid>
+      <guid>http://localhost:1313/tags/smc/</guid>
       <description></description>
     </item>
     <item>
       <title>State-Space Models</title>
-      <link>https://chris-nemeth.github.io/tags/state-space-models/</link>
+      <link>http://localhost:1313/tags/state-space-models/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/state-space-models/</guid>
+      <guid>http://localhost:1313/tags/state-space-models/</guid>
       <description></description>
     </item>
     <item>
       <title>MALA</title>
-      <link>https://chris-nemeth.github.io/tags/mala/</link>
+      <link>http://localhost:1313/tags/mala/</link>
       <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/mala/</guid>
+      <guid>http://localhost:1313/tags/mala/</guid>
       <description></description>
     </item>
     <item>
       <title>Metropolis-Adjusted Langevin Algorithm</title>
-      <link>https://chris-nemeth.github.io/tags/metropolis-adjusted-langevin-algorithm/</link>
+      <link>http://localhost:1313/tags/metropolis-adjusted-langevin-algorithm/</link>
       <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/metropolis-adjusted-langevin-algorithm/</guid>
+      <guid>http://localhost:1313/tags/metropolis-adjusted-langevin-algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Bearings-Only Tracking</title>
-      <link>https://chris-nemeth.github.io/tags/bearings-only-tracking/</link>
+      <link>http://localhost:1313/tags/bearings-only-tracking/</link>
       <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/bearings-only-tracking/</guid>
+      <guid>http://localhost:1313/tags/bearings-only-tracking/</guid>
       <description></description>
     </item>
     <item>
       <title>Parameter Estimation</title>
-      <link>https://chris-nemeth.github.io/tags/parameter-estimation/</link>
+      <link>http://localhost:1313/tags/parameter-estimation/</link>
       <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/parameter-estimation/</guid>
+      <guid>http://localhost:1313/tags/parameter-estimation/</guid>
       <description></description>
     </item>
     <item>
       <title>Target Tracking</title>
-      <link>https://chris-nemeth.github.io/tags/target-tracking/</link>
+      <link>http://localhost:1313/tags/target-tracking/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/target-tracking/</guid>
+      <guid>http://localhost:1313/tags/target-tracking/</guid>
       <description></description>
     </item>
     <item>
       <title>Irregular Verbs</title>
-      <link>https://chris-nemeth.github.io/tags/irregular-verbs/</link>
+      <link>http://localhost:1313/tags/irregular-verbs/</link>
       <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/irregular-verbs/</guid>
+      <guid>http://localhost:1313/tags/irregular-verbs/</guid>
       <description></description>
     </item>
     <item>
       <title>Philology</title>
-      <link>https://chris-nemeth.github.io/tags/philology/</link>
+      <link>http://localhost:1313/tags/philology/</link>
       <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/philology/</guid>
+      <guid>http://localhost:1313/tags/philology/</guid>
       <description></description>
     </item>
     <item>
       <title>Portuguese</title>
-      <link>https://chris-nemeth.github.io/tags/portuguese/</link>
+      <link>http://localhost:1313/tags/portuguese/</link>
       <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/portuguese/</guid>
+      <guid>http://localhost:1313/tags/portuguese/</guid>
       <description></description>
     </item>
     <item>
       <title>Romance Languages</title>
-      <link>https://chris-nemeth.github.io/tags/romance-languages/</link>
+      <link>http://localhost:1313/tags/romance-languages/</link>
       <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/romance-languages/</guid>
+      <guid>http://localhost:1313/tags/romance-languages/</guid>
       <description></description>
     </item>
     <item>
       <title>Spanish</title>
-      <link>https://chris-nemeth.github.io/tags/spanish/</link>
+      <link>http://localhost:1313/tags/spanish/</link>
       <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/spanish/</guid>
+      <guid>http://localhost:1313/tags/spanish/</guid>
       <description></description>
     </item>
     <item>
       <title>Celtic Languages</title>
-      <link>https://chris-nemeth.github.io/tags/celtic-languages/</link>
+      <link>http://localhost:1313/tags/celtic-languages/</link>
       <pubDate>Sat, 16 Jun 1990 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/celtic-languages/</guid>
+      <guid>http://localhost:1313/tags/celtic-languages/</guid>
       <description></description>
     </item>
     <item>
       <title>Irish</title>
-      <link>https://chris-nemeth.github.io/tags/irish/</link>
+      <link>http://localhost:1313/tags/irish/</link>
       <pubDate>Sat, 16 Jun 1990 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/irish/</guid>
+      <guid>http://localhost:1313/tags/irish/</guid>
       <description></description>
     </item>
     <item>
       <title>Language Modernization</title>
-      <link>https://chris-nemeth.github.io/tags/language-modernization/</link>
+      <link>http://localhost:1313/tags/language-modernization/</link>
       <pubDate>Sat, 16 Jun 1990 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/language-modernization/</guid>
+      <guid>http://localhost:1313/tags/language-modernization/</guid>
       <description></description>
     </item>
     <item>
       <title>Profanity</title>
-      <link>https://chris-nemeth.github.io/tags/profanity/</link>
+      <link>http://localhost:1313/tags/profanity/</link>
       <pubDate>Sat, 16 Jun 1990 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/profanity/</guid>
+      <guid>http://localhost:1313/tags/profanity/</guid>
       <description></description>
     </item>
   </channel>

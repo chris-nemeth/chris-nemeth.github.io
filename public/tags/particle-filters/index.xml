@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Particle Filters on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/particle-filters/</link>
+    <link>http://localhost:1313/tags/particle-filters/</link>
     <description>Recent content in Particle Filters on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/particle-filters/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/particle-filters/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Particle approximations of the score and observed information matrix for parameter estimation in state–space models with linear computational cost</title>
-      <link>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</link>
+      <link>http://localhost:1313/papers/2016-10-01-particle-score/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</guid>
+      <guid>http://localhost:1313/papers/2016-10-01-particle-score/</guid>
       <description> </description>
     </item>
     <item>
       <title>Particle Metropolis-adjusted Langevin algorithms</title>
-      <link>https://chris-nemeth.github.io/papers/2016-08-25-pmala/</link>
+      <link>http://localhost:1313/papers/2016-08-25-pmala/</link>
       <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2016-08-25-pmala/</guid>
+      <guid>http://localhost:1313/papers/2016-08-25-pmala/</guid>
       <description> </description>
     </item>
     <item>
       <title>Parameter estimation for state space models using sequential Monte Carlo algorithms</title>
-      <link>https://chris-nemeth.github.io/papers/2014-10-01-thesis/</link>
+      <link>http://localhost:1313/papers/2014-10-01-thesis/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2014-10-01-thesis/</guid>
+      <guid>http://localhost:1313/papers/2014-10-01-thesis/</guid>
       <description> </description>
     </item>
     <item>
       <title>Sequential Monte Carlo methods for state and parameter estimation in abruptly changing environments</title>
-      <link>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</link>
+      <link>http://localhost:1313/papers/2014-04-01-smc-change/</link>
       <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</guid>
+      <guid>http://localhost:1313/papers/2014-04-01-smc-change/</guid>
       <description> </description>
     </item>
     <item>
       <title>Bearings-only tracking with particle filtering for joint parameter learning and state estimation</title>
-      <link>https://chris-nemeth.github.io/papers/2012-07-09-bearings/</link>
+      <link>http://localhost:1313/papers/2012-07-09-bearings/</link>
       <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2012-07-09-bearings/</guid>
+      <guid>http://localhost:1313/papers/2012-07-09-bearings/</guid>
       <description> </description>
     </item>
     <item>
       <title>Particle learning methods for state and parameter estimation</title>
-      <link>https://chris-nemeth.github.io/papers/2012-01-01-particle-learning/</link>
+      <link>http://localhost:1313/papers/2012-01-01-particle-learning/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2012-01-01-particle-learning/</guid>
+      <guid>http://localhost:1313/papers/2012-01-01-particle-learning/</guid>
       <description> </description>
     </item>
   </channel>

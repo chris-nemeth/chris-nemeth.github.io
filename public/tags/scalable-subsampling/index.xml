@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Scalable Subsampling on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/scalable-subsampling/</link>
+    <link>http://localhost:1313/tags/scalable-subsampling/</link>
     <description>Recent content in Scalable Subsampling on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/scalable-subsampling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/scalable-subsampling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Control Variate-based Stochastic Sampling from the Probability Simplex</title>
-      <link>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</link>
+      <link>http://localhost:1313/papers/2024-10-01-scir-cv/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</guid>
+      <guid>http://localhost:1313/papers/2024-10-01-scir-cv/</guid>
       <description> </description>
     </item>
     <item>
       <title>Metropolis-Hastings with Scalable Subsampling</title>
-      <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
+      <link>http://localhost:1313/papers/2024-07-30-mhss/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</guid>
+      <guid>http://localhost:1313/papers/2024-07-30-mhss/</guid>
       <description> </description>
     </item>
   </channel>

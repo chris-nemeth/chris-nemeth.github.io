@@ -7,7 +7,7 @@ author: ["George Bolt", "Simon Lunagomez","Christopher Nemeth"]
 description: " "
 summary: "Journal of Machine Learning Research (to appear)"
 editPost:
-    URL: "https://arxiv.org/abs/2206.09995"
+    URL: "http://jmlr.org/papers/v26/22-0706.html"
     Text: "Journal of Machine Learning Research (to appear)"
 
 ---
@@ -18,6 +18,7 @@ editPost:
 ##### Download
 
 + [arXiv](https://arxiv.org/abs/2206.09995)
++ [paper](http://jmlr.org/papers/v26/22-0706.html)
 
 
 ---
@@ -29,13 +30,18 @@ Network data arises through observation of relational information between a coll
 ---
 ##### Citation
 
-Bolt, G., Lunagomez, S. and Nemeth, C., 2025. Modelling Populations of Interaction Networks via Distance Metrics. *Journal of Machine Learning Research (to appear)*.
+Bolt, G., Lunagomez, S. and Nemeth, C., (2025). Modelling Populations of Interaction Networks via Distance Metrics. *Journal of Machine Learning Research*. Vol. 26(126), pp. 1--112. 
 
 ```BibTeX
 @article{bolt2025modelling,
   title={Modelling Populations of Interaction Networks via Distance Metrics},
-  author={Bolt, George and Lunag{\'o}mez, Sim{\'o}n and Nemeth, Christopher},
-  journal={Journal of Machine Learning Research (to appear)},
-  year={2025}
+  author  = {George Bolt and Sim{{\'o}}n Lunag{{\'o}}mez and Christopher Nemeth},
+  journal={Journal of Machine Learning Research},
+  year    = {2025},
+  volume  = {26},
+  number  = {126},
+  pages   = {1--112},
+  url     = {http://jmlr.org/papers/v26/22-0706.html}
 }
 ```
+
