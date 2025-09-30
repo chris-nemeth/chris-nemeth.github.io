@@ -1,6 +1,6 @@
 ---
 title: "Research Group"
-date: 2024-08-06
+date: 2025-09-30
 hidemeta: true
 description: "Chris Nemeth's research group"
 
@@ -10,6 +10,7 @@ description: "Chris Nemeth's research group"
 
 #### Postdoctoral Researchers
 
++ [Ant Stephenson](https://scholar.google.com/citations?user=l4tBGbwAAAAJ&hl=en): 2025 - 
 + [Louis Sharrock](https://louissharrock.github.io/): 2022 - 2025
     - Now at [UCL](https://louissharrock.github.io/)
 + [Estevao Prado](https://www.linkedin.com/in/estevão-prado-998097238/): 2022 - 2024
