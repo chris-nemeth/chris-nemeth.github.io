@@ -2,325 +2,325 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Papers on Chris Nemeth</title>
-    <link>http://localhost:1313/papers/</link>
+    <link>https://chris-nemeth.github.io/papers/</link>
     <description>Recent content in Papers on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/papers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Probabilistic Inversion Modeling of Gas Emissions: A Gradient-Based MCMC Estimation of Gaussian Plume Parameters</title>
-      <link>http://localhost:1313/papers/2024-08-02-plume/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-08-02-plume/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-08-02-plume/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-08-02-plume/</guid>
       <description> </description>
     </item>
     <item>
       <title>Modelling Populations of Interaction Networks via Distance Metrics</title>
-      <link>http://localhost:1313/papers/2022-06-20-pop-interaction-networks/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-06-20-pop-interaction-networks/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</guid>
       <description> </description>
     </item>
     <item>
       <title>Deep Learning Surrogates for Real-Time Gas Emission Inversion</title>
-      <link>http://localhost:1313/papers/2025-06-02-plume_surrogates/</link>
+      <link>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2025-06-02-plume_surrogates/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</guid>
       <description> </description>
     </item>
     <item>
       <title>Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows</title>
-      <link>http://localhost:1313/papers/2024-05-24-mfm/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</link>
       <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-05-24-mfm/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</guid>
       <description> </description>
     </item>
     <item>
       <title>Control Variate-based Stochastic Sampling from the Probability Simplex</title>
-      <link>http://localhost:1313/papers/2024-10-01-scir-cv/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-10-01-scir-cv/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</guid>
       <description> </description>
     </item>
     <item>
       <title>Metropolis-Hastings with Scalable Subsampling</title>
-      <link>http://localhost:1313/papers/2024-07-30-mhss/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-07-30-mhss/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</guid>
       <description> </description>
     </item>
     <item>
       <title>Learning-Rate-Free Stochastic Optimization over Riemannian Manifolds</title>
-      <link>http://localhost:1313/papers/2024-06-05-rdog/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-06-05-rdog/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</guid>
       <description> </description>
     </item>
     <item>
       <title>Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI</title>
-      <link>http://localhost:1313/papers/2024-02-06-bdl/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-02-06-bdl/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-02-06-bdl/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-02-06-bdl/</guid>
       <description> </description>
     </item>
     <item>
       <title>Stochastic Gradient Piecewise Deterministic Monte Carlo Samplers</title>
-      <link>http://localhost:1313/papers/2024-06-28-spdmps/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-06-28-spdmps/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-06-28-spdmps/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-06-28-spdmps/</guid>
       <description> </description>
     </item>
     <item>
       <title>Diffusion Generative Modelling for Divide-and-Conquer MCMC</title>
-      <link>http://localhost:1313/papers/2024-06-18-diff-div-conq/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-06-18-diff-div-conq/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</guid>
       <description> </description>
     </item>
     <item>
       <title>Robust Bayesian Nonparametric Variable Selection for Linear Regression</title>
-      <link>http://localhost:1313/papers/2021-05-23-robust-bnp-variable/</link>
+      <link>https://chris-nemeth.github.io/papers/2021-05-23-robust-bnp-variable/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2021-05-23-robust-bnp-variable/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2021-05-23-robust-bnp-variable/</guid>
       <description> </description>
     </item>
     <item>
       <title>Tuning-Free Maximum Likelihood Training of Latent Variable Models via Coin Betting</title>
-      <link>http://localhost:1313/papers/2023-05-25-coinem/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</link>
       <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-05-25-coinem/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</guid>
       <description> </description>
     </item>
     <item>
       <title>Spatial Latent Gaussian Modelling with Change of Support</title>
-      <link>http://localhost:1313/papers/2024-03-14-gp-cos/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-03-14-gp-cos/</link>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-03-14-gp-cos/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-03-14-gp-cos/</guid>
       <description> </description>
     </item>
     <item>
       <title>Latent space modelling of hypergraph data</title>
-      <link>http://localhost:1313/papers/2023-09-25-lsm-hyper/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-09-25-lsm-hyper/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-09-25-lsm-hyper/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-09-25-lsm-hyper/</guid>
       <description> </description>
     </item>
     <item>
       <title>SwISS: A scalable Markov chain Monte Carlo divide-and-conquer strategy</title>
-      <link>http://localhost:1313/papers/2022-11-04-swiss/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-11-04-swiss/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</guid>
       <description> </description>
     </item>
     <item>
       <title>Learning Rate Free Sampling in Constrained Domains</title>
-      <link>http://localhost:1313/papers/2023-09-21-mirror-coin/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-09-21-mirror-coin/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-09-21-mirror-coin/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-09-21-mirror-coin/</guid>
       <description> </description>
     </item>
     <item>
       <title>A changepoint approach to modelling non-stationary soil moisture dynamics</title>
-      <link>http://localhost:1313/papers/2023-10-30-soil-changepoints/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-10-30-soil-changepoints/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</guid>
       <description> </description>
     </item>
     <item>
       <title>Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data</title>
-      <link>http://localhost:1313/papers/2023-08-31-ice-sheet/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-08-31-ice-sheet/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</guid>
       <description> </description>
     </item>
     <item>
       <title>Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates</title>
-      <link>http://localhost:1313/papers/2023-04-24-coin-sampling/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-04-24-coin-sampling/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</guid>
       <description> </description>
     </item>
     <item>
       <title>Stochastic Gradient MCMC for Nonlinear State Space Models</title>
-      <link>http://localhost:1313/papers/2023-06-08-sgmcmc-nonlinear-ssm/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</link>
       <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-06-08-sgmcmc-nonlinear-ssm/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</guid>
       <description> </description>
     </item>
     <item>
       <title>Preferential Subsampling for Stochastic Gradient Langevin Dynamics</title>
-      <link>http://localhost:1313/papers/2023-04-13-preferential-sgld/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-04-13-preferential-sgld/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/</guid>
       <description> </description>
     </item>
     <item>
       <title>Transport Elliptical Slice Sampling</title>
-      <link>http://localhost:1313/papers/2023-04-13-transport-ess/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-04-13-transport-ess/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-04-13-transport-ess/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-13-transport-ess/</guid>
       <description> </description>
     </item>
     <item>
       <title>Multivariate sensitivity analysis for a large-scale climate impact and adaptation model</title>
-      <link>http://localhost:1313/papers/2023-04-05-mv-sensitivity/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-04-05-mv-sensitivity/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-04-05-mv-sensitivity/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-05-mv-sensitivity/</guid>
       <description> </description>
     </item>
     <item>
       <title>Efficient and generalizable tuning strategies for stochastic gradient MCMC</title>
-      <link>http://localhost:1313/papers/2023-04-04-tuning-sgmcmc/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-04-04-tuning-sgmcmc/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-04-04-tuning-sgmcmc/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-04-04-tuning-sgmcmc/</guid>
       <description> </description>
     </item>
     <item>
       <title>Sequential Estimation of Temporally Evolving Latent Space Network Models</title>
-      <link>http://localhost:1313/papers/2022-09-25-seq-lsnm/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-09-25-seq-lsnm/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-09-25-seq-lsnm/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-09-25-seq-lsnm/</guid>
       <description> </description>
     </item>
     <item>
       <title>Distances for Comparing Multisets and Sequences</title>
-      <link>http://localhost:1313/papers/2022-06-17-distance-multisets/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-06-17-distance-multisets/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-06-17-distance-multisets/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-06-17-distance-multisets/</guid>
       <description> </description>
     </item>
     <item>
       <title>Semi-exact control functionals from Sard’s method</title>
-      <link>http://localhost:1313/papers/2022-06-01-semi-exact-cf/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-06-01-semi-exact-cf/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-06-01-semi-exact-cf/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-06-01-semi-exact-cf/</guid>
       <description> </description>
     </item>
     <item>
       <title>GaussianProcesses.jl: A Nonparametric Bayes Package for the Julia Language</title>
-      <link>http://localhost:1313/papers/2022-04-30-gpjl/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</link>
       <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-04-30-gpjl/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-30-gpjl/</guid>
       <description> </description>
     </item>
     <item>
       <title>SGMCMCJax: a lightweight JAX library for stochastic gradient Markov chain Monte Carlo algorithms</title>
-      <link>http://localhost:1313/papers/2022-04-18-sgmcmcjax/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-04-18-sgmcmcjax/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</guid>
       <description> </description>
     </item>
     <item>
       <title>Gaussian processes on hypergraphs</title>
-      <link>http://localhost:1313/papers/2021-06-03-gp-hypergraphs/</link>
+      <link>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</link>
       <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2021-06-03-gp-hypergraphs/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2021-06-03-gp-hypergraphs/</guid>
       <description> </description>
     </item>
     <item>
       <title>A Probabilistic Assessment of the COVID-19 Lockdown on Air Quality in the UK</title>
-      <link>http://localhost:1313/papers/2021-04-22-covid-lockdown-aq/</link>
+      <link>https://chris-nemeth.github.io/papers/2021-04-22-covid-lockdown-aq/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2021-04-22-covid-lockdown-aq/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2021-04-22-covid-lockdown-aq/</guid>
       <description> </description>
     </item>
     <item>
       <title>Stochastic Gradient Markov Chain Monte Carlo</title>
-      <link>http://localhost:1313/papers/2021-01-04-sgmcmc-review/</link>
+      <link>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2021-01-04-sgmcmc-review/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</guid>
       <description> </description>
     </item>
     <item>
       <title>Stein variational Gaussian processes</title>
-      <link>http://localhost:1313/papers/2020-09-25-stein-gp/</link>
+      <link>https://chris-nemeth.github.io/papers/2020-09-25-stein-gp/</link>
       <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2020-09-25-stein-gp/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2020-09-25-stein-gp/</guid>
       <description> </description>
     </item>
     <item>
       <title>Bayesian calibration of firn densification models</title>
-      <link>http://localhost:1313/papers/2020-09-15-firn/</link>
+      <link>https://chris-nemeth.github.io/papers/2020-09-15-firn/</link>
       <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2020-09-15-firn/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2020-09-15-firn/</guid>
       <description> </description>
     </item>
     <item>
       <title>Pseudo-extended Markov chain Monte Carlo</title>
-      <link>http://localhost:1313/papers/2019-12-01-pseudo-extended/</link>
+      <link>https://chris-nemeth.github.io/papers/2019-12-01-pseudo-extended/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2019-12-01-pseudo-extended/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2019-12-01-pseudo-extended/</guid>
       <description> </description>
     </item>
     <item>
       <title>sgmcmc: An R package for stochastic gradient Markov chain Monte Carlo</title>
-      <link>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</link>
+      <link>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</guid>
       <description> </description>
     </item>
     <item>
       <title>Control variates for stochastic gradient MCMC</title>
-      <link>http://localhost:1313/papers/2019-05-01-sgldcv/</link>
+      <link>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2019-05-01-sgldcv/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</guid>
       <description> </description>
     </item>
     <item>
       <title>Large-Scale Stochastic Sampling from the Probability Simplex</title>
-      <link>http://localhost:1313/papers/2018-12-01-simplex/</link>
+      <link>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2018-12-01-simplex/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</guid>
       <description> </description>
     </item>
     <item>
       <title>Merging MCMC Subposteriors through Gaussian-Process Approximations</title>
-      <link>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</link>
+      <link>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2018-06-01-merging-mcmc-gp/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2018-06-01-merging-mcmc-gp/</guid>
       <description> </description>
     </item>
     <item>
       <title>Particle approximations of the score and observed information matrix for parameter estimation in state–space models with linear computational cost</title>
-      <link>http://localhost:1313/papers/2016-10-01-particle-score/</link>
+      <link>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2016-10-01-particle-score/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</guid>
       <description> </description>
     </item>
     <item>
       <title>Particle Metropolis-adjusted Langevin algorithms</title>
-      <link>http://localhost:1313/papers/2016-08-25-pmala/</link>
+      <link>https://chris-nemeth.github.io/papers/2016-08-25-pmala/</link>
       <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2016-08-25-pmala/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2016-08-25-pmala/</guid>
       <description> </description>
     </item>
     <item>
       <title>Parameter estimation for state space models using sequential Monte Carlo algorithms</title>
-      <link>http://localhost:1313/papers/2014-10-01-thesis/</link>
+      <link>https://chris-nemeth.github.io/papers/2014-10-01-thesis/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2014-10-01-thesis/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2014-10-01-thesis/</guid>
       <description> </description>
     </item>
     <item>
       <title>Sequential Monte Carlo methods for state and parameter estimation in abruptly changing environments</title>
-      <link>http://localhost:1313/papers/2014-04-01-smc-change/</link>
+      <link>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</link>
       <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2014-04-01-smc-change/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</guid>
       <description> </description>
     </item>
     <item>
       <title>Bearings-only tracking with particle filtering for joint parameter learning and state estimation</title>
-      <link>http://localhost:1313/papers/2012-07-09-bearings/</link>
+      <link>https://chris-nemeth.github.io/papers/2012-07-09-bearings/</link>
       <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2012-07-09-bearings/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2012-07-09-bearings/</guid>
       <description> </description>
     </item>
     <item>
       <title>Particle learning methods for state and parameter estimation</title>
-      <link>http://localhost:1313/papers/2012-01-01-particle-learning/</link>
+      <link>https://chris-nemeth.github.io/papers/2012-01-01-particle-learning/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2012-01-01-particle-learning/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2012-01-01-particle-learning/</guid>
       <description> </description>
     </item>
   </channel>

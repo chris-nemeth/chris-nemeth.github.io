@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Scalable Monte Carlo for Bayesian Learning | Chris Nemeth</title>
 <meta name="keywords" content="Bayesian, Monte Carlo, Scalable">
 <meta name="description" content="This book covers recent advances in the Monte Carlo literature for performing Bayesian inference in high-dimensional and large-data settings.">
 <meta name="author" content="Paul Fearnhead, Christopher Nemeth, Chris J. Oates and Chris Sherlock">
-<link rel="canonical" href="http://localhost:1313/books/book1/">
+<link rel="canonical" href="https://chris-nemeth.github.io/books/book1/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/books/book1/">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/books/book1/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,13 +29,13 @@
 </noscript><meta property="og:title" content="Scalable Monte Carlo for Bayesian Learning" />
 <meta property="og:description" content="This book covers recent advances in the Monte Carlo literature for performing Bayesian inference in high-dimensional and large-data settings." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/books/book1/" />
-<meta property="og:image" content="http://localhost:1313/img.jpeg" /><meta property="article:section" content="books" />
+<meta property="og:url" content="https://chris-nemeth.github.io/books/book1/" />
+<meta property="og:image" content="https://chris-nemeth.github.io/img.jpeg" /><meta property="article:section" content="books" />
 <meta property="article:published_time" content="2025-06-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-06-07T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/img.jpeg" />
+<meta name="twitter:image" content="https://chris-nemeth.github.io/img.jpeg" />
 <meta name="twitter:title" content="Scalable Monte Carlo for Bayesian Learning"/>
 <meta name="twitter:description" content="This book covers recent advances in the Monte Carlo literature for performing Bayesian inference in high-dimensional and large-data settings."/>
 
@@ -49,13 +49,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Books",
-      "item": "http://localhost:1313/books/"
+      "item": "https://chris-nemeth.github.io/books/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Scalable Monte Carlo for Bayesian Learning",
-      "item": "http://localhost:1313/books/book1/"
+      "item": "https://chris-nemeth.github.io/books/book1/"
     }
   ]
 }
@@ -73,7 +73,7 @@
   "articleBody": " Description This book provides a graduate-level introduction to advanced topics in Markov chain Monte Carlo (MCMC) algorithms, as applied broadly in the Bayesian computational context. Most of these topics, stochastic gradient MCMC, non-reversible MCMC, continuous time MCMC, and new techniques for convergence assessment, have emerged as recently as the last decade. They have driven substantial recent practical and theoretical advances in the field. A particular focus is on methods that are scalable with respect to either the amount of data, or the data dimension, motivated by the emerging high-priority application areas in machine learning and AI.\nView Full book Chapter 1: Background\nMonte Carlo Methods What is Monte Carlo Integration? Importance Sampling Monte Carlo or Quadrature? Control Variates Monte Carlo Integration and Bayesian Statistics Example Applications Logistic Regression Bayesian Matrix Factorisation Bayesian Neural Networks for Classification Markov Chains Reversible Markov chains Convergence, Averages, and Variances Stochastic Differential Equations The Ornstein–Uhlenbeck Process The Infinitesimal Generator Langevin Diffusions The Kernel Trick Finite-Dimensional Inner Product Spaces Kernels in a Finite-Dimensional Inner Product Space A New Inner Product and the Kernel Trick in Finite Dimensions General Kernels The Power of the Kernel Trick Chapter Notes Chapter 2: Reversible MCMC and its Scaling\nThe Metropolis–Hastings Algorithm Component-wise updates and Gibbs moves The Metropolis–Hastings Independence Sampler The Random Walk Metropolis Algorithm The Metropolis-Adjusted Langevin Algorithm Hamiltonian Monte Carlo Chapter Notes Chapter 3: Stochastic Gradient MCMC Algorithms\nThe Unadjusted Langevin Algorithm Approximate vs. Exact MCMC Stochastic Gradient Langevin Dynamics Controlling Stochasticity in the Gradient Estimator Example: The Value of Control Variates Convergence Results for Stochastic Gradient Langevin Dynamics A General Framework for stochastic gradient MCMC Guidance for Efficient Scalable Bayesian Learning Experiments on a Logistic Regression Model Experiments on a Bayesian Neural Network Model Generalisations and Extensions Scalable Inference for Models in Constrained Spaces Scalable Inference with Time Series Data Chapter Notes Chapter 4: Non-Reversible MCMC\nThe Benefits of Non-Reversibility Hamiltonian Monte Carlo Revisited Lifting Schemes for MCMC Non-Reversible HMC Gustafson’s Algorithm and Multidimensional Generalisations Improving Non-reversibility: Delayed Rejection The Discrete Bouncy Particle Sampler Chapter Notes Chapter 5: Continuous-Time MCMC\nContinuous-Time MCMC as the Limit of Non-Reversible MCMC Piecewise Deterministic Markov Processes What is a PDMP? Simulating PDMPs The Generator and Invariant Distribution of a PDMP The Limiting Process of Section 5.1 as a PDMP Continuous-time MCMC via PDMPs Different Samplers Use of PDMP Output Comparison of Samplers Efficient Simulation of PDMP Samplers Simulating PDMPs Exploiting Model Sparsity Data Subsampling Ideas Extensions Discontinuous Target Distribution Reversible Jump PDMP Samplers More General Velocity Models Chapter Notes Chapter 6: Assessing and Improving MCMC\nDiagnostics for MCMC Convergence Diagnostics Bias Diagnostics Improved Bias Diagnostics via the Kernel Trick Convergence Bounds for MCMC Bounds on Integral Probability Metrics Choice of Auxiliary Markov Process Kernel Stein Discrepancy Convergence Control Stochastic Gradient Stein Discrepancy Optimal Weights for MCMC Optimal Thinning for MCMC Chapter Notes Citation Fearnhead, P., Nemeth, C., Oates, C.J. and Sherlock, C., 2025. Scalable Monte Carlo for Bayesian Learning. Cambridge University Press.\n@book{fearnhead2025scalable, title={Scalable Monte Carlo for Bayesian Learning}, author={Fearnhead, Paul and Nemeth, Christopher and Oates, Chris J and Sherlock, Chris}, publisher={Cambridge University Press}, year={2025} } ",
   "wordCount" : "515",
   "inLanguage": "en",
-  "image":"http://localhost:1313/img.jpeg","datePublished": "2025-06-07T00:00:00Z",
+  "image":"https://chris-nemeth.github.io/img.jpeg","datePublished": "2025-06-07T00:00:00Z",
   "dateModified": "2025-06-07T00:00:00Z",
   "author":[{
     "@type": "Person",
@@ -81,14 +81,14 @@
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/books/book1/"
+    "@id": "https://chris-nemeth.github.io/books/book1/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Chris Nemeth",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://chris-nemeth.github.io/favicon.ico"
     }
   }
 }
@@ -129,8 +129,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Chris Nemeth">
-                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
                     height="18"
                     width="18">Chris Nemeth</a>
             <div class="logo-switches">
@@ -138,32 +138,32 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/papers/" title="Papers">
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
                     <span>Papers</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/code_and_software/" title="Code">
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
                     <span>Code</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/software/" title="Software">
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
                     <span>Software</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/books/" title="Books">
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
                     <span>Books</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blogs/" title="Blog">
+                <a href="https://chris-nemeth.github.io/blogs/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/research_group/" title="Group">
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
                     <span>Group</span>
                 </a>
             </li>
@@ -374,16 +374,16 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/bayesian/">Bayesian</a></li>
-      <li><a href="http://localhost:1313/tags/monte-carlo/">Monte Carlo</a></li>
-      <li><a href="http://localhost:1313/tags/scalable/">Scalable</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/bayesian/">Bayesian</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/monte-carlo/">Monte Carlo</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/scalable/">Scalable</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="http://localhost:1313/">Chris Nemeth</a></span> ·     
+    <span>&copy; 2025 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
     <span>
     Powered by 
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

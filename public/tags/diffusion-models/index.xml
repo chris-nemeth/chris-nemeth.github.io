@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Diffusion Models on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/diffusion-models/</link>
+    <link>https://chris-nemeth.github.io/tags/diffusion-models/</link>
     <description>Recent content in Diffusion Models on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diffusion Generative Modelling for Divide-and-Conquer MCMC</title>
-      <link>http://localhost:1313/papers/2024-06-18-diff-div-conq/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-06-18-diff-div-conq/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</guid>
       <description> </description>
     </item>
   </channel>

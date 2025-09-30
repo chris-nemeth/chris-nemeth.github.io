@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Gaussian Processes in Julia | Chris Nemeth</title>
 <meta name="keywords" content="Gaussian processes, julia">
 <meta name="description" content="This repository contains a Julia package for Gaussian process models.">
 <meta name="author" content="Jamie Fairbrother,&thinsp;Christopher Nemeth,&thinsp;Maxime Rischard,&thinsp;Johanni Brea,&thinsp;Thomas Pinder">
-<link rel="canonical" href="http://localhost:1313/software/gaussianprocesses-jl/">
+<link rel="canonical" href="https://chris-nemeth.github.io/software/gaussianprocesses-jl/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/software/gaussianprocesses-jl/">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/software/gaussianprocesses-jl/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,13 +29,13 @@
 </noscript><meta property="og:title" content="Gaussian Processes in Julia" />
 <meta property="og:description" content="This repository contains a Julia package for Gaussian process models." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/software/gaussianprocesses-jl/" />
-<meta property="og:image" content="http://localhost:1313/poisson_gp.png" /><meta property="article:section" content="software" />
+<meta property="og:url" content="https://chris-nemeth.github.io/software/gaussianprocesses-jl/" />
+<meta property="og:image" content="https://chris-nemeth.github.io/poisson_gp.png" /><meta property="article:section" content="software" />
 <meta property="article:published_time" content="2024-08-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-08-07T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/poisson_gp.png" />
+<meta name="twitter:image" content="https://chris-nemeth.github.io/poisson_gp.png" />
 <meta name="twitter:title" content="Gaussian Processes in Julia"/>
 <meta name="twitter:description" content="This repository contains a Julia package for Gaussian process models."/>
 
@@ -49,13 +49,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Data",
-      "item": "http://localhost:1313/software/"
+      "item": "https://chris-nemeth.github.io/software/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Gaussian Processes in Julia",
-      "item": "http://localhost:1313/software/gaussianprocesses-jl/"
+      "item": "https://chris-nemeth.github.io/software/gaussianprocesses-jl/"
     }
   ]
 }
@@ -73,7 +73,7 @@
   "articleBody": "GaussianProcesses.jl A Gaussian Processes package for Julia.\nIf you have any suggestions to improve the package, or if you’ve noticed a bug, then please post an issue for us and we’ll get to it as quickly as we can. Pull requests are also welcome.\nCiting GaussianProcesses.jl To cite GaussianProcesses.jl, please reference the paper . Sample Bibtex is given below:\n@article{fairbrother2022gaussianprocesses, title={GaussianProcesses. jl: A Nonparametric Bayes Package for the Julia Language}, author={Fairbrother, Jamie and Nemeth, Christopher and Rischard, Maxime and Brea, Johanni and Pinder, Thomas}, journal={Journal of Statistical Software}, volume={102}, pages={1--36}, year={2022} } Introduction Gaussian processes are a family of stochastic processes which provide a flexible nonparametric tool for modelling data. A Gaussian Process places a prior over functions, and can be described as an infinite dimensional generalisation of a multivariate Normal distribution. Moreover, the joint distribution of any finite collection of points is a multivariate Normal. This process can be fully characterised by its mean and covariance functions, where the mean of any point in the process is described by the mean function and the covariance between any two observations is specified by the kernel. Given a set of observed real-valued points over a space, the Gaussian Process is used to make inference on the values at the remaining points in the space.\nFor an extensive review of Gaussian Processes there is an excellent book Gaussian Processes for Machine Learning by Rasmussen and Williams, (2006).\nInstallation GaussianProcesses.jl requires Julia version 0.7 or above. To install GaussianProcesses.jl run the following command inside a Julia session:\njulia\u003e using Pkg julia\u003e Pkg.add(\"GaussianProcesses\") Functionality The package allows the user to fit exact Gaussian process models when the observations are Gaussian distributed about the latent function. In the case where the observations are non-Gaussian, the posterior distribution of the latent function is intractable. The package allows for Monte Carlo sampling from the posterior.\nThe main function of the package is GP, which fits the Gaussian process\ngp = GP(x, y, mean, kernel) gp = GP(x, y, mean, kernel, likelihood) for Gaussian and non-Gaussian data respectively.\nThe package has a number of mean, kernel and likelihood functions available. See the documentation for further details.\nInference The parameters of the model can be estimated by maximizing the log-likelihood (where the latent function is integrated out) using the optimize! function, or in the case of non-Gaussian data, an mcmc function is available, utilizing the Hamiltonian Monte Carlo sampler. In addition to a HMC sampler, it is possible to sample from the posterior using an elliptical slice sampler, provided that the data exhibits a Gaussian likelihood. Finally, for fast, yet approximate inference in the case of Poisson data, a variational approximation can be used to infer the model parameters and latent function values.\noptimize!(gp) # Find parameters which maximize the log-likelihood mcmc(gp) # Sample from the GP posterior ess(gp) # Sample from the GP posterior using an elliptical slice sampler vi(gp) # Create a variational approximation See the notebooks for examples of the functions used in the package.\nDocumentation Documentation is accessible in the Julia REPL in help mode. Help mode can be started by typing ‘?’ at the prompt.\njulia\u003e ?GP search: GP GPE GPMC GPBase gperm log1p getpid getproperty MissingException GP(x, y, mean::Mean, kernel::Kernel[, logNoise::Float64=-2.0]) Fit a Gaussian process that is defined by its mean, its kernel, and the logarithm logNoise of the standard deviation of its observation noise to a set of training points x and y. See also: GPE ──────────────────────────────────────────────────────────────────────────── GP(x, y, mean::Mean, kernel::Kernel, lik::Likelihood) Fit a Gaussian process that is defined by its mean, its kernel, and its likelihood function lik to a set of training points x and y. See also: GPA Alternatively, online documentation and is under development.\nNotebooks Sample code is available from the notebooks .\nRelated packages GeoStats - High-performance implementations of geostatistical algorithms for the Julia programming language. This package is in its initial development, and currently only contains Kriging estimation methods. More features will be added as the Julia type system matures.\nScikitLearn This package also supports the ScikitLearn interface. ScikitLearn provides many tools for machine learning such as hyperparameter tuning and cross-validation. See here for an example of its usage with this package.\n",
   "wordCount" : "696",
   "inLanguage": "en",
-  "image":"http://localhost:1313/poisson_gp.png","datePublished": "2024-08-07T00:00:00Z",
+  "image":"https://chris-nemeth.github.io/poisson_gp.png","datePublished": "2024-08-07T00:00:00Z",
   "dateModified": "2024-08-07T00:00:00Z",
   "author":[{
     "@type": "Person",
@@ -93,14 +93,14 @@
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/software/gaussianprocesses-jl/"
+    "@id": "https://chris-nemeth.github.io/software/gaussianprocesses-jl/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Chris Nemeth",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://chris-nemeth.github.io/favicon.ico"
     }
   }
 }
@@ -141,8 +141,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Chris Nemeth">
-                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
                     height="18"
                     width="18">Chris Nemeth</a>
             <div class="logo-switches">
@@ -150,32 +150,32 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/papers/" title="Papers">
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
                     <span>Papers</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/code_and_software/" title="Code">
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
                     <span>Code</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/software/" title="Software">
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
                     <span>Software</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/books/" title="Books">
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
                     <span>Books</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blogs/" title="Blog">
+                <a href="https://chris-nemeth.github.io/blogs/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/research_group/" title="Group">
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
                     <span>Group</span>
                 </a>
             </li>
@@ -301,15 +301,15 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/gaussian-processes/">Gaussian Processes</a></li>
-      <li><a href="http://localhost:1313/tags/julia/">Julia</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/gaussian-processes/">Gaussian Processes</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/julia/">Julia</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="http://localhost:1313/">Chris Nemeth</a></span> ·     
+    <span>&copy; 2025 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
     <span>
     Powered by 
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

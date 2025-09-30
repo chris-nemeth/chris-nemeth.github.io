@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Soil on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/soil/</link>
+    <link>https://chris-nemeth.github.io/tags/soil/</link>
     <description>Recent content in Soil on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/soil/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/soil/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A changepoint approach to modelling non-stationary soil moisture dynamics</title>
-      <link>http://localhost:1313/papers/2023-10-30-soil-changepoints/</link>
+      <link>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</link>
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2023-10-30-soil-changepoints/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</guid>
       <description> </description>
     </item>
   </channel>

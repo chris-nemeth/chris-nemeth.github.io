@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Riemannian Manifold on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/riemannian-manifold/</link>
+    <link>https://chris-nemeth.github.io/tags/riemannian-manifold/</link>
     <description>Recent content in Riemannian Manifold on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/riemannian-manifold/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/riemannian-manifold/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning-Rate-Free Stochastic Optimization over Riemannian Manifolds</title>
-      <link>http://localhost:1313/papers/2024-06-05-rdog/</link>
+      <link>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2024-06-05-rdog/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2024-06-05-rdog/</guid>
       <description> </description>
     </item>
   </channel>

@@ -5,10 +5,10 @@ lastmod: 2025-07-09
 tags: ["network model","interaction network","distance metrics","Markov chain Monte Carlo","MCMC"]
 author: ["George Bolt", "Simon Lunagomez","Christopher Nemeth"]
 description: " "
-summary: "Journal of Machine Learning Research (to appear)"
+summary: "Journal of Machine Learning Research"
 editPost:
     URL: "http://jmlr.org/papers/v26/22-0706.html"
-    Text: "Journal of Machine Learning Research (to appear)"
+    Text: "Journal of Machine Learning Research"
 
 ---
 
