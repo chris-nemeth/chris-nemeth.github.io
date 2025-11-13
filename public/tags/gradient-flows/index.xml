@@ -16,6 +16,13 @@
       <description>Blog post on FUSE, an adaptive learning-rate-free approach to gradient-based sampling.</description>
     </item>
     <item>
+      <title>Tuning-Free Sampling via Optimization on the Space of Probability Measures</title>
+      <link>https://chris-nemeth.github.io/papers/2025-11-13-fuse/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2025-11-13-fuse/</guid>
+      <description> </description>
+    </item>
+    <item>
       <title>Why Should We Care About Gradient Flows?</title>
       <link>https://chris-nemeth.github.io/blogs/caring_about_gf/</link>
       <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>

@@ -23,10 +23,24 @@
       <description></description>
     </item>
     <item>
-      <title>Learning-Rate-Free</title>
+      <title>Learning Rate Free</title>
       <link>https://chris-nemeth.github.io/tags/learning-rate-free/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/learning-rate-free/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>https://chris-nemeth.github.io/tags/optimization/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sampling</title>
+      <link>https://chris-nemeth.github.io/tags/sampling/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/sampling/</guid>
       <description></description>
     </item>
     <item>
@@ -156,13 +170,6 @@
       <description></description>
     </item>
     <item>
-      <title>Sampling</title>
-      <link>https://chris-nemeth.github.io/tags/sampling/</link>
-      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sampling/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Control Variates</title>
       <link>https://chris-nemeth.github.io/tags/control-variates/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
@@ -195,13 +202,6 @@
       <link>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Optimization</title>
-      <link>https://chris-nemeth.github.io/tags/optimization/</link>
-      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     <item>

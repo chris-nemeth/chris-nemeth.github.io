@@ -17,10 +17,22 @@
     <loc>https://chris-nemeth.github.io/tags/learning-rate-free/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://chris-nemeth.github.io/tags/optimization/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/sampling/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chris-nemeth.github.io/tags/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/blogs/fuse/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2025-11-13-fuse/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/gas-emmissions/</loc>
@@ -35,9 +47,6 @@
     <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-08-02-plume/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -47,7 +56,7 @@
     <loc>https://chris-nemeth.github.io/tags/changepoints/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown/</loc>
+    <loc>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown-copy/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/soil/</loc>
@@ -110,9 +119,6 @@
     <loc>https://chris-nemeth.github.io/tags/normalizing-flows/</loc>
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sampling/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -133,9 +139,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/optimization/</loc>
-    <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/blogs/caring_about_gf/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
