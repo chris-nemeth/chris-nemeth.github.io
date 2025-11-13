@@ -6,12 +6,19 @@
     <description>Recent content in Soil on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/soil/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inferring Soil Drydown Behaviour with Adaptive Bayesian Online Changepoint Analysis</title>
+      <link>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>A changepoint approach to modelling non-stationary soil moisture dynamics</title>
       <link>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</link>
-      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</guid>
       <description> </description>
     </item>

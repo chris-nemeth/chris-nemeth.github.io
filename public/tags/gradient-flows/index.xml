@@ -6,8 +6,15 @@
     <description>Recent content in Gradient Flows on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/gradient-flows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tuning-free Sampling via Optimization on the Space of Probability Measures</title>
+      <link>https://chris-nemeth.github.io/blogs/fuse/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/blogs/fuse/</guid>
+      <description>Blog post on FUSE, an adaptive learning-rate-free approach to gradient-based sampling.</description>
+    </item>
     <item>
       <title>Why Should We Care About Gradient Flows?</title>
       <link>https://chris-nemeth.github.io/blogs/caring_about_gf/</link>

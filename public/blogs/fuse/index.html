@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tuning-free Sampling via Optimization on the Space of Probability Measures | Chris Nemeth</title>
+<meta name="keywords" content="fuse, gradient flows, learning-rate-free">
+<meta name="description" content="Blog post on FUSE, an adaptive learning-rate-free approach to gradient-based sampling.">
+<meta name="author" content="Louis Sharrock,&thinsp;Christopher Nemeth">
+<link rel="canonical" href="https://chris-nemeth.github.io/blogs/fuse/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chris-nemeth.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chris-nemeth.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chris-nemeth.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chris-nemeth.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chris-nemeth.github.io/blogs/fuse/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Tuning-free Sampling via Optimization on the Space of Probability Measures" />
+<meta property="og:description" content="Blog post on FUSE, an adaptive learning-rate-free approach to gradient-based sampling." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chris-nemeth.github.io/blogs/fuse/" />
+<meta property="og:image" content="https://chris-nemeth.github.io/fuse_logo_text.png" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2025-11-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-11-13T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://chris-nemeth.github.io/fuse_logo_text.png" />
+<meta name="twitter:title" content="Tuning-free Sampling via Optimization on the Space of Probability Measures"/>
+<meta name="twitter:description" content="Blog post on FUSE, an adaptive learning-rate-free approach to gradient-based sampling."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://chris-nemeth.github.io/blogs/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tuning-free Sampling via Optimization on the Space of Probability Measures",
+      "item": "https://chris-nemeth.github.io/blogs/fuse/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tuning-free Sampling via Optimization on the Space of Probability Measures",
+  "name": "Tuning-free Sampling via Optimization on the Space of Probability Measures",
+  "description": "Blog post on FUSE, an adaptive learning-rate-free approach to gradient-based sampling.",
+  "keywords": [
+    "fuse", "gradient flows", "learning-rate-free"
+  ],
+  "articleBody": "In many gradient-based sampling algorithms the step size (or learning rate) matters far more than we would like to admit. Pick it too small and the chain crawls; pick it too large and it blows up. In practice we end up running the same algorithm many times over a grid of step sizes, staring at diagnostic plots and trying to decide which run “looks OK”.\nIn our recent paper, Tuning-Free Sampling via Optimization on the Space of Probability Measures, we try to remove this manual tuning step altogether.\nThe core idea is simple:\nView sampling algorithms as optimisation algorithms on the space of probability measures, and design a parameter-free step size schedule directly from an upper bound on the objective functional.\nThe result is Fuse – the Functional Upper-Bound Step-Size Estimator – a dynamic, tuning-free step size schedule for Wasserstein gradient-flow algorithms. You can plug Fuse into a wide range of sampling algorithms, including ULA, SGLD, SVGD, mean-field Langevin, variational gradient descent, etc., and you obtain variants that are effectively step-size free, while retaining (almost) the same theoretical guarantees as the optimally-tuned versions.\nThis post gives a high-level overview of the main ideas, with a particular focus on how Fuse is constructed and why it works.\nSampling as optimisation on the space of probability measures Consider a target distribution\n$$\\pi(\\mathrm{d}x) \\propto \\exp(-U(x))\\mathrm{d}x,$$\nand a probability measure $\\mu$ on $\\mathbb{R}^d$. Recently, a new perspective on sampling algorithms has developed where we frame sampling as an optimisation problem\n$$\\min_{\\mu} \\mathcal{F}(\\mu),$$\nwhere $\\mathcal{F}$ is a functional on probability measures. The canonical choice is the KL divergence $\\mathcal{F}(\\mu) = \\mathrm{KL}(\\mu | \\pi),$ but other choices (e.g. functionals based on KSD or mean-field neural network objectives) are also possible.\nThe optimisation lives on the Wasserstein space $(\\mathcal{P}2(\\mathbb{R}^d), W_2)$: the set of probability measures with finite second moment, equipped with the 2-Wasserstein distance $W_2$. A Wasserstein gradient flow of $\\mathcal{F}$ is a curve $(\\mu_t)_{t\\ge0}$ such that\n$$\\partial_t \\mu_t + \\nabla \\cdot (\\mu_t v_t) = 0, \\qquad v_t = - \\nabla \\frac{\\delta \\mathcal{F}}{\\delta \\mu}(\\mu_t),$$ i.e. probability mass moves in the direction of steepest descent of $\\mathcal{F}$ under the Wasserstein geometry.\nFor the KL functional with target $\\pi$, this gradient flow coincides with the Fokker–Planck equation of the overdamped Langevin dynamics, so following the gradient flow corresponds to moving $\\mu_t$ towards $\\pi$.\nWe can picture this as follows: along the horizontal axis we measure distance in $W_2$ from the initial distribution $\\mu_0$ towards the target $\\pi$; vertically we plot the value of the functional $\\mathcal{F}(\\mu)$.\nThe black curve is the gradient flow trajectory of the functional. Starting from $\\mu_0$ (blue dot), following the flow moves us towards $\\pi$ (red star) while decreasing $\\mathcal{F}(\\mu)$.\nDiscretising the flow: from gradient flows to algorithms To obtain an actual sampling algorithm we discretise the gradient flow in time. For the KL functional this leads to variants of the unadjusted Langevin algorithm (ULA):\n$$x_{t+1} = x_t - \\gamma_t \\nabla U(x_t) + \\sqrt{2\\gamma_t},\\xi_t,$$ with $(\\xi_t)$ i.i.d. standard Gaussians and step size $\\gamma_t \u003e 0$.\nIn measure space this corresponds to a sequence of distributions $(\\mu_t)$ generated by applying the Markov transition kernel of ULA. We can think of the evolution as taking discrete steps along the gradient flow:\nConceptually, you can imagine that the blue dots are the functional values for marginals $\\mu_t$, the red arrows indicate the discrete updates driven by the gradient $\\nabla U(x_t)$.\nTwo important facts about this discretisation:\nThere is an optimal constant step size (in hindsight) that minimises an upper bound on the sub-optimality $\\mathcal{F}(\\bar\\mu_T) - \\mathcal{F}(\\pi)$, where $\\bar\\mu_T$ is an appropriate average of the iterates. This step size depends on: the Wasserstein distance between $\\mu_0$ and the “average” iterate, and accumulated information about gradients along the trajectory. Unfortunately, we cannot compute the optimal step size in practice. It depends on quantities such as $W_2(\\mu_0, \\pi)$ which are unknown and hard to estimate exactly. So, in theory, an optimal step size exists, but in practice we end up guessing it.\nThe goal of the paper is to bridge this gap: construct a dynamic schedule $\\gamma_t$ that tracks the optimal step size without knowing the constants it depends on, and prove that this schedule achieves (almost) the same convergence rate.\nA functional upper bound and an “oracle” step size The starting point is a functional inequality of the form $$\\mathcal{F}(\\bar\\mu_T) - \\mathcal{F}(\\pi) \\lesssim \\frac{A_T(\\mu_0,\\dots,\\mu_T) + B_T(\\gamma_1,\\dots,\\gamma_T)} {\\sum_{t=1}^T \\gamma_t},$$ where:\n$A_T$ involves Wasserstein distances between the initial distribution and the intermediate iterates (i.e., “how far we could travel?”), and\n$B_T$ involves accumulated squared gradients (i.e., “how much optimisation effort we have spent?”).\nIf we fix all iterates and treat the step size as a single scalar $\\gamma$, this bound simplifies to something of the form $$\\mathcal{F}(\\bar\\mu_T) - \\mathcal{F}(\\pi) \\lesssim \\frac{D^2}{\\gamma T} + \\gamma G^2$$, where:\n$D$ is a measure of distance in $W_2$ from $\\mu_0$ to the target distribution $\\pi$, $G^2$ is an average squared gradient norm along the trajectory. Minimising the right-hand side in $\\gamma$ yields an “oracle” step size\n$$\\gamma^\\star \\approx \\frac{D}{G \\sqrt{T}},$$\nwhich recovers the familiar optimal $1/\\sqrt{T}$ behaviour. The difficulty is that both $D$ and $G$ are unknown.\nThe key idea in Fuse is to replace the unknown constants by quantities that we can estimate online from the evolving trajectory, while keeping the same functional shape as the oracle step size.\nThe Fuse step size schedule Fuse builds its step size by combining two pieces of information:\nNumerator: how far we have moved from where we started? We track the Wasserstein distance from the initial distribution $\\mu_0$ to each intermediate iterate $\\mu_i$,\n$$W_2(\\mu_0, \\mu_1),; W_2(\\mu_0, \\mu_2), \\dots $$\nand keep their running maximum (see figure below). Intuitively, this captures the scale of the problem.\nDenominator: how much gradient effort we have accumulated? We track a running sum of squared gradient norms\n$$\\sum_{i=1}^t \\mathbb{E}_{x\\sim\\mu_i}\\bigl[|\\nabla U(x)|^2\\bigr],$$\nmeasuring how much “optimisation work” we have done up to iteration t.\nPutting these together, the idealised Fuse schedule for ULA takes the form $$\\gamma_t = \\frac{\\displaystyle \\max_{1 \\le i \\le t} \\bigl[, W_2(\\mu_0, \\mu_i), r_\\varepsilon \\bigr] }{ \\displaystyle \\sqrt{\\sum_{i=1}^t \\mathbb{E}_{x\\sim\\mu_i}\\bigl[|\\nabla U(x)|^2\\bigr]} },$$ where $r\\varepsilon\u003e0$ is a small constant that prevents the numerator from degenerating early on.\nThe sequence of figures below shows how this step size is constructed.\nTracking the distance travelled We start from the Wasserstein gradient flow picture and keep track of how far each iterate $\\mu_i$ is from the starting distribution $\\mu_0$.\nFirst step: Second and third step: As the algorithm progresses, we update the running maximum $$\\max_{1\\le i\\le t} W_2(\\mu_0,\\mu_i).$$\nBy the time we are close to the target, the numerator effectively captures the overall radius of the trajectory in Wasserstein space.\nIn practice, we do not have access to exact Wasserstein distances, so we work with particle-based approximations and coarse upper bounds derived from the dynamics. The important point is that these approximations are cheap to compute and only depend on quantities we already use in the algorithm.\nAccumulating gradient information The denominator of Fuse looks like an AdaGrad-style accumulator of squared gradient norms, $$\\sum_{i=1}^t \\mathbb{E}_{x\\sim\\mu_i}\\bigl[|\\nabla U(x)|^2\\bigr].$$ As this quantity grows, the step size automatically shrinks, so Fuse naturally transitions from aggressive early steps to more conservative steps later on, without ever needing a hand-crafted schedule.\nCombining numerator and denominator gives the full Fuse step size:\nFuse therefore behaves like a Polyak / AdaGrad-type schedule lifted to the Wasserstein space: it adjusts the step size using only information that is intrinsic to the optimisation problem on probability measures, rather than requiring us to specify Lipschitz constants, strong-convexity parameters, or distances to the optimum.\nFrom Fuse to tuning-free sampling algorithms The analysis is carried out for two time-discretisations of the Wasserstein gradient flow:\nForward-flow discretisation. This covers ULA and its mean-field variants. The resulting algorithms include:\nULA × Fuse – a tuning-free version of (parallel-chain) ULA; SGLD × Fuse – the stochastic-gradient counterpart, suitable for large datasets; MFLD × Fuse – a mean-field Langevin algorithm with automatic step sizes. Forward Euler discretisation. This covers particle-based methods where we approximate the Wasserstein gradient with a kernel operator. Here we obtain:\nSVGD × Fuse – a tuning-free Stein variational gradient descent; VGD × Fuse – a tuning-free variational gradient descent algorithm in the mean-field setting; a step-size-free variant of KSD descent. All of these methods share the same high-level pattern:\nMaintain a collection of particles $(x_t^{(k)})_{k=1}^N$ representing the current measure $\\mu_t.$ Use these particles to compute: approximate Wasserstein distances from the initial distribution; approximate expectations of squared gradient norms. Update the step size $\\gamma_t$ using Fuse. Propagate each particle using the relevant update rule (Langevin, SVGD, mean-field dynamics, etc.). In practice, there is only one hyperparameter: the small initial movement scale $r_\\varepsilon$. The performance is, in most cases, extremely robust to this choice; across several orders of magnitude of $r_\\varepsilon$ the behaviour of the algorithm barely changes.\nWhat do we actually prove? Under a set of fairly standard assumptions — geodesic convexity of $\\mathcal{F}$ in the Wasserstein space, and local boundedness of (stochastic) gradients — the paper establishes the following:\nFor both the forward-flow and forward Euler discretisations, Fuse achieves the same convergence rate (up to a logarithmic factor) as the algorithm with the optimally tuned constant step size. This holds in both non-smooth and smooth settings, for deterministic and stochastic gradients. The bounds are stated in terms of the functional sub-optimality $\\mathcal{F}(\\bar\\mu_T) - \\mathcal{F}(\\pi)$, where $\\bar\\mu_T$ is an average of the iterates with carefully chosen weights. In the KL case, this directly controls the KL divergence between an averaged iterate and the target. In the Gaussian setting, where the gradient flow remains Gaussian for all time, all Wasserstein distances and expectations can be computed in closed form. From a theoretical perspective, the message is that we can obtain near-optimal convergence rates in Wasserstein gradient-flow algorithms without ever specifying a step size. The information needed to tune the algorithm is extracted on the fly from the evolving trajectory in measure space.\nExperiments in practice The paper benchmarks Fuse across a range of synthetic and real-world problems. A few highlights:\nGaussian targets For a 10-dimensional Gaussian target with varying covariance structure, ULA × Fuse is compared with standard ULA over a wide grid of fixed step sizes.\nPerformance vs step size. ULA shows the usual U-shaped behaviour: too small a step size leads to high bias; too large a step size causes instability. ULA × Fuse, in contrast, achieves near-optimal performance for essentially any reasonable value of the initial movement parameter. Robustness to anisotropy and initialisation. The behaviour of ULA × Fuse is remarkably stable when we change the conditioning of the target covariance or the distance between $\\mu_0$ and $\\pi$. Bayesian logistic regression Two settings are considered:\nSynthetic data with a Gaussian prior. ULA × Fuse is compared to ULA across different step sizes. Posterior means and credible intervals computed with Fuse match closely those obtained from a long, carefully tuned reference run. Hierarchical prior with the Covertype dataset. Here we need stochastic gradients. SGLD × Fuse and SVGD × Fuse are compared against their classical counterparts over a wide range of step sizes. The predictive accuracy of SGLD and SVGD depends very sensitively on the step size. The Fuse variants achieve essentially the same best accuracy across a broad range of initial movement parameters, and remain stable as we vary the mini-batch size. Mean-field neural networks Finally, the paper looks at training a simple mean-field neural network, where the optimisation objective is not geodesically convex and the theory does not directly apply.\nEven in this more challenging setting:\nMFLD × Fuse and VGD × Fuse exhibit good empirical performance, and again show very mild sensitivity to the initial movement scale. These experiments collectively suggest that Fuse provides a practical way to make gradient-based samplers much less painful to tune, while maintaining competitive performance.\nRelation to previous work Fuse sits at the intersection of two lines of research:\nParameter-free optimisation in Euclidean spaces. Methods such as coin-betting, AdaGrad, and Polyak step sizes design learning-rate-free schedules that adapt to unknown problem parameters by relying on cumulative gradient information. Optimisation on the space of probability measures. Viewing sampling as optimisation in Wasserstein space has become standard, leading to algorithms like ULA, SVGD, mean-field Langevin, variational gradient descent, and many others. The contribution of Fuse is to lift parameter-free ideas to the Wasserstein setting, using functional inequalities specific to gradient flows on probability measures. The resulting schedule is not just a heuristic; it is tightly coupled to a non-asymptotic upper bound on $\\mathcal{F}(\\bar\\mu_T) - \\mathcal{F}(\\pi)$.\nWhere next? Several directions look promising:\nOther geometries. The analysis is formulated for Wasserstein gradient flows, but in principle the same approach should extend to other geometries (Stein, Fisher–Rao, Kalman, …) given appropriate functional inequalities and notions of geodesic convexity. Richer models and functionals. The current experiments focus on relatively classical targets and mean-field networks. Extending Fuse to more complex generative models and high-dimensional posteriors is an obvious next step. Sharper bounds and reduced logarithmic factors. The price we pay for being tuning-free is a logarithmic factor in the convergence rate. It would be interesting to know how far this can be reduced, and whether further problem structure can be exploited. For now, the main takeaway is that you can run a wide class of sampling algorithms without hand-tuning a step size, by letting Fuse adaptively select the step size based solely on the trajectory of the algorithm in the space of probability measures.\nIf you are interested in the full details, including proofs and additional experiments, the paper is available on arXiv.\nReferences Sharrock, L. and Nemeth, C. (2025). Tuning-Free Sampling via Optimization on the Space of Probability Measures. arXiv:2510.25315. https://arxiv.org/pdf/2510.25315.pdf ￼ Fearnhead P, Nemeth C, Oates CJ, Sherlock C. Scalable Monte Carlo for Bayesian Learning. Cambridge: Cambridge University Press; 2025. (Institute of Mathematical Statistics Monographs). Welling, M. and Teh, Y. W. (2011). Bayesian learning via stochastic gradient Langevin dynamics. In Proceedings of the 28th International Conference on Machine Learning (ICML 2011). Liu, Q. and Wang, D. (2016). Stein variational gradient descent: A general purpose Bayesian inference algorithm. In Proceedings of the 30th Conference on Neural Information Processing Systems (NIPS 2016). Suzuki, T., Wu, D., and Nitanda, A. (2023b). Convergence of mean-field Langevin dynamics: time-space discretization, stochastic gradient, and variance reduction. In Proceedings of the 37th Annual Conference on Neural Information Processing Systems (NeurIPS 2023). Chazal, C., Kanagawa, H., Shen, Z., Korba, A., Oates, C. J., et al. (2025). A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives. arXiv preprint arXiv:2509.10393. ",
+  "wordCount" : "2414",
+  "inLanguage": "en",
+  "image":"https://chris-nemeth.github.io/fuse_logo_text.png","datePublished": "2025-11-13T00:00:00Z",
+  "dateModified": "2025-11-13T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Louis Sharrock"
+  }, {
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chris-nemeth.github.io/blogs/fuse/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chris-nemeth.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chris-nemeth.github.io/" accesskey="h" title="Chris Nemeth">
+                <img src="https://chris-nemeth.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chris-nemeth.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/blogs/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chris-nemeth.github.io/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Tuning-free Sampling via Optimization on the Space of Probability Measures
+    </h1>
+    <div class="post-meta"><span title='2025-11-13 00:00:00 +0000 UTC'>November 2025</span>&nbsp;&middot;&nbsp;Louis Sharrock,&thinsp;Christopher Nemeth
+
+</div>
+  </header> 
+  <div class="post-content"><p>In many gradient-based sampling algorithms the step size (or learning rate) matters far more than we would like to admit.
+Pick it too small and the chain crawls; pick it too large and it blows up. In practice we end up running the same algorithm many times over a grid of step sizes, staring at diagnostic plots and trying to decide which run “looks OK”.</p>
+<p>In our recent paper, <em>Tuning-Free Sampling via Optimization on the Space of Probability Measures</em>, we try to remove this manual tuning step altogether.</p>
+<p><strong>The core idea is simple:</strong></p>
+<p>View sampling algorithms as optimisation algorithms on the space of probability measures, and design a parameter-free step size schedule directly from an upper bound on the objective functional.</p>
+<p>The result is <strong>Fuse – the Functional Upper-Bound Step-Size Estimator</strong> – a dynamic, tuning-free step size schedule for Wasserstein gradient-flow algorithms. You can plug Fuse into a wide range of sampling algorithms, including ULA, SGLD, SVGD, mean-field Langevin, variational gradient descent, etc., and you obtain variants that are effectively step-size free, while retaining (almost) the same theoretical guarantees as the optimally-tuned versions.</p>
+<p>This post gives a high-level overview of the main ideas, with a particular focus on how Fuse is constructed and why it works.</p>
+<hr>
+<h2 id="sampling-as-optimisation-on-the-space-of-probability-measures">Sampling as optimisation on the space of probability measures</h2>
+<p>Consider a target distribution</p>
+<p>$$\pi(\mathrm{d}x) \propto \exp(-U(x))\mathrm{d}x,$$</p>
+<p>and a probability measure $\mu$ on $\mathbb{R}^d$. Recently, a new perspective on sampling algorithms has developed where we frame sampling as an optimisation problem</p>
+<p>$$\min_{\mu}  \mathcal{F}(\mu),$$</p>
+<p>where $\mathcal{F}$ is a functional on probability measures. The canonical choice is the KL divergence
+$\mathcal{F}(\mu) = \mathrm{KL}(\mu | \pi),$ but other choices (e.g. functionals based on KSD or mean-field neural network objectives) are also possible.</p>
+<p>The optimisation lives on the Wasserstein space $(\mathcal{P}2(\mathbb{R}^d), W_2)$: the set of probability measures with finite second moment, equipped with the 2-Wasserstein distance $W_2$. A Wasserstein gradient flow of $\mathcal{F}$ is a curve $(\mu_t)_{t\ge0}$ such that</p>
+<p>$$\partial_t \mu_t + \nabla \cdot (\mu_t v_t) = 0, \qquad v_t = - \nabla \frac{\delta \mathcal{F}}{\delta \mu}(\mu_t),$$
+<em>i.e.</em> probability mass moves in the direction of steepest descent of $\mathcal{F}$ under the Wasserstein geometry.</p>
+<p>For the KL functional with target $\pi$, this gradient flow coincides with the Fokker–Planck equation of the overdamped Langevin dynamics, so following the gradient flow corresponds to moving $\mu_t$ towards $\pi$.</p>
+<p>We can picture this as follows: along the horizontal axis we measure distance in $W_2$ from the initial distribution $\mu_0$ towards the target $\pi$; vertically we plot the value of the functional $\mathcal{F}(\mu)$.</p>
+<p><img loading="lazy" src="./demo_1.png" alt=""  />
+</p>
+<p>The black curve is the gradient flow trajectory of the functional. Starting from $\mu_0$ (blue dot), following the flow moves us towards $\pi$ (red star) while decreasing $\mathcal{F}(\mu)$.</p>
+<hr>
+<h2 id="discretising-the-flow-from-gradient-flows-to-algorithms">Discretising the flow: from gradient flows to algorithms</h2>
+<p>To obtain an actual sampling algorithm we discretise the gradient flow in time. For the KL functional this leads to variants of the <strong>unadjusted Langevin algorithm (ULA):</strong></p>
+<p>$$x_{t+1} = x_t - \gamma_t \nabla U(x_t) + \sqrt{2\gamma_t},\xi_t,$$
+with $(\xi_t)$ i.i.d. standard Gaussians and step size $\gamma_t &gt; 0$.</p>
+<p>In measure space this corresponds to a sequence of distributions $(\mu_t)$ generated by applying the Markov transition kernel of ULA. We can think of the evolution as taking discrete steps along the gradient flow:</p>
+<p>Conceptually, you can imagine that the blue dots are the functional values for marginals $\mu_t$, the red arrows indicate the discrete updates driven by the gradient $\nabla U(x_t)$.</p>
+<p><img loading="lazy" src="./demo_2.png" alt=""  />
+</p>
+<p>Two important facts about this discretisation:</p>
+<ol>
+<li>There is an optimal constant step size (in hindsight) that minimises an upper bound on the sub-optimality $\mathcal{F}(\bar\mu_T) - \mathcal{F}(\pi)$, where $\bar\mu_T$ is an appropriate average of the iterates. This step size depends on:
+<ul>
+<li><em>the Wasserstein distance between $\mu_0$ and the “average” iterate</em>, and</li>
+<li><em>accumulated information about gradients along the trajectory</em>.</li>
+</ul>
+</li>
+<li>Unfortunately, we cannot compute the optimal step size in practice. It depends on quantities such as $W_2(\mu_0, \pi)$ which are unknown and hard to estimate exactly.</li>
+</ol>
+<p><em>So, in theory, an optimal step size exists, but in practice we end up guessing it.</em></p>
+<p>The goal of the paper is to bridge this gap: construct a dynamic schedule $\gamma_t$ that tracks the optimal step size without knowing the constants it depends on, and prove that this schedule achieves (almost) the same convergence rate.</p>
+<hr>
+<h2 id="a-functional-upper-bound-and-an-oracle-step-size">A functional upper bound and an “oracle” step size</h2>
+<p>The starting point is a functional inequality of the form
+$$\mathcal{F}(\bar\mu_T) - \mathcal{F}(\pi)
+\lesssim
+\frac{A_T(\mu_0,\dots,\mu_T) + B_T(\gamma_1,\dots,\gamma_T)}
+{\sum_{t=1}^T \gamma_t},$$
+where:</p>
+<ul>
+<li>
+<p>$A_T$ involves Wasserstein distances between the initial distribution and the intermediate iterates (i.e., <em>“how far we could travel?”</em>), and</p>
+</li>
+<li>
+<p>$B_T$ involves accumulated squared gradients (i.e., <em>“how much optimisation effort we have spent?”</em>).</p>
+</li>
+</ul>
+<p>If we fix all iterates and treat the step size as a single scalar $\gamma$, this bound simplifies to something of the form
+$$\mathcal{F}(\bar\mu_T) - \mathcal{F}(\pi) \lesssim \frac{D^2}{\gamma T} + \gamma G^2$$,
+where:</p>
+<ul>
+<li>$D$ is a measure of distance in $W_2$ from $\mu_0$ to the target distribution $\pi$,</li>
+<li>$G^2$ is an average squared gradient norm along the trajectory.</li>
+</ul>
+<p>Minimising the right-hand side in $\gamma$ yields an <em>“oracle”</em> step size</p>
+<p>$$\gamma^\star \approx \frac{D}{G \sqrt{T}},$$</p>
+<p>which recovers the familiar optimal $1/\sqrt{T}$ behaviour. The difficulty is that both $D$ and $G$ are unknown.</p>
+<p>The key idea in Fuse is to replace the unknown constants by quantities that we can estimate online from the evolving trajectory, while keeping the same functional shape as the oracle step size.</p>
+<hr>
+<h2 id="the-fuse-step-size-schedule">The Fuse step size schedule</h2>
+<p>Fuse builds its step size by combining two pieces of information:</p>
+<ol>
+<li><strong>Numerator:</strong> <em>how far we have moved from where we started?</em></li>
+</ol>
+<p>We track the Wasserstein distance from the initial distribution $\mu_0$ to each intermediate iterate $\mu_i$,</p>
+<p>$$W_2(\mu_0, \mu_1),; W_2(\mu_0, \mu_2), \dots $$</p>
+<p>and keep their running maximum (see figure below). Intuitively, this captures the scale of the problem.</p>
+<ol start="2">
+<li><strong>Denominator:</strong> <em>how much gradient effort we have accumulated?</em></li>
+</ol>
+<p>We track a running sum of squared gradient norms</p>
+<p>$$\sum_{i=1}^t \mathbb{E}_{x\sim\mu_i}\bigl[|\nabla U(x)|^2\bigr],$$</p>
+<p>measuring how much <em>“optimisation work”</em> we have done up to iteration <em>t</em>.</p>
+<p>Putting these together, the idealised Fuse schedule for ULA takes the form
+$$\gamma_t = \frac{\displaystyle
+\max_{1 \le i \le t}
+\bigl[, W_2(\mu_0, \mu_i), r_\varepsilon \bigr]
+}{
+\displaystyle
+\sqrt{\sum_{i=1}^t
+\mathbb{E}_{x\sim\mu_i}\bigl[|\nabla U(x)|^2\bigr]}
+},$$
+where $r\varepsilon&gt;0$ is a small constant that prevents the numerator from degenerating early on.</p>
+<p>The sequence of figures below shows how this step size is constructed.</p>
+<h3 id="tracking-the-distance-travelled">Tracking the distance travelled</h3>
+<p>We start from the Wasserstein gradient flow picture and keep track of how far each iterate $\mu_i$ is from the starting distribution $\mu_0$.</p>
+<p>First step:
+<img loading="lazy" src="./demo_3.png" alt=""  />
+</p>
+<p>Second and third step:
+<img loading="lazy" src="./demo_5.png" alt=""  />
+
+<img loading="lazy" src="./demo_7.png" alt=""  />
+</p>
+<p>As the algorithm progresses, we update the running maximum
+$$\max_{1\le i\le t} W_2(\mu_0,\mu_i).$$</p>
+<p>By the time we are close to the target, the numerator effectively captures the overall radius of the trajectory in Wasserstein space.</p>
+<p>In practice, we do not have access to exact Wasserstein distances, so we work with particle-based approximations and coarse upper bounds derived from the dynamics. The important point is that these approximations are cheap to compute and only depend on quantities we already use in the algorithm.</p>
+<h3 id="accumulating-gradient-information">Accumulating gradient information</h3>
+<p>The denominator of Fuse looks like an AdaGrad-style accumulator of squared gradient norms,
+$$\sum_{i=1}^t \mathbb{E}_{x\sim\mu_i}\bigl[|\nabla U(x)|^2\bigr].$$
+As this quantity grows, the step size automatically shrinks, so Fuse naturally transitions from aggressive early steps to more conservative steps later on, without ever needing a hand-crafted schedule.</p>
+<p>Combining numerator and denominator gives the full Fuse step size:</p>
+<p><img loading="lazy" src="./demo_9.png" alt=""  />
+</p>
+<p>Fuse therefore behaves like a Polyak / AdaGrad-type schedule lifted to the Wasserstein space: it adjusts the step size using only information that is intrinsic to the optimisation problem on probability measures, rather than requiring us to specify Lipschitz constants, strong-convexity parameters, or distances to the optimum.</p>
+<hr>
+<h3 id="from-fuse-to-tuning-free-sampling-algorithms">From Fuse to tuning-free sampling algorithms</h3>
+<p>The analysis is carried out for two time-discretisations of the Wasserstein gradient flow:</p>
+<ol>
+<li>
+<p><strong>Forward-flow discretisation.</strong>
+This covers ULA and its mean-field variants. The resulting algorithms include:</p>
+<ul>
+<li>ULA × Fuse – a tuning-free version of (parallel-chain) ULA;</li>
+<li>SGLD × Fuse – the stochastic-gradient counterpart, suitable for large datasets;</li>
+<li>MFLD × Fuse – a mean-field Langevin algorithm with automatic step sizes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Forward Euler discretisation.</strong>
+This covers particle-based methods where we approximate the Wasserstein gradient with a kernel operator. Here we obtain:</p>
+<ul>
+<li>SVGD × Fuse – a tuning-free Stein variational gradient descent;</li>
+<li>VGD × Fuse – a tuning-free variational gradient descent algorithm in the mean-field setting;</li>
+<li>a step-size-free variant of KSD descent.</li>
+</ul>
+</li>
+</ol>
+<p>All of these methods share the same high-level pattern:</p>
+<ol>
+<li>Maintain a collection of particles $(x_t^{(k)})_{k=1}^N$ representing the current measure $\mu_t.$</li>
+<li>Use these particles to compute:
+<ul>
+<li>approximate Wasserstein distances from the initial distribution;</li>
+<li>approximate expectations of squared gradient norms.</li>
+</ul>
+</li>
+<li>Update the step size $\gamma_t$ using Fuse.</li>
+<li>Propagate each particle using the relevant update rule (Langevin, SVGD, mean-field dynamics, etc.).</li>
+</ol>
+<p>In practice, there is only one hyperparameter: the small initial movement scale $r_\varepsilon$. The performance is, in most cases, extremely robust to this choice; across several orders of magnitude of $r_\varepsilon$ the behaviour of the algorithm barely changes.</p>
+<hr>
+<h3 id="what-do-we-actually-prove">What do we actually prove?</h3>
+<p>Under a set of fairly standard assumptions — <em>geodesic convexity</em> of $\mathcal{F}$ in the Wasserstein space, and local boundedness of (stochastic) gradients — the paper establishes the following:</p>
+<ul>
+<li>For both the forward-flow and forward Euler discretisations, Fuse achieves the same convergence rate (up to a logarithmic factor) as the algorithm with the optimally tuned constant step size.</li>
+<li>This holds in both non-smooth and smooth settings, for deterministic and stochastic gradients.</li>
+<li>The bounds are stated in terms of the functional sub-optimality $\mathcal{F}(\bar\mu_T) - \mathcal{F}(\pi)$, where $\bar\mu_T$ is an average of the iterates with carefully chosen weights. In the KL case, this directly controls the KL divergence between an averaged iterate and the target.</li>
+<li>In the Gaussian setting, where the gradient flow remains Gaussian for all time, all Wasserstein distances and expectations can be computed in closed form.</li>
+</ul>
+<p>From a theoretical perspective, the message is that we can obtain near-optimal convergence rates in Wasserstein gradient-flow algorithms without ever specifying a step size. The information needed to tune the algorithm is extracted on the fly from the evolving trajectory in measure space.</p>
+<hr>
+<h3 id="experiments-in-practice">Experiments in practice</h3>
+<p>The paper benchmarks Fuse across a range of synthetic and real-world problems. A few highlights:</p>
+<h3 id="gaussian-targets">Gaussian targets</h3>
+<p>For a 10-dimensional Gaussian target with varying covariance structure, ULA × Fuse is compared with standard ULA over a wide grid of fixed step sizes.</p>
+<ul>
+<li><strong>Performance vs step size.</strong> ULA shows the usual U-shaped behaviour: too small a step size leads to high bias; too large a step size causes instability. ULA × Fuse, in contrast, achieves near-optimal performance for essentially any reasonable value of the initial movement parameter.</li>
+</ul>
+<p><img loading="lazy" src="./fig1a.pdf" alt=""  />
+</p>
+<ul>
+<li><strong>Robustness to anisotropy and initialisation.</strong> The behaviour of ULA × Fuse is remarkably stable when we change the conditioning of the target covariance or the distance between $\mu_0$ and $\pi$.</li>
+</ul>
+<p><img loading="lazy" src="./fig4b.pdf" alt=""  />
+
+<img loading="lazy" src="./fig4a.pdf" alt=""  />
+</p>
+<h3 id="bayesian-logistic-regression">Bayesian logistic regression</h3>
+<p>Two settings are considered:</p>
+<ol>
+<li><strong>Synthetic data with a Gaussian prior.</strong>
+ULA × Fuse is compared to ULA across different step sizes. Posterior means and credible intervals computed with Fuse match closely those obtained from a long, carefully tuned reference run.</li>
+<li><strong>Hierarchical prior with the Covertype dataset.</strong>
+Here we need stochastic gradients. SGLD × Fuse and SVGD × Fuse are compared against their classical counterparts over a wide range of step sizes.</li>
+</ol>
+<ul>
+<li>The predictive accuracy of SGLD and SVGD depends very sensitively on the step size.</li>
+<li>The Fuse variants achieve essentially the same best accuracy across a broad range of initial movement parameters, and remain stable as we vary the mini-batch size.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img loading="lazy" src="./fig8a.pdf" alt=""  />
+</td>
+<td><img loading="lazy" src="./fig8b.pdf" alt=""  />
+</td>
+</tr>
+<tr>
+<td><img loading="lazy" src="./fig9a.pdf" alt=""  />
+</td>
+<td><img loading="lazy" src="./fig9b.pdf" alt=""  />
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mean-field-neural-networks">Mean-field neural networks</h3>
+<p>Finally, the paper looks at training a simple mean-field neural network, where the optimisation objective is not geodesically convex and the theory does not directly apply.</p>
+<p>Even in this more challenging setting:</p>
+<ul>
+<li>MFLD × Fuse and VGD × Fuse exhibit good empirical performance,</li>
+<li>and again show very mild sensitivity to the initial movement scale.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img loading="lazy" src="./fig11a.pdf" alt=""  />
+</td>
+<td><img loading="lazy" src="./fig11b.pdf" alt=""  />
+</td>
+</tr>
+</tbody>
+</table>
+<p>These experiments collectively suggest that Fuse provides a practical way to make gradient-based samplers much less painful to tune, while maintaining competitive performance.</p>
+<hr>
+<h2 id="relation-to-previous-work">Relation to previous work</h2>
+<p>Fuse sits at the intersection of two lines of research:</p>
+<ul>
+<li><strong>Parameter-free optimisation in Euclidean spaces.</strong> Methods such as coin-betting, AdaGrad, and Polyak step sizes design learning-rate-free schedules that adapt to unknown problem parameters by relying on cumulative gradient information.</li>
+<li><strong>Optimisation on the space of probability measures.</strong> Viewing sampling as optimisation in Wasserstein space has become standard, leading to algorithms like ULA, SVGD, mean-field Langevin, variational gradient descent, and many others.</li>
+</ul>
+<p>The contribution of Fuse is to lift parameter-free ideas to the Wasserstein setting, using functional inequalities specific to gradient flows on probability measures. The resulting schedule is not just a heuristic; it is tightly coupled to a non-asymptotic upper bound on $\mathcal{F}(\bar\mu_T) - \mathcal{F}(\pi)$.</p>
+<hr>
+<h2 id="where-next">Where next?</h2>
+<p>Several directions look promising:</p>
+<ul>
+<li><strong>Other geometries.</strong> The analysis is formulated for Wasserstein gradient flows, but in principle the same approach should extend to other geometries (Stein, Fisher–Rao, Kalman, …) given appropriate functional inequalities and notions of geodesic convexity.</li>
+<li><strong>Richer models and functionals.</strong> The current experiments focus on relatively classical targets and mean-field networks. Extending Fuse to more complex generative models and high-dimensional posteriors is an obvious next step.</li>
+<li><strong>Sharper bounds and reduced logarithmic factors.</strong> The price we pay for being tuning-free is a logarithmic factor in the convergence rate. It would be interesting to know how far this can be reduced, and whether further problem structure can be exploited.</li>
+</ul>
+<p>For now, the main takeaway is that you can run a wide class of sampling algorithms without hand-tuning a step size, by letting Fuse adaptively select the step size based solely on the trajectory of the algorithm in the space of probability measures.</p>
+<p>If you are interested in the full details, including proofs and additional experiments, the paper is available on arXiv.</p>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li>Sharrock, L. and Nemeth, C. (2025). Tuning-Free Sampling via Optimization on the Space of Probability Measures. arXiv:2510.25315. <a href="https://arxiv.org/pdf/2510.25315.pdf" target="_blank">https://arxiv.org/pdf/2510.25315.pdf</a>
+￼</li>
+<li>Fearnhead P, Nemeth C, Oates CJ, Sherlock C. Scalable Monte Carlo for Bayesian Learning. Cambridge: Cambridge University Press; 2025. (Institute of Mathematical Statistics Monographs).</li>
+<li>Welling, M. and Teh, Y. W. (2011). Bayesian learning via stochastic gradient Langevin dynamics.
+In Proceedings of the 28th International Conference on Machine Learning (ICML 2011).</li>
+<li>Liu, Q. and Wang, D. (2016). Stein variational gradient descent: A general purpose Bayesian
+inference algorithm. In Proceedings of the 30th Conference on Neural Information Processing
+Systems (NIPS 2016).</li>
+<li>Suzuki, T., Wu, D., and Nitanda, A. (2023b). Convergence of mean-field Langevin dynamics:
+time-space discretization, stochastic gradient, and variance reduction. In Proceedings of the 37th
+Annual Conference on Neural Information Processing Systems (NeurIPS 2023).</li>
+<li>Chazal, C., Kanagawa, H., Shen, Z., Korba, A., Oates, C. J., et al. (2025). A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives. arXiv preprint arXiv:2509.10393.</li>
+</ul>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chris-nemeth.github.io/tags/fuse/">Fuse</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/gradient-flows/">Gradient Flows</a></li>
+      <li><a href="https://chris-nemeth.github.io/tags/learning-rate-free/">Learning-Rate-Free</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://chris-nemeth.github.io/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

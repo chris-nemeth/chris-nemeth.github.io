@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chris-nemeth.github.io/blogs/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chris-nemeth.github.io/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/fuse/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/gradient-flows/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/learning-rate-free/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/blogs/fuse/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/gas-emmissions/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
@@ -15,7 +33,7 @@
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
@@ -26,8 +44,17 @@
     <loc>https://chris-nemeth.github.io/research_group/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
-    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+    <loc>https://chris-nemeth.github.io/tags/changepoints/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/soil/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/time-series/</loc>
+    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/distance-metrics/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
@@ -43,6 +70,9 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/network-model/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/bayesian/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
@@ -62,20 +92,26 @@
     <loc>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/blogs/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+    <loc>https://chris-nemeth.github.io/tags/state-space-model/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/stochastic-gradient/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/flow-matching/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/blogs/mfm/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/normalizing-flows/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/sampling/</loc>
-    <lastmod>2024-10-29T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-05-24-mfm/</loc>
     <lastmod>2024-10-02T00:00:00+00:00</lastmod>
@@ -98,9 +134,6 @@
     <loc>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gradient-flows/</loc>
-    <lastmod>2024-09-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/optimization/</loc>
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -108,16 +141,13 @@
     <lastmod>2024-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/coin-betting/</loc>
-    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/coin-sampling/</loc>
-    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/learning-rate-free/</loc>
-    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/blogs/coin_betting/</loc>
-    <lastmod>2024-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/software/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
@@ -245,18 +275,6 @@
     <loc>https://chris-nemeth.github.io/tags/mirror-descent/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</loc>
-    <lastmod>2023-10-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/changepoints/</loc>
-    <lastmod>2023-10-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/soil/</loc>
-    <lastmod>2023-10-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/time-series/</loc>
-    <lastmod>2023-10-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</loc>
     <lastmod>2023-08-31T00:00:00+00:00</lastmod>
   </url><url>
@@ -274,15 +292,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/svgd/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/state-space-model/</loc>
-    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/stochastic-gradient/</loc>
-    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</loc>
-    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/elliptical-slice-sampling/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>

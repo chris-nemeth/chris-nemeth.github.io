@@ -16,6 +16,13 @@
       <description> </description>
     </item>
     <item>
+      <title>Inferring Soil Drydown Behaviour with Adaptive Bayesian Online Changepoint Analysis</title>
+      <link>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2025-09-10-soil-drydown/</guid>
+      <description> </description>
+    </item>
+    <item>
       <title>Modelling Populations of Interaction Networks via Distance Metrics</title>
       <link>https://chris-nemeth.github.io/papers/2022-06-20-pop-interaction-networks/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
@@ -23,10 +30,24 @@
       <description> </description>
     </item>
     <item>
+      <title>A changepoint approach to modelling non-stationary soil moisture dynamics</title>
+      <link>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</guid>
+      <description> </description>
+    </item>
+    <item>
       <title>Deep Learning Surrogates for Real-Time Gas Emission Inversion</title>
       <link>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/papers/2025-06-02-plume_surrogates/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Stochastic Gradient MCMC for Nonlinear State Space Models</title>
+      <link>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</guid>
       <description> </description>
     </item>
     <item>
@@ -121,13 +142,6 @@
       <description> </description>
     </item>
     <item>
-      <title>A changepoint approach to modelling non-stationary soil moisture dynamics</title>
-      <link>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</link>
-      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2023-10-30-soil-changepoints/</guid>
-      <description> </description>
-    </item>
-    <item>
       <title>Characterising the ice sheet surface in Northeast Greenland using Sentinel-1 SAR data</title>
       <link>https://chris-nemeth.github.io/papers/2023-08-31-ice-sheet/</link>
       <pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate>
@@ -139,13 +153,6 @@
       <link>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/papers/2023-04-24-coin-sampling/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>Stochastic Gradient MCMC for Nonlinear State Space Models</title>
-      <link>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</link>
-      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2023-06-08-sgmcmc-nonlinear-ssm/</guid>
       <description> </description>
     </item>
     <item>

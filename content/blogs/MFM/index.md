@@ -1,7 +1,7 @@
 ---
 title: "Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows" 
 date: 2024-10-29
-lastmod: 2024-10-29
+lastmod: 2025-11-12
 tags: ["normalizing flows","flow matching", "Markov chain Monte Carlo","sampling"]
 author: ["Alberto Cabezas-Gonzalez", "Louis Sharrock", "Christopher Nemeth"]
 description: "Blog post on NeurIPS 2024 paper - Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows" 
@@ -71,3 +71,11 @@ We tested MFM on a variety of benchmarks:
 MFM provides a promising framework for improving MCMC through flow-based transitions, making it adaptable for complex inference tasks in machine learning and statistics. Potential directions include refining the choice of flow architectures and exploring non-asymptotic convergence properties.
 
 For those interested, the full [paper](https://arxiv.org/abs/2405.14392) and code are available on [GitHub](https://github.com/albcab/mfm).
+
+
+--- 
+
+## References
+
+- Cabezas, A., Sharrock, L. and Nemeth, C. (2024). Markovian Flow Matching: Accelerating MCMC with
+Continuous Normalizing Flows. 38th Conference on Neural Information Processing Systems (NeurIPS 2024).

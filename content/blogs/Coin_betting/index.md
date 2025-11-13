@@ -1,7 +1,7 @@
 ---
 title: "Using coins to make Bayesian inference learning-rate free" 
 date: 2024-08-22
-lastmod: 2024-08-22
+lastmod: 2025-11-12
 tags: ["coin betting","coin sampling","gradient flows","learning-rate-free"]
 author: ["Louis Sharrock", "Christopher Nemeth
 "]
@@ -354,5 +354,13 @@ The coin sampling algorithm (aka Coin Wasserstein gradient descent algorithm) is
 
 For more details on the theoretical underpinnings and empirical performance of coin sampling, you can access the full paper [here](https://arxiv.org/abs/2301.11294). The code is also available on [Github](https://github.com/louissharrock/Coin-SVGD)
 
----
 
+--- 
+
+## References
+
+- Sharrock, L. and Nemeth, C. (2023). Coin Sampling: Gradient-Based Bayesian Inference without Learning Rates. Proceedings of the 40th International Conference on Machine Learning (ICML). 
+- Sharrock, L., Mackey, L. and Nemeth, C. (2023). Learning Rate Free Sampling in Constrained Domains. 37th Conference on Neural Information Processing Systems (NeurIPS 2023). 
+- Sharrock, L., Dodd, D. and Nemeth, C. (2024). Tuning-free maximum likelihood training of latent variable models via coin betting. International Conference on Artificial Intelligence and Statistics (AISTATS). 
+- Dodd, D., Sharrock, L. and Nemeth, C. (2024). Learning-Rate-Free Stochastic Optimization over Riemannian Manifolds. International Conference on Machine Learning (ICML). 
+  
