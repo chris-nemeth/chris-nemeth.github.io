@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generative Modelling</title>
+      <link>https://chris-nemeth.github.io/tags/generative-modelling/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/generative-modelling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generators</title>
+      <link>https://chris-nemeth.github.io/tags/generators/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/generators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graphs</title>
+      <link>https://chris-nemeth.github.io/tags/graphs/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heat Kernel</title>
+      <link>https://chris-nemeth.github.io/tags/heat-kernel/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/heat-kernel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Changepoints</title>
+      <link>https://chris-nemeth.github.io/tags/changepoints/</link>
+      <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/changepoints/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Soil</title>
+      <link>https://chris-nemeth.github.io/tags/soil/</link>
+      <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/soil/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time Series</title>
+      <link>https://chris-nemeth.github.io/tags/time-series/</link>
+      <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/time-series/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Fuse</title>
       <link>https://chris-nemeth.github.io/tags/fuse/</link>
@@ -69,27 +118,6 @@
       <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Changepoints</title>
-      <link>https://chris-nemeth.github.io/tags/changepoints/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/changepoints/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Soil</title>
-      <link>https://chris-nemeth.github.io/tags/soil/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/soil/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Time Series</title>
-      <link>https://chris-nemeth.github.io/tags/time-series/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/time-series/</guid>
       <description></description>
     </item>
     <item>

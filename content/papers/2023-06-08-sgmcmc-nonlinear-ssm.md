@@ -36,6 +36,7 @@ State space models (SSMs) provide a flexible framework for modeling complex time
 
 Aicher, C., Putcha, S., Nemeth, C., Fearnhead, P. and Fox, E. (2025). Stochastic gradient MCMC for nonlinear state space models. *Bayesian Analysis*, 20(1), pp.83--105.
 
+```BibTeX
 @article{aicher2025stochastic,
   title={Stochastic gradient MCMC for nonlinear state space models},
   author={Aicher, Christopher and Putcha, Srshti and Nemeth, Christopher and Fearnhead, Paul and Fox, Emily},
@@ -46,4 +47,5 @@ Aicher, C., Putcha, S., Nemeth, C., Fearnhead, P. and Fox, E. (2025). Stochastic
   year={2025},
   publisher={International Society for Bayesian Analysis}
 }
+```
 

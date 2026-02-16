@@ -1,6 +1,6 @@
 ---
 title: "Research Group"
-date: 2025-09-30
+date: 2026-02-16
 hidemeta: true
 description: "Chris Nemeth's research group"
 
@@ -10,7 +10,9 @@ description: "Chris Nemeth's research group"
 
 #### Postdoctoral Researchers
 
-+ [Ant Stephenson](https://scholar.google.com/citations?user=l4tBGbwAAAAJ&hl=en): 2025 - 
++ [Liam Llamazares-Elias](https://scholar.google.com/citations?user=nW7-c62TwJ0C&hl=en&oi=ao): 2025 -
++ [Ant Stephenson](https://scholar.google.com/citations?user=l4tBGbwAAAAJ&hl=en): 2025 - 2026 
+    - Now at [University of Bristol](https://research-information.bris.ac.uk/en/persons/anthony-stephenson/) 
 + [Louis Sharrock](https://louissharrock.github.io/): 2022 - 2025
     - Now at [UCL](https://louissharrock.github.io/)
 + [Estevao Prado](https://www.linkedin.com/in/estevão-prado-998097238/): 2022 - 2024
@@ -29,20 +31,22 @@ description: "Chris Nemeth's research group"
 
 #### PhD Students
 
-
++ [Abiel Talwar](https://www.lancaster.ac.uk/data-science-and-artificial-intelligence/about-us/members/abiel-talwar): 2025 - 
+    - Funded by [G-Research](https://www.gresearch.com)
+    - Co-supervised with [Henry Moss](https://henrymoss.github.io)
+     
 + [Andreas Makris](https://www.lancaster.ac.uk/maths/people/andreas-makris): 2024 - 
     - Funded by [ProbAI](https://www.probai.uk)
     - Co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/)
-
-+ [Dan Dodd](https://www.lancaster.ac.uk/sci-tech/about-us/people/daniel-dodd): 2023 -
 
 + [Connie Trojan](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/): 2022 -
     - Funded by [Microsoft Research](https://www.microsoft.com/en-us/research/) 
     - Co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/)
 
-+ [Thomas Newman](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/): 2022 -
++ [Thomas Newman](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/): 2022 - 2025
     - Funded by [Shell](https://www.shell.co.uk/) 
     - Co-supervised with [Phil Jonathan](https://ygraigarw.github.io/)
+    - Now at [Space Research Organisation Netherlands](https://www.sron.nl/en/)
 
 + [Katie Howgate](https://www.lancaster.ac.uk/stor-i-student-sites/katie-howgate/): 2021 -
     - Funded by [Tesco](https://www.tesco.com/) 
@@ -56,7 +60,7 @@ description: "Chris Nemeth's research group"
     - [*Developments in Gaussian processes with applications to climate science and network problems*](https://eprints.lancs.ac.uk/id/eprint/188421/1/main.pdf). 
     - Funded by [DSNE](https://www.lancaster.ac.uk/data-science-of-the-natural-environment/) 
     - Co-supervised with [David Leslie](https://www.lancaster.ac.uk/maths/people/david-leslie) and [Paul Young](https://sites.google.com/site/pauljyoung/)
-    - Now at [Amazon](https://tpin.uk/about/)
+    - Now at [Netflix](https://tpin.uk/about/)
 
 + [Rachael Duncan](https://www.linkedin.com/in/rachael-duncan-21a951270/): 2019 - 2023
     - [*Methods for missing time-series data and large spatial data*](https://eprints.lancs.ac.uk/id/eprint/214397/3/2024duncanphd.pdf)
