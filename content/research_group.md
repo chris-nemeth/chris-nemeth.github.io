@@ -31,6 +31,10 @@ description: "Chris Nemeth's research group"
 
 #### PhD Students
 
++ [Chaim Elchik](https://lec-reefs.org/team/chaim-elchik/): 2025 - 
+    - Funded by [ExaGeo](https://www.exageo.org)
+    - Co-supervised with [Sally Keith](https://www.lancaster.ac.uk/lec/about-us/people/sally-anne-keith)
+    
 + [Abiel Talwar](https://www.lancaster.ac.uk/data-science-and-artificial-intelligence/about-us/members/abiel-talwar): 2025 - 
     - Funded by [G-Research](https://www.gresearch.com)
     - Co-supervised with [Henry Moss](https://henrymoss.github.io)
