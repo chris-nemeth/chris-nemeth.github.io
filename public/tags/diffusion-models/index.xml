@@ -2,17 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Diffusion Models on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/diffusion-models/</link>
+    <link>http://localhost:1313/tags/diffusion-models/</link>
     <description>Recent content in Diffusion Models on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/diffusion-models/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conditioning Gaussian Processes on Almost Anything</title>
+      <link>http://localhost:1313/papers/2026-05-20-gp-conditioning/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/2026-05-20-gp-conditioning/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Hypergraph Generation via Structured Stochastic Diffusion</title>
+      <link>http://localhost:1313/papers/2026-05-06-hedge/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/2026-05-06-hedge/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Diffusion Generative Modelling for Divide-and-Conquer MCMC</title>
-      <link>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</link>
+      <link>http://localhost:1313/papers/2024-06-18-diff-div-conq/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-06-18-diff-div-conq/</guid>
+      <guid>http://localhost:1313/papers/2024-06-18-diff-div-conq/</guid>
       <description> </description>
     </item>
   </channel>

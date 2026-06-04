@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Parallel MCMC on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/parallel-mcmc/</link>
+    <link>http://localhost:1313/tags/parallel-mcmc/</link>
     <description>Recent content in Parallel MCMC on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/parallel-mcmc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/parallel-mcmc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SwISS: A scalable Markov chain Monte Carlo divide-and-conquer strategy</title>
-      <link>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</link>
+      <link>http://localhost:1313/papers/2022-11-04-swiss/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2022-11-04-swiss/</guid>
+      <guid>http://localhost:1313/papers/2022-11-04-swiss/</guid>
       <description> </description>
     </item>
   </channel>

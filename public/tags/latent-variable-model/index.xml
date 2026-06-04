@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Latent Variable Model on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/latent-variable-model/</link>
+    <link>http://localhost:1313/tags/latent-variable-model/</link>
     <description>Recent content in Latent Variable Model on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/latent-variable-model/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/latent-variable-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tuning-Free Maximum Likelihood Training of Latent Variable Models via Coin Betting</title>
-      <link>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</link>
+      <link>http://localhost:1313/papers/2023-05-25-coinem/</link>
       <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2023-05-25-coinem/</guid>
+      <guid>http://localhost:1313/papers/2023-05-25-coinem/</guid>
       <description> </description>
     </item>
   </channel>

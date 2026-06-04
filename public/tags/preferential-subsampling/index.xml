@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Preferential Subsampling on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/preferential-subsampling/</link>
+    <link>http://localhost:1313/tags/preferential-subsampling/</link>
     <description>Recent content in Preferential Subsampling on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/preferential-subsampling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/preferential-subsampling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Preferential Subsampling for Stochastic Gradient Langevin Dynamics</title>
-      <link>https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/</link>
+      <link>http://localhost:1313/papers/2023-04-13-preferential-sgld/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2023-04-13-preferential-sgld/</guid>
+      <guid>http://localhost:1313/papers/2023-04-13-preferential-sgld/</guid>
       <description> </description>
     </item>
   </channel>

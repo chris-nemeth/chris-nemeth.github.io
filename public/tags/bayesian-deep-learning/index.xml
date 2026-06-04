@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bayesian Deep Learning on Chris Nemeth</title>
-    <link>https://chris-nemeth.github.io/tags/bayesian-deep-learning/</link>
+    <link>http://localhost:1313/tags/bayesian-deep-learning/</link>
     <description>Recent content in Bayesian Deep Learning on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chris-nemeth.github.io/tags/bayesian-deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bayesian-deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Position Paper: Bayesian Deep Learning in the Age of Large-Scale AI</title>
-      <link>https://chris-nemeth.github.io/papers/2024-02-06-bdl/</link>
+      <link>http://localhost:1313/papers/2024-02-06-bdl/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-02-06-bdl/</guid>
+      <guid>http://localhost:1313/papers/2024-02-06-bdl/</guid>
       <description> </description>
     </item>
   </channel>
