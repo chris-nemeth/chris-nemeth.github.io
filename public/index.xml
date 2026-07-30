@@ -6,8 +6,15 @@
     <description>Recent content on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The MCMC Gallery</title>
+      <link>http://localhost:1313/software/mcmc-viz/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/software/mcmc-viz/</guid>
+      <description>An interactive visual atlas of MCMC algorithms - animated, tunable, and explained in plain language.</description>
+    </item>
     <item>
       <title>Conditioning Gaussian Processes on Almost Anything</title>
       <link>http://localhost:1313/papers/2026-05-20-gp-conditioning/</link>

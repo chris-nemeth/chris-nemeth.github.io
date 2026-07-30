@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>The MCMC Gallery | Chris Nemeth</title>
+<meta name="keywords" content="MCMC, visualisation, interactive, sampling, teaching">
+<meta name="description" content="An interactive visual atlas of MCMC algorithms - animated, tunable, and explained in plain language.">
+<meta name="author" content="Christopher Nemeth">
+<link rel="canonical" href="http://localhost:1313/software/mcmc-viz/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/software/mcmc-viz/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="The MCMC Gallery" />
+<meta property="og:description" content="An interactive visual atlas of MCMC algorithms - animated, tunable, and explained in plain language." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/software/mcmc-viz/" />
+<meta property="og:image" content="http://localhost:1313/mcmc_gallery.png" /><meta property="article:section" content="software" />
+<meta property="article:published_time" content="2026-07-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-07-30T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/mcmc_gallery.png" />
+<meta name="twitter:title" content="The MCMC Gallery"/>
+<meta name="twitter:description" content="An interactive visual atlas of MCMC algorithms - animated, tunable, and explained in plain language."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Data",
+      "item": "http://localhost:1313/software/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The MCMC Gallery",
+      "item": "http://localhost:1313/software/mcmc-viz/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The MCMC Gallery",
+  "name": "The MCMC Gallery",
+  "description": "An interactive visual atlas of MCMC algorithms - animated, tunable, and explained in plain language.",
+  "keywords": [
+    "MCMC", "visualisation", "interactive", "sampling", "teaching"
+  ],
+  "articleBody": "The MCMC Gallery Launch the tool The MCMC Gallery is an interactive, browser-based visualisation tool for exploring Markov chain Monte Carlo algorithms. Every method faces the same problem: map out a probability distribution that you can only evaluate point by point. Pick a target distribution — a banana, a ring, a mixture of hills — choose an algorithm, and watch the sampler feel its way across the landscape. You can tune the step size and speed as it runs, and watch the acceptance rate and running mean update live.\nThe tool is designed for teaching and for building intuition about how different samplers behave — where they mix well, where they struggle, and how their tuning parameters affect performance. It builds on the excellent mcmc-demo by Chi Feng.\nSamplers The gallery currently includes the following algorithms:\nStandard MCMC methods Random Walk Metropolis Adaptive Metropolis Hamiltonian Monte Carlo No-U-Turn Sampler (NUTS) Metropolis-adjusted Langevin (MALA) Unadjusted Langevin (ULA) Stochastic Gradient Langevin Dynamics (SGLD) SGLD with Control Variates Tuning-free ULA (FUSE) Hessian-Hamiltonian Monte Carlo (H2MC) Gibbs Sampling Differential Evolution MCMC Microcanonical HMC Non-reversible samplers Zig-Zag Sampler Bouncy Particle Sampler Non-Markovian iterative methods Stein Variational Gradient Descent Nested Sampling (RadFriends) Ask a question or open an issue The source code is available on GitHub . Suggestions for new samplers or target distributions are welcome — please open an issue on the repository.\n",
+  "wordCount" : "228",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/mcmc_gallery.png","datePublished": "2026-07-30T00:00:00Z",
+  "dateModified": "2026-07-30T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Christopher Nemeth"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/software/mcmc-viz/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Nemeth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Nemeth">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Chris Nemeth</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/code_and_software/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blogs/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research_group/" title="Group">
+                    <span>Group</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The MCMC Gallery
+    </h1>
+    <div class="post-meta"><span title='2026-07-30 00:00:00 +0000 UTC'>July 2026</span>&nbsp;&middot;&nbsp;Christopher Nemeth&nbsp;&middot;&nbsp;<a href="https://github.com/chris-nemeth/mcmc-viz" rel="noopener noreferrer" target="_blank">GitHub repository</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#samplers">Samplers</a></li>
+    <li><a href="#ask-a-question-or-open-an-issue">Ask a question or open an issue</a></li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="the-mcmc-gallery">The MCMC Gallery<a hidden class="anchor" aria-hidden="true" href="#the-mcmc-gallery">#</a></h1>
+<p><a href="https://chris-nemeth.github.io/mcmc-viz/" target="_blank"><strong>Launch the tool</strong></a>
+</p>
+<p>The MCMC Gallery is an interactive, browser-based visualisation tool for exploring Markov chain Monte Carlo algorithms. Every method faces the same problem: map out a probability distribution that you can only evaluate point by point. Pick a target distribution — a banana, a ring, a mixture of hills — choose an algorithm, and watch the sampler feel its way across the landscape. You can tune the step size and speed as it runs, and watch the acceptance rate and running mean update live.</p>
+<p>The tool is designed for teaching and for building intuition about how different samplers behave — where they mix well, where they struggle, and how their tuning parameters affect performance. It builds on the excellent <a href="https://github.com/chi-feng/mcmc-demo" target="_blank">mcmc-demo</a>
+ by Chi Feng.</p>
+<hr>
+<h2 id="samplers">Samplers<a hidden class="anchor" aria-hidden="true" href="#samplers">#</a></h2>
+<p>The gallery currently includes the following algorithms:</p>
+<h3 id="standard-mcmc-methods">Standard MCMC methods<a hidden class="anchor" aria-hidden="true" href="#standard-mcmc-methods">#</a></h3>
+<ul>
+<li>Random Walk Metropolis</li>
+<li>Adaptive Metropolis</li>
+<li>Hamiltonian Monte Carlo</li>
+<li>No-U-Turn Sampler (NUTS)</li>
+<li>Metropolis-adjusted Langevin (MALA)</li>
+<li>Unadjusted Langevin (ULA)</li>
+<li>Stochastic Gradient Langevin Dynamics (SGLD)</li>
+<li>SGLD with Control Variates</li>
+<li>Tuning-free ULA (FUSE)</li>
+<li>Hessian-Hamiltonian Monte Carlo (H2MC)</li>
+<li>Gibbs Sampling</li>
+<li>Differential Evolution MCMC</li>
+<li>Microcanonical HMC</li>
+</ul>
+<h3 id="non-reversible-samplers">Non-reversible samplers<a hidden class="anchor" aria-hidden="true" href="#non-reversible-samplers">#</a></h3>
+<ul>
+<li>Zig-Zag Sampler</li>
+<li>Bouncy Particle Sampler</li>
+</ul>
+<h3 id="non-markovian-iterative-methods">Non-Markovian iterative methods<a hidden class="anchor" aria-hidden="true" href="#non-markovian-iterative-methods">#</a></h3>
+<ul>
+<li>Stein Variational Gradient Descent</li>
+<li>Nested Sampling (RadFriends)</li>
+</ul>
+<hr>
+<h2 id="ask-a-question-or-open-an-issue">Ask a question or open an issue<a hidden class="anchor" aria-hidden="true" href="#ask-a-question-or-open-an-issue">#</a></h2>
+<p>The source code is available on <a href="https://github.com/chris-nemeth/mcmc-viz" target="_blank">GitHub</a>
+. Suggestions for new samplers or target distributions are welcome — please open an <a href="https://github.com/chris-nemeth/mcmc-viz/issues" target="_blank">issue</a>
+ on the repository.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mcmc/">MCMC</a></li>
+      <li><a href="http://localhost:1313/tags/visualisation/">Visualisation</a></li>
+      <li><a href="http://localhost:1313/tags/interactive/">Interactive</a></li>
+      <li><a href="http://localhost:1313/tags/sampling/">Sampling</a></li>
+      <li><a href="http://localhost:1313/tags/teaching/">Teaching</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="http://localhost:1313/">Chris Nemeth</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

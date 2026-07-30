@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interactive</title>
+      <link>http://localhost:1313/tags/interactive/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/interactive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCMC</title>
+      <link>http://localhost:1313/tags/mcmc/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sampling</title>
+      <link>http://localhost:1313/tags/sampling/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Teaching</title>
+      <link>http://localhost:1313/tags/teaching/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/teaching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visualisation</title>
+      <link>http://localhost:1313/tags/visualisation/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/visualisation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Conditioning</title>
       <link>http://localhost:1313/tags/conditioning/</link>
@@ -156,13 +191,6 @@
       <description></description>
     </item>
     <item>
-      <title>Sampling</title>
-      <link>http://localhost:1313/tags/sampling/</link>
-      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sampling/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Gas Emmissions</title>
       <link>http://localhost:1313/tags/gas-emmissions/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
@@ -202,13 +230,6 @@
       <link>http://localhost:1313/tags/interaction-network/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/interaction-network/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCMC</title>
-      <link>http://localhost:1313/tags/mcmc/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mcmc/</guid>
       <description></description>
     </item>
     <item>
