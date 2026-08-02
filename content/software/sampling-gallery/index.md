@@ -1,7 +1,7 @@
 ---
 title: "The Sampling Gallery"
 date: 2026-07-30
-lastmod: 2026-07-30
+lastmod: 2026-08-02
 tags: ["Monte Carlo", "MCMC", "sampling", "visualisation", "interactive", "teaching"]
 author: ["Christopher Nemeth"]
 description: "An interactive gallery of Monte Carlo, MCMC, and related sampling algorithms - animated, tunable, and explained in plain language."
@@ -31,13 +31,11 @@ The tool is designed for teaching and for building intuition about how different
 
 The gallery currently includes the following algorithms:
 
-### Direct and accept-reject methods
+### Independent Monte Carlo
 
 - Rejection Sampling
-
-### Weighted Monte Carlo
-
-- Importance Sampling (with optional SIR resampling)
+- Importance Sampling (with optional SIR resampling and Pareto-smoothed importance sampling)
+- Quasi-Monte Carlo
 
 ### Markov chain Monte Carlo
 
@@ -45,8 +43,11 @@ The gallery currently includes the following algorithms:
 - Adaptive Metropolis
 - Hamiltonian Monte Carlo
 - No-U-Turn Sampler (NUTS)
+- Riemannian-Manifold HMC
+- Apogee-to-Apogee Path Sampler
 - Metropolis-adjusted Langevin (MALA)
 - Slice Sampling
+- Elliptical Slice Sampling
 - Gibbs Sampling
 - Hessian-Hamiltonian Monte Carlo (H2MC)
 - Unadjusted Langevin (ULA)
@@ -55,13 +56,13 @@ The gallery currently includes the following algorithms:
 
 ### Ensemble and multimodal methods
 
-- Differential Evolution MCMC
+- Ensemble MCMC (affine-invariant stretch moves, with a differential evolution mode)
 - Parallel Tempering
 
 ### Sequential and annealed methods
 
-- Tempered Sequential Monte Carlo (SMC)
-- Nested Sampling (RadFriends)
+- Tempered Sequential Monte Carlo (SMC), with an annealed importance sampling mode
+- Nested Sampling
 
 ### Non-reversible samplers
 
@@ -71,6 +72,9 @@ The gallery currently includes the following algorithms:
 ### Deterministic and variational particle methods
 
 - Stein Variational Gradient Descent
+- Coin SVGD
+- Wasserstein Particle Descent
+- Stochastic Particle-Optimization Sampling
 
 ---
 ## Ask a question or open an issue

@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SGMCMC on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/sgmcmc/</link>
+    <link>https://chris-nemeth.github.io/tags/sgmcmc/</link>
     <description>Recent content in SGMCMC on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sgmcmc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/sgmcmc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stochastic Gradient MCMC in Jax</title>
-      <link>http://localhost:1313/software/sgmcmcjax/</link>
+      <link>https://chris-nemeth.github.io/software/sgmcmcjax/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/software/sgmcmcjax/</guid>
+      <guid>https://chris-nemeth.github.io/software/sgmcmcjax/</guid>
       <description>This repository contains a python package for stochastic gradient MCMC algorithms written in the Jax language.</description>
     </item>
     <item>
       <title>SGMCMCJax: a lightweight JAX library for stochastic gradient Markov chain Monte Carlo algorithms</title>
-      <link>http://localhost:1313/papers/2022-04-18-sgmcmcjax/</link>
+      <link>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2022-04-18-sgmcmcjax/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2022-04-18-sgmcmcjax/</guid>
       <description> </description>
     </item>
     <item>
       <title>Stochastic Gradient Markov Chain Monte Carlo</title>
-      <link>http://localhost:1313/papers/2021-01-04-sgmcmc-review/</link>
+      <link>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2021-01-04-sgmcmc-review/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2021-01-04-sgmcmc-review/</guid>
       <description> </description>
     </item>
     <item>
       <title>sgmcmc: An R package for stochastic gradient Markov chain Monte Carlo</title>
-      <link>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</link>
+      <link>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2019-10-31-sgmcmc-r-package/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2019-10-31-sgmcmc-r-package/</guid>
       <description> </description>
     </item>
     <item>
       <title>Control variates for stochastic gradient MCMC</title>
-      <link>http://localhost:1313/papers/2019-05-01-sgldcv/</link>
+      <link>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2019-05-01-sgldcv/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2019-05-01-sgldcv/</guid>
       <description> </description>
     </item>
     <item>
       <title>Large-Scale Stochastic Sampling from the Probability Simplex</title>
-      <link>http://localhost:1313/papers/2018-12-01-simplex/</link>
+      <link>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2018-12-01-simplex/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2018-12-01-simplex/</guid>
       <description> </description>
     </item>
   </channel>

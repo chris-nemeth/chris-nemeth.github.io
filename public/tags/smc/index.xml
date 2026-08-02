@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SMC on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/smc/</link>
+    <link>https://chris-nemeth.github.io/tags/smc/</link>
     <description>Recent content in SMC on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/smc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/smc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Particle approximations of the score and observed information matrix for parameter estimation in state–space models with linear computational cost</title>
-      <link>http://localhost:1313/papers/2016-10-01-particle-score/</link>
+      <link>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2016-10-01-particle-score/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2016-10-01-particle-score/</guid>
       <description> </description>
     </item>
     <item>
       <title>Sequential Monte Carlo methods for state and parameter estimation in abruptly changing environments</title>
-      <link>http://localhost:1313/papers/2014-04-01-smc-change/</link>
+      <link>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</link>
       <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2014-04-01-smc-change/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2014-04-01-smc-change/</guid>
       <description> </description>
     </item>
   </channel>
