@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://chris-nemeth.github.io/software/sampling-gallery/" />
 <meta property="og:image" content="https://chris-nemeth.github.io/sampling_gallery.png" /><meta property="article:section" content="software" />
 <meta property="article:published_time" content="2026-07-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2026-07-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-08-02T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://chris-nemeth.github.io/sampling_gallery.png" />
@@ -70,11 +70,11 @@
   "keywords": [
     "Monte Carlo", "MCMC", "sampling", "visualisation", "interactive", "teaching"
   ],
-  "articleBody": "The Sampling Gallery Launch the tool The Sampling Gallery is an interactive, browser-based collection of Monte Carlo, MCMC, and related sampling algorithms. On paper, each algorithm is only a few lines of mathematics, but its behaviour is not always obvious. These visualisations let you watch a sampler explore a landscape in real time — where it proposes, what it rejects, and how gradients, trajectories, and adaptation shape the search. Pick a target distribution — a banana, a ring, a mixture of hills — choose an algorithm, tune its parameters, and watch it run.\nThe tool is designed for teaching and for building intuition about how different samplers behave — where they mix well, where they struggle, and how their tuning parameters affect performance. It builds on the excellent mcmc-demo by Chi Feng.\nSamplers The gallery currently includes the following algorithms:\nDirect and accept-reject methods Rejection Sampling Weighted Monte Carlo Importance Sampling (with optional SIR resampling) Markov chain Monte Carlo Random Walk Metropolis Adaptive Metropolis Hamiltonian Monte Carlo No-U-Turn Sampler (NUTS) Metropolis-adjusted Langevin (MALA) Slice Sampling Gibbs Sampling Hessian-Hamiltonian Monte Carlo (H2MC) Unadjusted Langevin (ULA) Stochastic Gradient Langevin Dynamics (SGLD), with optional control variates Tuning-free ULA (FUSE) Ensemble and multimodal methods Differential Evolution MCMC Parallel Tempering Sequential and annealed methods Tempered Sequential Monte Carlo (SMC) Nested Sampling (RadFriends) Non-reversible samplers Zig-Zag Sampler Bouncy Particle Sampler Deterministic and variational particle methods Stein Variational Gradient Descent Ask a question or open an issue The source code is available on GitHub . Suggestions for new samplers or target distributions are welcome — please open an issue on the repository.\n",
-  "wordCount" : "265",
+  "articleBody": "The Sampling Gallery Launch the tool The Sampling Gallery is an interactive, browser-based collection of Monte Carlo, MCMC, and related sampling algorithms. On paper, each algorithm is only a few lines of mathematics, but its behaviour is not always obvious. These visualisations let you watch a sampler explore a landscape in real time — where it proposes, what it rejects, and how gradients, trajectories, and adaptation shape the search. Pick a target distribution — a banana, a ring, a mixture of hills — choose an algorithm, tune its parameters, and watch it run.\nThe tool is designed for teaching and for building intuition about how different samplers behave — where they mix well, where they struggle, and how their tuning parameters affect performance. It builds on the excellent mcmc-demo by Chi Feng.\nSamplers The gallery currently includes the following algorithms:\nIndependent Monte Carlo Rejection Sampling Importance Sampling (with optional SIR resampling and Pareto-smoothed importance sampling) Quasi-Monte Carlo Markov chain Monte Carlo Random Walk Metropolis Adaptive Metropolis Hamiltonian Monte Carlo No-U-Turn Sampler (NUTS) Riemannian-Manifold HMC Apogee-to-Apogee Path Sampler Metropolis-adjusted Langevin (MALA) Slice Sampling Elliptical Slice Sampling Gibbs Sampling Hessian-Hamiltonian Monte Carlo (H2MC) Unadjusted Langevin (ULA) Stochastic Gradient Langevin Dynamics (SGLD), with optional control variates Tuning-free ULA (FUSE) Ensemble and multimodal methods Ensemble MCMC (affine-invariant stretch moves, with a differential evolution mode) Parallel Tempering Sequential and annealed methods Tempered Sequential Monte Carlo (SMC), with an annealed importance sampling mode Nested Sampling Non-reversible samplers Zig-Zag Sampler Bouncy Particle Sampler Deterministic and variational particle methods Stein Variational Gradient Descent Coin SVGD Wasserstein Particle Descent Stochastic Particle-Optimization Sampling Ask a question or open an issue The source code is available on GitHub . Suggestions for new samplers or target distributions are welcome — please open an issue on the repository.\n",
+  "wordCount" : "295",
   "inLanguage": "en",
   "image":"https://chris-nemeth.github.io/sampling_gallery.png","datePublished": "2026-07-30T00:00:00Z",
-  "dateModified": "2026-07-30T00:00:00Z",
+  "dateModified": "2026-08-02T00:00:00Z",
   "author":[{
     "@type": "Person",
     "name": "Christopher Nemeth"
@@ -207,13 +207,11 @@
 <hr>
 <h2 id="samplers">Samplers<a hidden class="anchor" aria-hidden="true" href="#samplers">#</a></h2>
 <p>The gallery currently includes the following algorithms:</p>
-<h3 id="direct-and-accept-reject-methods">Direct and accept-reject methods<a hidden class="anchor" aria-hidden="true" href="#direct-and-accept-reject-methods">#</a></h3>
+<h3 id="independent-monte-carlo">Independent Monte Carlo<a hidden class="anchor" aria-hidden="true" href="#independent-monte-carlo">#</a></h3>
 <ul>
 <li>Rejection Sampling</li>
-</ul>
-<h3 id="weighted-monte-carlo">Weighted Monte Carlo<a hidden class="anchor" aria-hidden="true" href="#weighted-monte-carlo">#</a></h3>
-<ul>
-<li>Importance Sampling (with optional SIR resampling)</li>
+<li>Importance Sampling (with optional SIR resampling and Pareto-smoothed importance sampling)</li>
+<li>Quasi-Monte Carlo</li>
 </ul>
 <h3 id="markov-chain-monte-carlo">Markov chain Monte Carlo<a hidden class="anchor" aria-hidden="true" href="#markov-chain-monte-carlo">#</a></h3>
 <ul>
@@ -221,8 +219,11 @@
 <li>Adaptive Metropolis</li>
 <li>Hamiltonian Monte Carlo</li>
 <li>No-U-Turn Sampler (NUTS)</li>
+<li>Riemannian-Manifold HMC</li>
+<li>Apogee-to-Apogee Path Sampler</li>
 <li>Metropolis-adjusted Langevin (MALA)</li>
 <li>Slice Sampling</li>
+<li>Elliptical Slice Sampling</li>
 <li>Gibbs Sampling</li>
 <li>Hessian-Hamiltonian Monte Carlo (H2MC)</li>
 <li>Unadjusted Langevin (ULA)</li>
@@ -231,13 +232,13 @@
 </ul>
 <h3 id="ensemble-and-multimodal-methods">Ensemble and multimodal methods<a hidden class="anchor" aria-hidden="true" href="#ensemble-and-multimodal-methods">#</a></h3>
 <ul>
-<li>Differential Evolution MCMC</li>
+<li>Ensemble MCMC (affine-invariant stretch moves, with a differential evolution mode)</li>
 <li>Parallel Tempering</li>
 </ul>
 <h3 id="sequential-and-annealed-methods">Sequential and annealed methods<a hidden class="anchor" aria-hidden="true" href="#sequential-and-annealed-methods">#</a></h3>
 <ul>
-<li>Tempered Sequential Monte Carlo (SMC)</li>
-<li>Nested Sampling (RadFriends)</li>
+<li>Tempered Sequential Monte Carlo (SMC), with an annealed importance sampling mode</li>
+<li>Nested Sampling</li>
 </ul>
 <h3 id="non-reversible-samplers">Non-reversible samplers<a hidden class="anchor" aria-hidden="true" href="#non-reversible-samplers">#</a></h3>
 <ul>
@@ -247,6 +248,9 @@
 <h3 id="deterministic-and-variational-particle-methods">Deterministic and variational particle methods<a hidden class="anchor" aria-hidden="true" href="#deterministic-and-variational-particle-methods">#</a></h3>
 <ul>
 <li>Stein Variational Gradient Descent</li>
+<li>Coin SVGD</li>
+<li>Wasserstein Particle Descent</li>
+<li>Stochastic Particle-Optimization Sampling</li>
 </ul>
 <hr>
 <h2 id="ask-a-question-or-open-an-issue">Ask a question or open an issue<a hidden class="anchor" aria-hidden="true" href="#ask-a-question-or-open-an-issue">#</a></h2>
