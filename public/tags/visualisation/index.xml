@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/visualisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Sampling Gallery</title>
-      <link>http://localhost:1313/software/sampling-viz/</link>
+      <link>http://localhost:1313/software/sampling-gallery/</link>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/software/sampling-viz/</guid>
+      <guid>http://localhost:1313/software/sampling-gallery/</guid>
       <description>An interactive gallery of Monte Carlo, MCMC, and related sampling algorithms - animated, tunable, and explained in plain language.</description>
     </item>
   </channel>

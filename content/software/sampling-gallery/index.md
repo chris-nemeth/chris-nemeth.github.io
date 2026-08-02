@@ -11,7 +11,7 @@ cover:
     alt: "The Sampling Gallery"
     relative: false
 editPost:
-    URL: "https://github.com/chris-nemeth/sampling-viz"
+    URL: "https://github.com/chris-nemeth/sampling-gallery"
     Text: "GitHub repository"
 showToc: true
 disableAnchoredHeadings: false
@@ -20,7 +20,7 @@ disableAnchoredHeadings: false
 
 # The Sampling Gallery
 
-[**Launch the tool**](https://chris-nemeth.github.io/sampling-viz/)
+[**Launch the tool**](https://chris-nemeth.github.io/sampling-gallery/)
 
 The Sampling Gallery is an interactive, browser-based collection of Monte Carlo, MCMC, and related sampling algorithms. On paper, each algorithm is only a few lines of mathematics, but its behaviour is not always obvious. These visualisations let you watch a sampler explore a landscape in real time — where it proposes, what it rejects, and how gradients, trajectories, and adaptation shape the search. Pick a target distribution — a banana, a ring, a mixture of hills — choose an algorithm, tune its parameters, and watch it run.
 
@@ -75,4 +75,4 @@ The gallery currently includes the following algorithms:
 ---
 ## Ask a question or open an issue
 
-The source code is available on [GitHub](https://github.com/chris-nemeth/sampling-viz). Suggestions for new samplers or target distributions are welcome — please open an [issue](https://github.com/chris-nemeth/sampling-viz/issues) on the repository.
+The source code is available on [GitHub](https://github.com/chris-nemeth/sampling-gallery). Suggestions for new samplers or target distributions are welcome — please open an [issue](https://github.com/chris-nemeth/sampling-gallery/issues) on the repository.
