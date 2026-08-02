@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sampling on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/sampling/</link>
+    <link>https://chris-nemeth.github.io/tags/sampling/</link>
     <description>Recent content in Sampling on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sampling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/sampling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Sampling Gallery</title>
-      <link>http://localhost:1313/software/sampling-gallery/</link>
+      <link>https://chris-nemeth.github.io/software/sampling-gallery/</link>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/software/sampling-gallery/</guid>
+      <guid>https://chris-nemeth.github.io/software/sampling-gallery/</guid>
       <description>An interactive gallery of Monte Carlo, MCMC, and related sampling algorithms - animated, tunable, and explained in plain language.</description>
     </item>
     <item>
       <title>Tuning-Free Sampling via Optimization on the Space of Probability Measures</title>
-      <link>http://localhost:1313/papers/2025-11-13-fuse/</link>
+      <link>https://chris-nemeth.github.io/papers/2025-11-13-fuse/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/2025-11-13-fuse/</guid>
+      <guid>https://chris-nemeth.github.io/papers/2025-11-13-fuse/</guid>
       <description> </description>
     </item>
     <item>
       <title>Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows</title>
-      <link>http://localhost:1313/blogs/mfm/</link>
+      <link>https://chris-nemeth.github.io/blogs/mfm/</link>
       <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/mfm/</guid>
+      <guid>https://chris-nemeth.github.io/blogs/mfm/</guid>
       <description>Blog post on NeurIPS 2024 paper - Markovian Flow Matching: Accelerating MCMC with Continuous Normalizing Flows</description>
     </item>
     <item>
       <title>Why Should We Care About Gradient Flows?</title>
-      <link>http://localhost:1313/blogs/caring_about_gf/</link>
+      <link>https://chris-nemeth.github.io/blogs/caring_about_gf/</link>
       <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/caring_about_gf/</guid>
+      <guid>https://chris-nemeth.github.io/blogs/caring_about_gf/</guid>
       <description>Blog post on gradient flows in Euclidean and Wasserstein spaces.</description>
     </item>
   </channel>

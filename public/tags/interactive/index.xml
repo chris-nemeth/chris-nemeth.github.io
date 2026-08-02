@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Interactive on Chris Nemeth</title>
-    <link>http://localhost:1313/tags/interactive/</link>
+    <link>https://chris-nemeth.github.io/tags/interactive/</link>
     <description>Recent content in Interactive on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/interactive/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chris-nemeth.github.io/tags/interactive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Sampling Gallery</title>
-      <link>http://localhost:1313/software/sampling-gallery/</link>
+      <link>https://chris-nemeth.github.io/software/sampling-gallery/</link>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/software/sampling-gallery/</guid>
+      <guid>https://chris-nemeth.github.io/software/sampling-gallery/</guid>
       <description>An interactive gallery of Monte Carlo, MCMC, and related sampling algorithms - animated, tunable, and explained in plain language.</description>
     </item>
   </channel>
