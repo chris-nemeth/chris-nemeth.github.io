@@ -6,20 +6,34 @@
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Interactive</title>
-      <link>https://chris-nemeth.github.io/tags/interactive/</link>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/interactive/</guid>
+      <title>Markov Chain Monte Carlo</title>
+      <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
       <description></description>
     </item>
     <item>
       <title>MCMC</title>
       <link>https://chris-nemeth.github.io/tags/mcmc/</link>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalable Subsampling</title>
+      <link>https://chris-nemeth.github.io/tags/scalable-subsampling/</link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/scalable-subsampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interactive</title>
+      <link>https://chris-nemeth.github.io/tags/interactive/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/interactive/</guid>
       <description></description>
     </item>
     <item>
@@ -219,13 +233,6 @@
       <description></description>
     </item>
     <item>
-      <title>Markov Chain Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</link>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Distance Metrics</title>
       <link>https://chris-nemeth.github.io/tags/distance-metrics/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
@@ -307,13 +314,6 @@
       <link>https://chris-nemeth.github.io/tags/probability-simplex/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/probability-simplex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalable Subsampling</title>
-      <link>https://chris-nemeth.github.io/tags/scalable-subsampling/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/scalable-subsampling/</guid>
       <description></description>
     </item>
     <item>

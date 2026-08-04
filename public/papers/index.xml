@@ -6,8 +6,15 @@
     <description>Recent content in Papers on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metropolis-Hastings with Scalable Subsampling</title>
+      <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Conditioning Gaussian Processes on Almost Anything</title>
       <link>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</link>
@@ -104,13 +111,6 @@
       <link>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/papers/2024-10-01-scir-cv/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>Metropolis-Hastings with Scalable Subsampling</title>
-      <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</guid>
       <description> </description>
     </item>
     <item>

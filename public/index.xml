@@ -6,8 +6,15 @@
     <description>Recent content on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metropolis-Hastings with Scalable Subsampling</title>
+      <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>The Sampling Gallery</title>
       <link>https://chris-nemeth.github.io/software/sampling-gallery/</link>
@@ -182,13 +189,6 @@
       <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/location/</guid>
       <description>Professor Christopher Nemeth&amp;#39;s mailing and office addresses at Lancaster University.</description>
-    </item>
-    <item>
-      <title>Metropolis-Hastings with Scalable Subsampling</title>
-      <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</guid>
-      <description> </description>
     </item>
     <item>
       <title>Learning-Rate-Free Stochastic Optimization over Riemannian Manifolds</title>
