@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chris-nemeth.github.io/</loc>
-    <lastmod>2026-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/mcmc/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/scalable-subsampling/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/software/</loc>
     <lastmod>2026-08-02T00:00:00+00:00</lastmod>
@@ -11,16 +29,10 @@
     <loc>https://chris-nemeth.github.io/tags/interactive/</loc>
     <lastmod>2026-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/mcmc/</loc>
-    <lastmod>2026-08-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/monte-carlo/</loc>
     <lastmod>2026-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/sampling/</loc>
-    <lastmod>2026-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
     <lastmod>2026-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/teaching/</loc>
@@ -45,9 +57,6 @@
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/non-conjugate-inference/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/generative-modelling/</loc>
@@ -134,9 +143,6 @@
     <loc>https://chris-nemeth.github.io/tags/inverse-modelling/</loc>
     <lastmod>2026-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
-    <lastmod>2026-02-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/papers/2024-08-02-plume/</loc>
     <lastmod>2026-02-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -206,9 +212,6 @@
     <loc>https://chris-nemeth.github.io/tags/probability-simplex/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/scalable-subsampling/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/stochastic-gradient-mcmc/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -247,9 +250,6 @@
   </url><url>
     <loc>https://chris-nemeth.github.io/location/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</loc>
-    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/bayesian-deep-learning/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
