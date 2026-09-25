@@ -6,8 +6,15 @@
     <description>Recent content in Sequential Monte Carlo on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/sequential-monte-carlo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tempered Guided Diffusion</title>
+      <link>https://chris-nemeth.github.io/papers/2026-05-05-tgd/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2026-05-05-tgd/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Scalable Model-Based Clustering with Sequential Monte Carlo</title>
       <link>https://chris-nemeth.github.io/papers/2026-04-16-smc-clustering/</link>
