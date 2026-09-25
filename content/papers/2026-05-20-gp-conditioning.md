@@ -1,14 +1,14 @@
 ---
 title: "Conditioning Gaussian Processes on Almost Anything"
-date: 2026-05-20
-lastmod: 2026-05-20
+date: 2026-09-25
+lastmod: 2026-09-25
 tags: ["Gaussian processes","diffusion models","non-conjugate inference","conditioning"]
 author: ["Henry Moss","Lachlan Astfalck","Thomas Cowperthwaite","Colin Doumont","Sam Willis","Philipp Hennig","Christopher Nemeth","Andrew Zammit-Mangion"]
 description: " "
-summary: "arXiv preprint"
+summary: "NeurIPS 2026 (to appear)"
 editPost:
     URL: "https://arxiv.org/abs/2605.21041"
-    Text: "arXiv preprint"
+    Text: "NeurIPS 2026 (to appear)"
 
 ---
 
@@ -28,13 +28,13 @@ Gaussian processes (GPs) offer a principled probabilistic model over functions, 
 ---
 ##### Citation
 
-Moss, H., Astfalck, L., Cowperthwaite, T., Doumont, C., Willis, S., Hennig, P., Nemeth, C. and Zammit-Mangion, A. (2026). Conditioning Gaussian Processes on Almost Anything. *arXiv preprint*.
+Moss, H., Astfalck, L., Cowperthwaite, T., Doumont, C., Willis, S., Hennig, P., Nemeth, C. and Zammit-Mangion, A. (2026). Conditioning Gaussian Processes on Almost Anything. *NeurIPS 2026 (to appear)*.
 
 ```BibTeX
-@article{moss2026conditioning,
+@inproceedings{moss2026conditioning,
   title={Conditioning Gaussian Processes on Almost Anything},
   author={Moss, Henry and Astfalck, Lachlan and Cowperthwaite, Thomas and Doumont, Colin and Willis, Sam and Hennig, Philipp and Nemeth, Christopher and Zammit-Mangion, Andrew},
-  journal={arXiv preprint arXiv:2605.21041},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2026}
 }
 ```

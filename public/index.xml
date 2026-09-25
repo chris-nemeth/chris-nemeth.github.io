@@ -6,8 +6,29 @@
     <description>Recent content on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conditioning Gaussian Processes on Almost Anything</title>
+      <link>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Hypergraph Generation via Structured Stochastic Diffusion</title>
+      <link>https://chris-nemeth.github.io/papers/2026-05-06-hedge/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2026-05-06-hedge/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Tempered Guided Diffusion</title>
+      <link>https://chris-nemeth.github.io/papers/2026-05-05-tgd/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2026-05-05-tgd/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Metropolis-Hastings with Scalable Subsampling</title>
       <link>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</link>
@@ -21,20 +42,6 @@
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/software/sampling-gallery/</guid>
       <description>An interactive gallery of Monte Carlo, MCMC, and related sampling algorithms - animated, tunable, and explained in plain language.</description>
-    </item>
-    <item>
-      <title>Conditioning Gaussian Processes on Almost Anything</title>
-      <link>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>Hypergraph Generation via Structured Stochastic Diffusion</title>
-      <link>https://chris-nemeth.github.io/papers/2026-05-06-hedge/</link>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/papers/2026-05-06-hedge/</guid>
-      <description> </description>
     </item>
     <item>
       <title>Scalable Model-Based Clustering with Sequential Monte Carlo</title>

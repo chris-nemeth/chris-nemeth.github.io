@@ -3,7 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chris-nemeth.github.io/</loc>
-    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/conditional-sampling/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/conditioning/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/diffusion-models/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/gaussian-processes/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/generative-modelling/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2026-05-06-hedge/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/hypergraphs/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/inverse-problems/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/non-conjugate-inference/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/stochastic-diffusion/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2026-05-05-tgd/</loc>
+    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/markov-chain-monte-carlo/</loc>
     <lastmod>2026-08-04T00:00:00+00:00</lastmod>
@@ -14,13 +59,7 @@
     <loc>https://chris-nemeth.github.io/papers/2024-07-30-mhss/</loc>
     <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
-    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/scalable-subsampling/</loc>
-    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
     <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/software/</loc>
@@ -44,33 +83,6 @@
     <loc>https://chris-nemeth.github.io/tags/visualisation/</loc>
     <lastmod>2026-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/tags/conditioning/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/diffusion-models/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/gaussian-processes/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/non-conjugate-inference/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/generative-modelling/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/papers/2026-05-06-hedge/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/hypergraphs/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/stochastic-diffusion/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/clustering/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -81,9 +93,6 @@
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2026-04-16-smc-clustering/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/research_group/</loc>
