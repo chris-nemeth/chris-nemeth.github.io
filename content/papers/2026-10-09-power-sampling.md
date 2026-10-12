@@ -28,12 +28,12 @@ Reinforcement learning with verifiable rewards (RLVR) has substantially improved
 ---
 ##### Citation
 
-Malkani Talwar, A., Nemeth, C. and Moss, H. (2026). A Critical Look at Power Sampling when Test Time Sharpening LLMs. *arXiv preprint*.
+Talwar, A. M., Nemeth, C. and Moss, H. (2026). A Critical Look at Power Sampling when Test Time Sharpening LLMs. *arXiv preprint*.
 
 ```BibTeX
-@article{malkanitalwar2026critical,
+@article{talwar2026critical,
   title={A Critical Look at Power Sampling when Test Time Sharpening LLMs},
-  author={Malkani Talwar, Abiel and Nemeth, Christopher and Moss, Henry},
+  author={Talwar, Abiel Malkani and Nemeth, Christopher and Moss, Henry},
   journal={arXiv preprint arXiv:2610.13653},
   year={2026}
 }
