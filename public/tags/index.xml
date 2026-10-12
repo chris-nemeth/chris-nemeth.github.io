@@ -23,6 +23,27 @@
       <description></description>
     </item>
     <item>
+      <title>Large Language Models</title>
+      <link>https://chris-nemeth.github.io/tags/large-language-models/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/large-language-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Sampling</title>
+      <link>https://chris-nemeth.github.io/tags/power-sampling/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/power-sampling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sequential Monte Carlo</title>
+      <link>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Spatial Prediction</title>
       <link>https://chris-nemeth.github.io/tags/spatial-prediction/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
@@ -34,6 +55,13 @@
       <link>https://chris-nemeth.github.io/tags/spatial-statistics/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/spatial-statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test-Time Sharpening</title>
+      <link>https://chris-nemeth.github.io/tags/test-time-sharpening/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/test-time-sharpening/</guid>
       <description></description>
     </item>
     <item>
@@ -83,13 +111,6 @@
       <link>https://chris-nemeth.github.io/tags/non-conjugate-inference/</link>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/non-conjugate-inference/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sequential Monte Carlo</title>
-      <link>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</link>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</guid>
       <description></description>
     </item>
     <item>
