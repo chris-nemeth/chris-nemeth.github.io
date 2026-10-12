@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chris-nemeth.github.io/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/diffusion-models/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/guided-diffusion/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/spatial-prediction/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/papers/2026-10-09-spatial-guided-diffusion/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/spatial-statistics/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chris-nemeth.github.io/tags/</loc>
+    <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/conditional-sampling/</loc>
     <lastmod>2026-09-25T00:00:00+00:00</lastmod>
@@ -12,9 +33,6 @@
     <lastmod>2026-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/diffusion-models/</loc>
     <lastmod>2026-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/gaussian-processes/</loc>
@@ -35,16 +53,10 @@
     <loc>https://chris-nemeth.github.io/tags/non-conjugate-inference/</loc>
     <lastmod>2026-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chris-nemeth.github.io/papers/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chris-nemeth.github.io/tags/sequential-monte-carlo/</loc>
     <lastmod>2026-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/tags/stochastic-diffusion/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chris-nemeth.github.io/tags/</loc>
     <lastmod>2026-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chris-nemeth.github.io/papers/2026-05-05-tgd/</loc>

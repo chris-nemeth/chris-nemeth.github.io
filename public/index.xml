@@ -6,8 +6,15 @@
     <description>Recent content on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spatial Prediction with Guided Diffusion</title>
+      <link>https://chris-nemeth.github.io/papers/2026-10-09-spatial-guided-diffusion/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/papers/2026-10-09-spatial-guided-diffusion/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Conditioning Gaussian Processes on Almost Anything</title>
       <link>https://chris-nemeth.github.io/papers/2026-05-20-gp-conditioning/</link>
