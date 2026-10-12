@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diffusion Models</title>
+      <link>https://chris-nemeth.github.io/tags/diffusion-models/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/diffusion-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guided Diffusion</title>
+      <link>https://chris-nemeth.github.io/tags/guided-diffusion/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/guided-diffusion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spatial Prediction</title>
+      <link>https://chris-nemeth.github.io/tags/spatial-prediction/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/spatial-prediction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spatial Statistics</title>
+      <link>https://chris-nemeth.github.io/tags/spatial-statistics/</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/tags/spatial-statistics/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Conditional Sampling</title>
       <link>https://chris-nemeth.github.io/tags/conditional-sampling/</link>
@@ -20,13 +48,6 @@
       <link>https://chris-nemeth.github.io/tags/conditioning/</link>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/tags/conditioning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Diffusion Models</title>
-      <link>https://chris-nemeth.github.io/tags/diffusion-models/</link>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/tags/diffusion-models/</guid>
       <description></description>
     </item>
     <item>
