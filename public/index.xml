@@ -6,8 +6,15 @@
     <description>Recent content on Chris Nemeth</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chris-nemeth.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research Group</title>
+      <link>https://chris-nemeth.github.io/research_group/</link>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://chris-nemeth.github.io/research_group/</guid>
+      <description>Chris Nemeth&amp;#39;s research group</description>
+    </item>
     <item>
       <title>A Critical Look at Power Sampling when Test Time Sharpening LLMs</title>
       <link>https://chris-nemeth.github.io/papers/2026-10-09-power-sampling/</link>
@@ -63,13 +70,6 @@
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://chris-nemeth.github.io/papers/2026-04-16-smc-clustering/</guid>
       <description> </description>
-    </item>
-    <item>
-      <title>Research Group</title>
-      <link>https://chris-nemeth.github.io/research_group/</link>
-      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://chris-nemeth.github.io/research_group/</guid>
-      <description>Chris Nemeth&amp;#39;s research group</description>
     </item>
     <item>
       <title>Generator-based Graph Generation via Heat Diffusion</title>
