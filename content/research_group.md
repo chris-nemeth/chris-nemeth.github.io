@@ -1,6 +1,6 @@
 ---
 title: "Research Group"
-date: 2026-02-16
+date: 2026-10-18
 hidemeta: true
 description: "Chris Nemeth's research group"
 
@@ -30,6 +30,10 @@ description: "Chris Nemeth's research group"
 ---
 
 #### PhD Students
+
++ Steve Isaac: 2026 - 
+    - Funded by [MARS](https://www.lancaster.ac.uk/mars)
+    - Co-supervised with [Matthias Sachs](https://sites.google.com/view/matthiassachs) and [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/)
 
 + [Chaim Elchik](https://lec-reefs.org/team/chaim-elchik/): 2025 - 
     - Funded by [ExaGeo](https://www.exageo.org)
