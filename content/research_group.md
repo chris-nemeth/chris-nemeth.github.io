@@ -51,7 +51,7 @@ description: "Chris Nemeth's research group"
     - Funded by [ProbAI](https://www.probai.uk)
     - Co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/)
 
-+ [Connie Trojan](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/): 2022 -
++ [Connie Trojan](https://www.lancaster.ac.uk/stor-i/about-us/mres-students/): 2022 - 2026
     - Funded by [Microsoft Research](https://www.microsoft.com/en-us/research/) 
     - Co-supervised with [Paul Fearnhead](https://www.maths.lancs.ac.uk/~fearnhea/)
 
